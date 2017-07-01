@@ -1,0 +1,74 @@
+#!/bin/sh
+
+# Variables
+SERVER_IP=""
+DNS_SERVERS=""
+# If you need to open some port, you can just add it here with name started "PORT_"
+PORT_SSH="22"
+PORT_HTTP="80"
+PORT_HTTP_2="8080"
+PORT_HTTPS="443"
+
+[ ${SERVER_IP:?You forgot to declare a SERVER_IP variable} ]
+# Flushing all rules
+iptables -F
+iptables -X
+
+# Setting default filter policy
+iptables -P INPUT DROP
+iptables -P OUTPUT DROP
+iptables -P FORWARD DROP
+
+# Allow unlimited traffic on loopback
+iptables -A INPUT -i lo -j ACCEPT
+iptables -A OUTPUT -o lo -j ACCEPT
+
+# For connected
+iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+iptables -A OUTPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+
+# DDoS Check for web server
+if [ -n $PORT_HTTP ]
+then
+    iptables -A INPUT -p tcp --dport $PORT_HTTP -m state --state NEW -m recent --set
+    iptables -A INPUT -p tcp --dport $PORT_HTTP -m state --state NEW -m recent --update --seconds 60 --hitcount 20 -j DROP
+fi
+
+for i in $(set | awk 'BEGIN{FS="="} /PORT_/{print $2}')
+do
+    iptables -A INPUT -p tcp -d $SERVER_IP --dport $i -m state --state NEW -j ACCEPT
+    #iptables -A OUTPUT -p tcp -s $SERVER_IP --sport $i -m state --state ESTABLISHED -j ACCEPT
+done
+
+# Allow server to create outgoing HTTP connections
+iptables -A OUTPUT -p tcp --dport 80    -m state --state NEW -j ACCEPT
+iptables -A OUTPUT -p tcp --dport 8080  -m state --state NEW -j ACCEPT
+iptables -A OUTPUT -p tcp --dport 443   -m state --state NEW -j ACCEPT
+
+# It's not totaly secured, but its needed for updates, you can comment it if you dont need it
+iptables -A OUTPUT -p tcp --match multiport --dports 1024:65535 -j ACCEPT
+iptables -A OUTPUT -p udp --match multiport --dports 1024:65535 -j ACCEPT
+
+# Allow DNS
+for i in $DNS_SERVERS
+do
+    iptables -A OUTPUT -p udp -s $SERVER_IP --sport 1024:65535 -d $i --dport 53 -m state --state NEW,ESTABLISHED -j ACCEPT
+    iptables -A INPUT -p udp -s $i --sport 53 -d $SERVER_IP --dport 1024:65535 -m state --state ESTABLISHED -j ACCEPT
+    iptables -A OUTPUT -p tcp -s $SERVER_IP --sport 1024:65535 -d $i --dport 53 -m state --state NEW,ESTABLISHED -j ACCEPT
+    iptables -A INPUT -p tcp -s $i --sport 53 -d $SERVER_IP --dport 1024:65535 -m state --state ESTABLISHED -j ACCEPT
+done
+
+## For manual openinig ports
+#iptables -A INPUT -p tcp -d $SERVER_IP --dport ===PORT=== -m state --state NEW,ESTABLISHED -j ACCEPT
+#iptables -A OUTPUT -p tcp -s $SERVER_IP --sport ===PORT=== -m state --state ESTABLISHED -j ACCEPT
+
+# Allow ssh if you anyhow fail's with it before, im realy advise you to NOT DELETE THIS LINE
+if [ -z $PORT_SSH ]
+then
+    iptables -A INPUT -p tcp -d $SERVER_IP --dport $PORT_SSH -m state --state NEW,ESTABLISHED -j ACCEPT
+    iptables -A OUTPUT -p tcp -s $SERVER_IP --sport $PORT_SSH -m state --state ESTABLISHED -j ACCEPT
+fi
+
+# Allow pings
+iptables -A INPUT   -p icmp --icmp-type 8 -d $SERVER_IP -m state --state NEW,ESTABLISHED,RELATED -j ACCEPT
+iptables -A OUTPUT  -p icmp --icmp-type 0 -s $SERVER_IP -m state --state ESTABLISHED,RELATED -j ACCEPT

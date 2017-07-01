@@ -1,0 +1,8 @@
+#! /bin/bash
+
+# I bound this script to my Alt+PrintScreen
+# This script select an area on your screen, and put this screenshot to your clipboard
+
+scrot -s /tmp/foo.png 
+copyq write image/png - < /tmp/foo.png && copyq select 0
+rm /tmp/foo.png

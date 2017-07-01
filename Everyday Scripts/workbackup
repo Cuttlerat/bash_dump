@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# It is my old script. I want to rewrite it from scratch. Don't use it
+
+cd /home/backup
+HOME="/home/rat"
+
+tar -cvzf home_$(date '+%d_%m_%y').tar.gz --exclude=$HOME/Videos --exclude=$HOME/Study/Вебинары --exclude=$HOME/.virtualenvs --exclude=$HOME/Бэкапы --exclude=$HOME/Downloads --exclude=$HOME/.cache --exclude=$HOME/.local --exclude=$HOME/.ssh --exclude="$HOME/.password-store*" --exclude=$HOME/Work --exclude=$HOME/.minecraft --exclude=$HOME/qemu $HOME
+tar -cvzf work_$(date '+%d_%m_%y').tar.gz $HOME/Work
+tar -cvzf etc_$(date '+%d_%m_%y').tar.gz --exclude=/etc/shadow* --exclude=/etc/passwd* /etc
+
+sudo chown backup:users *.tar.gz
+sudo chmod 600 *.tar.gz
+
+echo "Done"
+
+exit 0
