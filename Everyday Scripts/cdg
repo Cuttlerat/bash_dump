@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# It's a function for ~/.bashrc which allow cd back to your main git directory, and when you made commit or something, you can cd back into place where you was before with a "cd -"
+
+function cdg {
+    TEMP_PWD=$PWD
+    while [ ! -d .git ]
+    do
+            cd ..
+    done
+    OLDPWD=$TEMP_PWD
+}
