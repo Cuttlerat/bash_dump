@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# I like to store all my scripts in the ~/.bin folder, and I don't like to add it to the $PATH 
+# So I usually make the symlinks in /usr/local/bin/ for all scripts from my ~/.bin directory
+
+for i in /home/rat/.bin/*;{ ln -s $i /usr/local/bin/${i/#*\//} 2>/dev/null;} 
