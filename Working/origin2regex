@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# I was in a great hurry when I wrote this script, so it turned out oneliner
+# I'm going to fix it in the near future
+
+for IP in $(whois -h whois.radb.net -i origin -T route $(whois -h whois.radb.net $(dig $1 +short | head -1) | grep origin: |awk '$0=$2')| grep -w "route:" | awk '{print $NF}' |sort -n);{ rgxg cidr $IP;}
