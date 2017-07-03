@@ -1,0 +1,9 @@
+#
+#~/.bash_cd
+#
+
+function cd {
+    unset -f cd
+    cd $1 && ls .
+    source ~/.bash_cd
+}

@@ -1,0 +1,18 @@
+#
+#~/.bash_functions
+#
+
+. ~/.bash_cd
+
+function ssk { ssh kioller_a@$1; }
+function memtop
+{
+    {
+        echo -e "-PID-\t-NAME-\t-MEM-"
+        for proc in /proc/[0-9]* 
+        {
+                echo -e "${proc##*/}\t$(<$proc/comm)\t$(pmap -d ${proc##*/}|tail -1|awk '$0=$4'|sed 's/K/\/1024/'|bc 2>/dev/null)M" 
+        }|sort -rnk3|head -20
+    }|column -t 
+}
+

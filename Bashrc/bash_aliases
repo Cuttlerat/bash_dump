@@ -1,0 +1,11 @@
+#
+#~/.bash_aliases
+#
+
+alias ssh='TERM=xterm ssh'
+alias vim='nvim'
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias :q='exit'
+alias dc='cd'
+alias sl='ls'
