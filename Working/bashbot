@@ -1,0 +1,20 @@
+#!/bin/bash
+
+CHATID="<CHAT_ID>"
+KEY="<BOT_TOKEN>"
+URL="https://api.telegram.org/bot$KEY/sendMessage"
+TIMEOUT="10"
+
+arr=();
+for i in а б в г д е ё ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я; { arr+=($i$i$i);}
+index=0;
+
+while :;
+do
+    MESSAGE=$(curl -s "https://api.telegram.org/bot$KEY/getUpdates" | json_reformat | grep "text" | sed -r 's/^[^:]*//;s/^[^"]*"//;s/"$//' | tail -1)
+    echo $MESSAGE
+    [[ $index -gt 32 ]] && index=0
+    [[ "${arr[$index]}" == "$MESSAGE" ]] && curl -s --max-time $TIMEOUT -d "chat_id=$CHATID&disable_web_page_preview=1&text=${arr[$[index+1]]}" $URL > /dev/null && index=$[index+2];
+    [[ "$MESSAGE" == "/reload\"," ]] && index=0
+    sleep 1;
+done
