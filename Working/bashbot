@@ -11,7 +11,7 @@ index=0;
 
 while :;
 do
-    MESSAGE=$(curl -s "https://api.telegram.org/bot$KEY/getUpdates?offset=-1" | json_reformat | awk '/text/{print $2}' | tr -d \")
+    MESSAGE=$(curl -s "https://api.telegram.org/bot$KEY/getUpdates?offset=-1" | jq .result[0].message.text | sed 's/^"\|"$//g' )
     echo $MESSAGE
     [[ $index -gt 32 ]] && index=0
     [[ "${arr[$index]}" == "$MESSAGE" ]] && curl -s --max-time $TIMEOUT -d "chat_id=$CHATID&disable_web_page_preview=1&text=${arr[$[index+1]]}" $URL > /dev/null && index=$[index+2];
