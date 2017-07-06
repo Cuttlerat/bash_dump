@@ -1,6 +1,4 @@
-#
 #~/.bash_functions
-#
 
 . ~/.bash_cd
 
@@ -14,5 +12,21 @@ function memtop
                 echo -e "${proc##*/}\t$(<$proc/comm)\t$(pmap -d ${proc##*/}|tail -1|awk '$0=$4'|sed 's/K/\/1024/'|bc 2>/dev/null)M" 
         }|sort -rnk3|head -20
     }|column -t 
+}
+
+function cdg {
+    TEMP_PWD=$PWD
+    while [ ! -d .git ]
+    do
+            cd ..
+    done
+    OLDPWD=$TEMP_PWD
+}
+
+function gcp {
+    # [g]it [c]ommit [p]ush
+    cdg
+    git add . && git commit -m "$1" && git push 
+    cd -
 }
 
