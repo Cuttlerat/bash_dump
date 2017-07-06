@@ -1,6 +1,5 @@
-#
+#!/bin/bash
 #~/.bash_aliases
-#
 
 alias ssh='TERM=xterm ssh'
 alias vim='nvim'
