@@ -2,8 +2,6 @@
 
 function cd {
     unset -f cd
-    path=$@
-    [ ${path:=~} ]
-    cd ${path:+"$path"} && ls .
+    cd "$@" && ls .
     source ~/.bash_cd
 }
