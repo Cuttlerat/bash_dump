@@ -1,9 +1,9 @@
-#
 #~/.bash_cd
-#
 
 function cd {
     unset -f cd
-    cd "$1" && ls .
+    path=$@
+    [ ${path:=~} ]
+    cd ${path:+"$path"} && ls .
     source ~/.bash_cd
 }
