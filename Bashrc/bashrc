@@ -4,17 +4,18 @@
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
-# alias steam="LD_PRELOAD='/usr/$LIB/libstdc++.so.6 /usr/$LIB/libgcc_s.so.1 /usr/$LIB/libxcb.so.1 /usr/$LIB/libgpg-error.so' steam"
 set -o vi
 bind 'set completion-ignore-case on'
 bind 'TAB:menu-complete'
 bind 'set menu-complete-display-prefix on'
 bind 'set show-all-if-ambiguous on'
 bind 'set match-hidden-files off'
+
 export HISTSIZE=10000
 export HISTFILESIZE=10000
 export HISTTIMEFORMAT="%h %d %H:%M:%S "
 export HISTCONTROL=ignoreboth:erasedups
+
 PS1="\[\033[0;31;0;31m\][Kioller_Alexey]\[\033[1;31m\]\w:\[\033[0m\] "
 
 # Use bash-completion, if available
