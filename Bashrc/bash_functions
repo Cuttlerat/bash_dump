@@ -15,7 +15,7 @@ function cdg {
 }
 
 function gcp {
-    # [g]it [c]ommit [p]ush
+    # [g]it [c]ommit [p]ush 
     cdg
     git add . && git commit -m "${1:-"Fast commit by Cuttlerat"}" && git push 
     cd -
