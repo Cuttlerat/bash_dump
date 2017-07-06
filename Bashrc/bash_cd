@@ -3,5 +3,5 @@
 function cd {
     unset -f cd
     cd "$@" && ls .
-    source ~/.bash_cd
+    source ${BASH_SOURCE[@]}
 }
