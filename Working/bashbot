@@ -17,7 +17,7 @@
              URL="https://api.telegram.org/bot$KEY"
          LOGFILE="/var/log/telebot.log"
      WEATHER_KEY="<INSERT YOUR KEY HERE>"        # https://www.worldweatheronline.com/
- WEATHER_REQUEST=$( tr -d "[ \n]"<<<\
+ WEATHER_REQUEST=$( tr -d " \n" <<< \
                  "https://api.worldweatheronline.com/premium/v1/weather.ashx?
                               key=$WEATHER_KEY&
                               q=Saint-Petersburg&
@@ -27,24 +27,24 @@
 
 #===========================================================================
 
-while $(sleep 1);
+while sleep 1;
 do
     RAW_MESSAGE=$( curl -s "$URL/getUpdates?offset=-1" )
-     MESSAGE_ID=$( jq .result[0].message.message_id <<<$RAW_MESSAGE )
-        MESSAGE=$( jq .result[0].message.text       <<<$RAW_MESSAGE | sed 's/^"\|"$//g' )
+     MESSAGE_ID=$( jq .result[0].message.message_id <<< "$RAW_MESSAGE" )
+        MESSAGE=$( jq .result[0].message.text       <<< "$RAW_MESSAGE" | sed 's/^"\|"$//g' )
 
-    if [[ $MESSAGE_ID -ne $LAST_ID ]] 
+    if [[ "$MESSAGE_ID" -ne "$LAST_ID" ]] 
     then
-        case $MESSAGE in
+        case "$MESSAGE" in
 
         [Пп]огода)
-              RAW_WEATHER=$( curl -s $WEATHER_REQUEST )
-                     TEMP=$( jq .data.current_condition[0].temp_C           <<<$RAW_WEATHER | sed 's/^"\|"$//g' | sed '/^[0-9]/s/^/%2B/')
-                  COMMENT=$( jq .data.current_condition[0].lang_ru[0].value <<<$RAW_WEATHER | sed 's/^"\|"$//g' )
-              UPDATE_TIME=$( jq .data.current_condition[0].observation_time <<<$RAW_WEATHER | sed 's/^"\|"$//g;s/ .*//' | xargs -i date -d "TZ=\"UTC\" {}" +"%H:%M" )
+              RAW_WEATHER=$( curl -s "$WEATHER_REQUEST" )
+                     TEMP=$( jq .data.current_condition[0].temp_C           <<< "$RAW_WEATHER" | sed 's/^"\|"$//g' | sed '/^[0-9]/s/^/%2B/')
+                  COMMENT=$( jq .data.current_condition[0].lang_ru[0].value <<< "$RAW_WEATHER" | sed 's/^"\|"$//g' )
+              UPDATE_TIME=$( jq .data.current_condition[0].observation_time <<< "$RAW_WEATHER" | sed 's/^"\|"$//g;s/ .*//' | xargs -i date -d "TZ=\"UTC\" {}" +"%H:%M" )
 
               TEXT="[$UPDATE_TIME]: $TEMP $COMMENT"
-              curl -s --max-time $TIMEOUT                                         \
+              curl -s --max-time "$TIMEOUT"                                       \
                       -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT"  \
                       "$URL/sendMessage"                                          \
                       >/dev/null &&                                               \
@@ -52,6 +52,6 @@ do
               ;;
 
         esac
-        LAST_ID=$MESSAGE_ID
+        LAST_ID="$MESSAGE_ID"
     fi
 done
