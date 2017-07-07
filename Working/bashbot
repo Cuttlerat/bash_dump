@@ -1,20 +1,53 @@
 #!/bin/bash
 
-CHATID="<CHAT_ID>"
-KEY="<BOT_TOKEN>"
-URL="https://api.telegram.org/bot$KEY/sendMessage"
-TIMEOUT="10"
+#----------------------------------------------------------------
+#
+# DESCRIPTION: Telegram weather bot
+#      AUTHOR: Kioller Alexey
+#      E-MAIL: avkioller@gmail.com
+#        DATE: 07.07.2017
+#
+#----------------------------------------------------------------
 
-arr=();
-for i in а б в г д е ё ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я; { arr+=($i$i$i);}
-index=0;
+#==========VARIABLES========================================================
+
+            KEY="$1"
+         CHATID="$2"
+        TIMEOUT="10"
+            URL="https://api.telegram.org/bot$KEY"
+    WEATHER_KEY="<INSERT YOUR KEY HERE>"        # https://www.worldweatheronline.com/
+WEATHER_REQUEST=$(tr -d "[ \n]"<<<\
+                "https://api.worldweatheronline.com/premium/v1/weather.ashx?
+                             key=$WEATHER_KEY&
+                             q=Saint-Petersburg&
+                             format=json&
+                             date=today&
+                             lang=ru")
+
+#===========================================================================
 
 while :;
 do
-    MESSAGE=$(curl -s "https://api.telegram.org/bot$KEY/getUpdates?offset=-1" | jq .result[0].message.text | sed 's/^"\|"$//g' )
-    echo $MESSAGE
-    [[ $index -gt 32 ]] && index=0
-    [[ "${arr[$index]}" == "$MESSAGE" ]] && curl -s --max-time $TIMEOUT -d "chat_id=$CHATID&disable_web_page_preview=1&text=${arr[$[index+1]]}" $URL > /dev/null && index=$[index+2];
-    [[ "$MESSAGE" == "/reload\"," ]] && index=0
+    RAW_MESSAGE=$( curl -s "$URL/getUpdates?offset=-1" )
+     MESSAGE_ID=$( jq .result[0].message.message_id <<<$RAW_MESSAGE )
+        MESSAGE=$( jq .result[0].message.text       <<<$RAW_MESSAGE | sed 's/^"\|"$//g' )
+
+    if [[ $MESSAGE_ID -ne $LAST_ID ]] 
+    then
+        case $MESSAGE in
+        [Пп]огода)
+                   RAW_WEATHER=$( curl -s $WEATHER_REQUEST )
+                          TEMP=$( jq .data.current_condition[0].temp_C           <<<$RAW_WEATHER | sed 's/^"\|"$//g' | sed '/^[0-9]/s/^/%2B/')
+                       COMMENT=$( jq .data.current_condition[0].lang_ru[0].value <<<$RAW_WEATHER | sed 's/^"\|"$//g' )
+                   UPDATE_TIME=$( jq .data.current_condition[0].observation_time <<<$RAW_WEATHER | sed 's/^"\|"$//g;s/ .*//' | xargs -i date -d "TZ=\"UTC\" {}" +"%H:%M" )
+
+                   TEXT="[$UPDATE_TIME]: $TEMP $COMMENT"
+                   curl -s --max-time $TIMEOUT -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT" "$URL/sendMessage" >/dev/null &&\
+                           echo "$(date +"[%H:%M]: \"")$TEXT\"" >> /var/log/telebot.log
+                   ;;
+        esac
+        LAST_ID=$MESSAGE_ID
+    fi
+
     sleep 0.7;
 done
