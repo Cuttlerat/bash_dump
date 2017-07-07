@@ -26,7 +26,7 @@ WEATHER_REQUEST=$(tr -d "[ \n]"<<<\
 
 #===========================================================================
 
-while :;
+while $(sleep 1);
 do
     RAW_MESSAGE=$( curl -s "$URL/getUpdates?offset=-1" )
      MESSAGE_ID=$( jq .result[0].message.message_id <<<$RAW_MESSAGE )
@@ -50,5 +50,4 @@ do
         esac
         LAST_ID=$MESSAGE_ID
     fi
-    sleep 0.7;
 done
