@@ -17,13 +17,13 @@
              URL="https://api.telegram.org/bot$KEY"
          LOGFILE="/var/log/telebot.log"
      WEATHER_KEY="<INSERT YOUR KEY HERE>"        # https://www.worldweatheronline.com/
- WEATHER_REQUEST=$(tr -d "[ \n]"<<<\
+ WEATHER_REQUEST=$( tr -d "[ \n]"<<<\
                  "https://api.worldweatheronline.com/premium/v1/weather.ashx?
                               key=$WEATHER_KEY&
                               q=Saint-Petersburg&
                               format=json&
                               date=today&
-                              lang=ru")
+                              lang=ru" )
 
 #===========================================================================
 
