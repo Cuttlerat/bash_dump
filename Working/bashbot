@@ -45,9 +45,9 @@ do
 
               TEXT="[$UPDATE_TIME]: $TEMP $COMMENT"
               curl -s --max-time "$TIMEOUT"                                       \
+                      --output /dev/null                                          \
                       -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT"  \
-                      "$URL/sendMessage"                                          \
-                      >/dev/null &&                                               \
+                      "$URL/sendMessage" &&                                       \
                       echo "$( date +"[%H:%M]: \"" )$TEXT\"" >> "$LOGFILE"
               ;;
 
