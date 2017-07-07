@@ -29,9 +29,10 @@
 while sleep 1;
 do
     RAW_MESSAGE=$( curl -s "$URL/getUpdates?offset=-1" )
-     MESSAGE_ID=$( jq .result[0].message.message_id <<< "$RAW_MESSAGE" )
-        CHAT_ID=$( jq .result[0].message.chat.id    <<< "$RAW_MESSAGE" )
-        MESSAGE=$( jq .result[0].message.text       <<< "$RAW_MESSAGE" | sed 's/^"\|"$//g' )
+     MESSAGE_ID=$( jq .result[0].message.message_id    <<< "$RAW_MESSAGE" )
+        CHAT_ID=$( jq .result[0].message.chat.id       <<< "$RAW_MESSAGE" )
+        MESSAGE=$( jq .result[0].message.text          <<< "$RAW_MESSAGE" | sed 's/^"\|"$//g' )
+         SENDER=$( jq .result[0].message.from.username <<< "$RAW_MESSAGE" | tr -d '"' )
 
     if [[ "$MESSAGE_ID" -ne "$LAST_ID" ]] 
     then
@@ -46,9 +47,10 @@ do
               TEXT="[$UPDATE_TIME]: $TEMP $COMMENT"
               curl -s --max-time "$TIMEOUT"                                       \
                       --output /dev/null                                          \
-                      -d "chat_id=$CHAT_ID&disable_web_page_preview=1&text=$TEXT"  \
+                      -d "chat_id=$CHAT_ID&disable_web_page_preview=1&text=$TEXT" \
                       "$URL/sendMessage" &&                                       \
-              sed 's/%2B/+/g' <<< "$( date +"[%H:%M]: \"" )$TEXT\"" >> "$LOGFILE"
+              sed 's/%2B/+/g' <<< "$( date +"[%H:%M]: \"" )$TEXT\" to @$SENDER"   \
+                                                                    >> "$LOGFILE"
               ;;
 
         esac
