@@ -48,7 +48,7 @@ do
                       -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT"  \
                       "$URL/sendMessage"                                          \
                       >/dev/null &&                                               \
-                      echo "$(date +"[%H:%M]: \"")$TEXT\"" >> "$LOGFILE"
+                      echo "$( date +"[%H:%M]: \"" )$TEXT\"" >> "$LOGFILE"
               ;;
 
         esac
