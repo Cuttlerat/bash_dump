@@ -24,6 +24,15 @@
                               date=today&
                               lang=ru" )
 
+#==========FUNCTIONS========================================================
+
+function send_text {
+    curl -s --max-time "$TIMEOUT"                                       \
+            --output /dev/null                                          \
+            -d "chat_id=$CHAT_ID&disable_web_page_preview=1&text=$TEXT" \
+            "$URL/sendMessage"
+}
+
 #===========================================================================
 
 while sleep 1;
@@ -38,20 +47,24 @@ do
     then
         case "$MESSAGE" in
 
-  /weather|[Пп]огода)
-              RAW_WEATHER=$( curl -s "$WEATHER_REQUEST" )
-                     TEMP=$( jq .data.current_condition[0].temp_C           <<< "$RAW_WEATHER" | sed 's/^"\|"$//g' | sed '/^[0-9]/s/^/%2B/')
-                  COMMENT=$( jq .data.current_condition[0].lang_ru[0].value <<< "$RAW_WEATHER" | sed 's/^"\|"$//g' )
-              UPDATE_TIME=$( jq .data.current_condition[0].observation_time <<< "$RAW_WEATHER" | sed 's/^"\|"$//g;s/ .*//' | xargs -i date -d "TZ=\"UTC\" {}" +"%H:%M" )
+            /weather|[Пп]огода)
 
-              TEXT="[$UPDATE_TIME]: $TEMP $COMMENT"
-              curl -s --max-time "$TIMEOUT"                                       \
-                      --output /dev/null                                          \
-                      -d "chat_id=$CHAT_ID&disable_web_page_preview=1&text=$TEXT" \
-                      "$URL/sendMessage" &&                                       \
-              sed 's/%2B/+/g' <<< "$( date +"[%H:%M]: \"" )$TEXT\" to @$SENDER"   \
-                                                                    >> "$LOGFILE"
-              ;;
+                RAW_WEATHER=$( curl -s "$WEATHER_REQUEST" )
+                       TEMP=$( jq .data.current_condition[0].temp_C           <<< "$RAW_WEATHER" | sed 's/^"\|"$//g' | sed '/^[0-9]/s/^/%2B/')
+                    COMMENT=$( jq .data.current_condition[0].lang_ru[0].value <<< "$RAW_WEATHER" | sed 's/^"\|"$//g' )
+                UPDATE_TIME=$( jq .data.current_condition[0].observation_time <<< "$RAW_WEATHER" | sed 's/^"\|"$//g;s/ .*//' | xargs -i date -d "TZ=\"UTC\" {}" +"%H:%M" )
+
+                TEXT="[$UPDATE_TIME]: $TEMP $COMMENT"
+                send_text && sed 's/%2B/+/g' <<<                             \
+                             "$( date +"[%H:%M]: \"" )$TEXT\" to @$SENDER"   \
+                             >> "$LOGFILE"
+                ;;
+
+            /start|/info)
+
+                TEXT="This is my own bot writed on Bash. @Cuttlerat"
+                send_text
+                ;;
 
         esac
         LAST_ID="$MESSAGE_ID"
