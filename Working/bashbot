@@ -35,19 +35,20 @@ do
     if [[ $MESSAGE_ID -ne $LAST_ID ]] 
     then
         case $MESSAGE in
-        [Пп]огода)
-                   RAW_WEATHER=$( curl -s $WEATHER_REQUEST )
-                          TEMP=$( jq .data.current_condition[0].temp_C           <<<$RAW_WEATHER | sed 's/^"\|"$//g' | sed '/^[0-9]/s/^/%2B/')
-                       COMMENT=$( jq .data.current_condition[0].lang_ru[0].value <<<$RAW_WEATHER | sed 's/^"\|"$//g' )
-                   UPDATE_TIME=$( jq .data.current_condition[0].observation_time <<<$RAW_WEATHER | sed 's/^"\|"$//g;s/ .*//' | xargs -i date -d "TZ=\"UTC\" {}" +"%H:%M" )
 
-                   TEXT="[$UPDATE_TIME]: $TEMP $COMMENT"
-                   curl -s --max-time $TIMEOUT -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT" "$URL/sendMessage" >/dev/null &&\
-                           echo "$(date +"[%H:%M]: \"")$TEXT\"" >> /var/log/telebot.log
-                   ;;
+        [Пп]огода)
+              RAW_WEATHER=$( curl -s $WEATHER_REQUEST )
+                     TEMP=$( jq .data.current_condition[0].temp_C           <<<$RAW_WEATHER | sed 's/^"\|"$//g' | sed '/^[0-9]/s/^/%2B/')
+                  COMMENT=$( jq .data.current_condition[0].lang_ru[0].value <<<$RAW_WEATHER | sed 's/^"\|"$//g' )
+              UPDATE_TIME=$( jq .data.current_condition[0].observation_time <<<$RAW_WEATHER | sed 's/^"\|"$//g;s/ .*//' | xargs -i date -d "TZ=\"UTC\" {}" +"%H:%M" )
+
+              TEXT="[$UPDATE_TIME]: $TEMP $COMMENT"
+              curl -s --max-time $TIMEOUT -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT" "$URL/sendMessage" >/dev/null &&\
+                      echo "$(date +"[%H:%M]: \"")$TEXT\"" >> /var/log/telebot.log
+              ;;
+
         esac
         LAST_ID=$MESSAGE_ID
     fi
-
     sleep 0.7;
 done
