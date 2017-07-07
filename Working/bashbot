@@ -38,7 +38,7 @@ do
     then
         case "$MESSAGE" in
 
-        [Пп]огода)
+  /weather|[Пп]огода)
               RAW_WEATHER=$( curl -s "$WEATHER_REQUEST" )
                      TEMP=$( jq .data.current_condition[0].temp_C           <<< "$RAW_WEATHER" | sed 's/^"\|"$//g' | sed '/^[0-9]/s/^/%2B/')
                   COMMENT=$( jq .data.current_condition[0].lang_ru[0].value <<< "$RAW_WEATHER" | sed 's/^"\|"$//g' )
