@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cd ~/Git/bashbot/
+while :; do
+    inotifywait -e modify ./bashbot
+    sudo docker build -t bashbot .
+    sudo docker kill $( sudo docker ps | grep bashbot | awk '{print $1}' )
+done
+
