@@ -16,11 +16,12 @@ export HISTFILESIZE=10000
 export HISTTIMEFORMAT="%h %d %H:%M:%S "
 export HISTCONTROL=ignoreboth:erasedups
 
-PS1="\[\033[0;31;0;31m\][Kioller_Alexey]\[\033[1;31m\]\w:\[\033[0m\] "
+. ~/.bash_aliases
+. ~/.bash_functions
+
+PS1="\[\033[0;31;0;31m\][Kioller_Alexey]\[\033[0;49;32m\]\$(git_branch)\[\033[1;31m\]\w:\[\033[0m\] "
 
 # Use bash-completion, if available
 [[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
     . /usr/share/bash-completion/bash_completion
 
-. ~/.bash_aliases
-. ~/.bash_functions
