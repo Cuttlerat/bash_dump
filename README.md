@@ -19,4 +19,3 @@ English version will be soon
 ## English
 
 It is a dump of my Bash/Shell scripts
-
