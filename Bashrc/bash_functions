@@ -3,8 +3,6 @@
 
 . ~/.bash_cd
 
-function ssk { ssh kioller_a@$1; }
-
 function cdg {
     TEMP_PWD=$PWD
     while [ ! -d .git ]
@@ -19,6 +17,13 @@ function gcp {
     cdg
     git add . && git commit -m "${1:-"Fast commit by Cuttlerat"}" && git push 
     cd -
+}
+
+function gbc {
+
+    git branch $1
+    git checkout $1
+    git push --set-upstream origin $1
 }
 
 git_branch() {
