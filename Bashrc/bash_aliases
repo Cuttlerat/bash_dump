@@ -8,4 +8,4 @@ alias grep='grep --color=auto'
 alias :q='exit'
 alias dc='cd'
 alias sl='ls'
-alias ambient='mpv http://prem2.di.fm:80/ambient_hi?ba648c26fe153861ecba7e26'
+alias ambient="mpv 'http://hot.friezy.ru/?radio=di&station=ambient&bitrate=320'"
