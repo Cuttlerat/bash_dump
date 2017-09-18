@@ -9,3 +9,6 @@ alias :q='exit'
 alias dc='cd'
 alias sl='ls'
 alias ambient="mpv 'http://hot.friezy.ru/?radio=di&station=ambient&bitrate=320'"
+alias kmaster="ssh -i ~/.ssh/cuttlerat.pem ubuntu@ec2-18-194-39-24.eu-central-1.compute.amazonaws.com"
+alias kworker_1="ssh -i ~/.ssh/cuttlerat.pem ubuntu@ec2-52-58-236-160.eu-central-1.compute.amazonaws.com"
+alias kworker_2="ssh -i ~/.ssh/cuttlerat.pem ubuntu@ec2-35-158-158-245.eu-central-1.compute.amazonaws.com"

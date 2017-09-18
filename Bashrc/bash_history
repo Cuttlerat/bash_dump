@@ -1,0 +1,6385 @@
+#1504507912
+nmtui
+#1504507912
+ls -la
+#1504507912
+cd .config/
+#1504507912
+sudo su
+#1504507912
+git clone git@github.com:Cuttlerat/bash_dump.git
+#1504507912
+git clone https://github.com/Cuttlerat/bash_dump.git
+#1504507912
+cd bash_dump/
+#1504507912
+cd ba
+#1504507912
+cd Bashrc/
+#1504507912
+for i in *; do cp $i ~/.$i; done
+#1504507912
+cd 
+#1504507912
+ls- la
+#1504507912
+ls -la
+#1504273045
+cd Bashrc/
+#1504273045
+for i in *; do cp $i ~/.$i; done
+#1504273045
+ls- la
+#1504273045
+ls -la
+#1504273049
+vim 
+#1504273060
+sudo chown -R rat: /home/rat/
+#1504273098
+cd .config/nvim/
+#1504273112
+cd .config/nvim/colors/
+#1504273186
+vim srcery-dark.vim
+#1504273232
+mv srcery-dark.vim srcery-drk.vim
+#1504273235
+cd. ./
+#1504273238
+vim init.vim 
+#1504273254
+cd 
+#1504273256
+cd .termite/
+#1504273259
+vim config 
+#1504273383
+cd .config/nvim/
+#1504273389
+git clone https://github.com/VundleVim/Vundle.vim.git
+#1504273402
+vim asd
+#1504273411
+cd .config/
+#1504273413
+cd nvim/
+#1504273417
+vim init.vim 
+#1504273765
+for i in *; do cp $i ~/.$i; done
+#1504273765
+ls- la
+#1504273765
+ls -la
+#1504273045
+cd Bashrc/
+#1504273045
+for i in *; do cp $i ~/.$i; done
+#1504273045
+ls- la
+#1504273045
+ls -la
+#1504273049
+vim 
+#1504273060
+sudo chown -R rat: /home/rat/
+#1504273098
+cd .config/nvim/
+#1504273112
+cd .config/nvim/colors/
+#1504273186
+vim srcery-dark.vim
+#1504273232
+mv srcery-dark.vim srcery-drk.vim
+#1504273235
+cd. ./
+#1504273238
+vim init.vim 
+#1504273256
+cd .termite/
+#1504273259
+vim config 
+#1504273383
+cd .config/nvim/
+#1504273389
+git clone https://github.com/VundleVim/Vundle.vim.git
+#1504273402
+vim asd
+#1504273411
+cd .config/
+#1504273413
+cd nvim/
+#1504273417
+vim init.vim 
+#1504273770
+sudo mount /dev/sdb1 /mn
+#1504273778
+mkdir /mnt
+#1504273781
+sudo mkdir /mnt
+#1504273784
+sudo mount /dev/sdb1 /mnt
+#1504273789
+cp background_new.png ~/
+#1504273794
+mkdir Git
+#1504273802
+mv bash_dump/ Git/
+#1504273807
+mkdir Pictures
+#1504273809
+mv background_new.png 
+#1504273810
+mv background_new.png Pictures/
+#1504273878
+ды
+#1504273881
+cd 
+#1504273885
+l
+#1504273891
+vim .xes
+#1504273894
+vim .xsession 
+#1504274011
+sudo mount /dev/sdc1 /mnt/
+#1504274014
+cd / /mnt/
+#1504274016
+cd  ls
+#1504274018
+cd /mnt/
+#1504274024
+cp -r bin/ ~/
+#1504274028
+cd bin/
+#1504274039
+change_monitor
+#1504276819
+nix-env -iA ansible
+#1504276823
+nix-env -iA nixos.ansible
+#1504276845
+ansible
+#1504276854
+vim Ansible-Tests
+#1504276863
+mkdir Ansible
+#1504276867
+mv Ansible-Tests Ansible
+#1504276873
+vim hosts;
+#1504276908
+;s
+#1504276910
+vim Ansible-Tests 
+#1504276917
+mv Ansible-Tests test.yml
+#1504276975
+vim ansible.cfg
+#1504277197
+ansible-playbook test.yml --ask-password
+#1504277220
+ansible-playbook test.yml --ask-sudo-pass
+#1504277265
+nix-env -iA nixos.sshpass
+#1504277268
+ansible-playbook test.yml --ask-pass
+#1504277625
+ssh root@testserver
+#1504277747
+scp /home/rat/.bash* a_kioller@testserver:~/
+#1504277753
+ssh a_kioller@testserver
+#1504277309
+cd Bashrc/
+#1504277309
+for i in *; do cp $i ~/.$i; done
+#1504277309
+ls- la
+#1504277309
+ls -la
+#1504273045
+cd Bashrc/
+#1504273045
+for i in *; do cp $i ~/.$i; done
+#1504273045
+ls- la
+#1504273045
+ls -la
+#1504273049
+vim 
+#1504273060
+sudo chown -R rat: /home/rat/
+#1504273098
+cd .config/nvim/
+#1504273112
+cd .config/nvim/colors/
+#1504273186
+vim srcery-dark.vim
+#1504273232
+mv srcery-dark.vim srcery-drk.vim
+#1504273235
+cd. ./
+#1504273238
+vim init.vim 
+#1504273256
+cd .termite/
+#1504273259
+vim config 
+#1504273383
+cd .config/nvim/
+#1504273389
+git clone https://github.com/VundleVim/Vundle.vim.git
+#1504273402
+vim asd
+#1504273411
+cd .config/
+#1504273413
+cd nvim/
+#1504273417
+vim init.vim 
+#1504277323
+sudo vim /etc/hosts 
+#1504277443
+sudo vim /etc/nixos/configuration.nix 
+#1504277487
+sudo nixos-rebuild switch
+#1504277966
+mkdir Work
+#1504277975
+vim Test_process
+#1504280421
+scp root@testserver
+#1504280437
+scp root@testserver:~/devOps/env/com* .
+#1504280447
+mv commons-test.env ~/
+#1504280452
+cp commons-test.env Work/
+#1504280456
+rm commons-test.env 
+#1504280466
+chmod 700 Work/
+#1504280468
+cd Work/
+#1504280469
+cd ./
+#1504280470
+cd 
+#1504280484
+cp ../Work/commons-test.env .
+#1504280488
+mkdir configs
+#1504280494
+rmdir configs/
+#1504280499
+mkdir env
+#1504280503
+mv commons-test.env env/
+#1504280504
+cd env/e
+#1504509242
+vim env/commons-test.env 
+#1504509438
+vim test.retry 
+#1504509444
+rm test.
+#1504509923
+rm test.retry 
+#1504510927
+vim vars/common_vars.yml 
+#1504510933
+cd env/
+#1504510935
+vim commons-test.env 
+#1504511178
+cd ../vars/
+#1504511180
+vim update_vars.yml 
+#1504511279
+ansible-playbook test.yml
+#1504511296
+vim test.
+#1504511440
+vim ansible.cfg 
+#1504511449
+rm test.retry
+#1504511934
+lss
+#1504512111
+docker-compose up --help
+#1504512650
+vim docker.yml
+#1504512933
+sudo docker run --rm -it -v ~+/Ansible:/Ansible ansible 
+#1504512957
+sudo docker search ansible
+#1504512979
+sudo docker run --rm -it -v ~+/Ansible:/Ansible williamyeh/ansible
+#1504513010
+sudo docker run --rm -it -v ~+/Ansible:/Ansible ansible/ansible
+#1504513032
+sudo docker pull williamyeh/ansible
+#1504513048
+sudo docker pull generik/ansible
+#1504513055
+sudo docker run --rm -it -v ~+/Ansible:/Ansible generik/ansible
+#1504513230
+nix-shell pythonPackages.docker-py
+#1504513241
+nix-shell -p pythonPackages.docker-py
+#1504513246
+nix-shell -p pythonPackages.docker_py
+#1504513249
+nix-shell -p pythonPackages.docker
+#1504513336
+cd Docker/
+#1504513337
+vim docker-compose.yml 
+#1504513410
+cd ../
+#1504513502
+ansible-playbook test.yml 
+#1504513528
+vim test.yml 
+#1504513539
+ansible-playbook docker.yml 
+#1504513788
+cp docker.yml docker_crutch.yml
+#1504516509
+ansible-playbook docker_crutch.yml.yml --private-key ~/.ssh/cuttlerat.pem 
+#1504517589
+rm *.retry
+#1504517623
+vim docker-
+#1504518108
+ansible-playbook docker_crutch.yml --private-key ~/.ssh/cuttlerat.pem 
+#1504518237
+ansible-playbook docker.yml --private-key ~/.ssh/cuttlerat.pem 
+#1504518324
+ansible-playbook docker.yml --private-key ~/.ssh/cuttlerat.pem  -v
+#1504518344
+ansible-playbook docker.yml --private-key ~/.ssh/cuttlerat.pem
+#1504518369
+vim docker.yml 
+#1504518506
+ansible-playbook docker-crutch.yml
+#1504518539
+sl
+#1504518575
+ansible-playbook docker_crutch.yml 
+#1504518723
+ansible-playbook docker_crutch.yml --private-key ~/.ssh/cuttlerat.pem
+#1504518936
+cp -r * ../Git/ansible_deploy/
+#1504518939
+cd  ../Git/ansible_deploy/
+#1504518948
+cd -
+#1504518949
+kls
+#1504518976
+scp root@testserver:~/devOps/docker-compose.yml ~/
+#1504518980
+cd
+#1504518981
+vim d
+#1504518985
+vim
+#1504527091
+rm docker-compose.yml 
+#1504527093
+cd Ansible/
+#1504527099
+rm *retry
+#1504527100
+ks
+#1504527147
+ls
+#1504527686
+vim docker_crutch.yml 
+#1504527698
+vim hosts 
+#1504527703
+ansible-playbook docker_crutch.yml
+#1504527739
+exit
+#1504513230
+nix-shell pythonPackages.docker-py
+#1504513241
+nix-shell -p pythonPackages.docker-py
+#1504513246
+nix-shell -p pythonPackages.docker_py
+#1504513249
+nix-shell -p pythonPackages.docker
+#1504513336
+cd Docker/
+#1504513337
+vim docker-compose.yml 
+#1504513410
+cd ../
+#1504513502
+ansible-playbook test.yml 
+#1504513528
+vim test.yml 
+#1504513539
+ansible-playbook docker.yml 
+#1504513788
+cp docker.yml docker_crutch.yml
+#1504516509
+ansible-playbook docker_crutch.yml.yml --private-key ~/.ssh/cuttlerat.pem 
+#1504517589
+rm *.retry
+#1504517623
+vim docker-
+#1504518108
+ansible-playbook docker_crutch.yml --private-key ~/.ssh/cuttlerat.pem 
+#1504518237
+ansible-playbook docker.yml --private-key ~/.ssh/cuttlerat.pem 
+#1504518324
+ansible-playbook docker.yml --private-key ~/.ssh/cuttlerat.pem  -v
+#1504518344
+ansible-playbook docker.yml --private-key ~/.ssh/cuttlerat.pem
+#1504518369
+vim docker.yml 
+#1504518506
+ansible-playbook docker-crutch.yml
+#1504518539
+sl
+#1504518948
+cd -
+#1504518949
+kls
+#1504518976
+scp root@testserver:~/devOps/docker-compose.yml ~/
+#1504518980
+cd
+#1504518981
+vim d
+#1504518985
+vim
+#1504527091
+rm docker-compose.yml 
+#1504527739
+exit
+#1504527743
+cd Ansible/
+#1504527855
+ansible-playbook docker_crutch.yml 
+#1504527867
+cat hosts 
+#1504527874
+ssh root@92.53.101.182
+#1504527986
+ansible-playbook docker_crutch.yml --ask-pass
+#1504527988
+vim hosts 
+#1504528517
+vim docker_crutch.yml 
+#1504528532
+ansible-playbook docker_crutch.yml
+#1504528629
+ansible-playbook docker_crutch.yml -vvv
+#1504528748
+ansible-playbook docker_crutch.yml --private-key ~/.ssh/cuttlerat.pem
+#1504528893
+las
+#1504528901
+rm *retry
+#1504528902
+ks
+#1504528909
+cp -r * ../Git/ansible_deploy/
+#1504528911
+cd  ../Git/ansible_deploy/
+#1504528911
+ls
+#1504528920
+vim .gitignore 
+#1504528994
+git status
+#1504529002
+:q
+#1504535448
+ssh root@92.53.101.182
+#1504540194
+ks
+#1504540195
+ls
+#1504273112
+cd .config/nvim/colors/
+#1504273186
+vim srcery-dark.vim
+#1504273232
+mv srcery-dark.vim srcery-drk.vim
+#1504273235
+cd. ./
+#1504273238
+vim init.vim 
+#1504273256
+cd .termite/
+#1504273259
+vim config 
+#1504273383
+cd .config/nvim/
+#1504273389
+git clone https://github.com/VundleVim/Vundle.vim.git
+#1504273399
+cd
+#1504273402
+vim asd
+#1504273411
+cd .config/
+#1504273413
+cd nvim/
+#1504273417
+vim init.vim 
+#1504277323
+sudo vim /etc/hosts 
+#1504277443
+sudo vim /etc/nixos/configuration.nix 
+#1504277487
+sudo nixos-rebuild switch
+#1504277966
+mkdir Work
+#1504277975
+vim Test_process
+#1504278243
+rm test.retry 
+#1504280421
+scp root@testserver
+#1504280437
+scp root@testserver:~/devOps/env/com* .
+#1504280447
+mv commons-test.env ~/
+#1504280452
+cp commons-test.env Work/
+#1504280456
+rm commons-test.env 
+#1504280466
+chmod 700 Work/
+#1504280468
+cd Work/
+#1504280469
+cd ./
+#1504280470
+cd 
+#1504280484
+cp ../Work/commons-test.env .
+#1504280488
+mkdir configs
+#1504280494
+rmdir configs/
+#1504280499
+mkdir env
+#1504280503
+mv commons-test.env env/
+#1504280504
+cd env/e
+#1504280505
+cd env/
+#1504280507
+vim commons-test.env 
+#1504280625
+vim ansible.cfg 
+#1504507908
+sudo nix-env -u '*'
+#1504508421
+cd Ansible/
+#1504508433
+ssh a_kioller@testserver
+#1504509110
+mkdir vars
+#1504509111
+cd vars/
+#1504509120
+vim common_vars.yml
+#1504510238
+vim default.yml
+#1504510656
+vim default.yml 
+#1504510905
+vim update_vars.yml
+#1504510952
+cp common_vars.yml ../env/update-test.env 
+#1504511117
+cp update_vars.yml ../env/update-test.env 
+#1504511128
+vim update_vars.yml 
+#1504511637
+cd ../
+#1504511639
+cd Git/
+#1504511648
+git clone https://Aleksei_Kioller@bitbucket.org/Aleksei_Kioller/ansible_deploy.git
+#1504511660
+cd ansible_deploy/
+#1504511667
+cp -r ~/Ansible/* .
+#1504511668
+l
+#1504511692
+git config --global user.email "a.kioller@dreamkas.ru"
+#1504511705
+git config --global user.name "Aleksei_Kioller"
+#1504511710
+gcp "First version"
+#1504512664
+vim test.yml 
+#1504527008
+vim hosts 
+#1504530916
+vim docker_restart.yml 
+#1504536023
+vim apply_vars.yml 
+#1504539082
+ssh root@testserver
+#1504540448
+els
+#1504540450
+ls
+#1504512979
+sudo docker run --rm -it -v ~+/Ansible:/Ansible williamyeh/ansible
+#1504513010
+sudo docker run --rm -it -v ~+/Ansible:/Ansible ansible/ansible
+#1504513032
+sudo docker pull williamyeh/ansible
+#1504513048
+sudo docker pull generik/ansible
+#1504513055
+sudo docker run --rm -it -v ~+/Ansible:/Ansible generik/ansible
+#1504513230
+nix-shell pythonPackages.docker-py
+#1504513241
+nix-shell -p pythonPackages.docker-py
+#1504513246
+nix-shell -p pythonPackages.docker_py
+#1504513249
+nix-shell -p pythonPackages.docker
+#1504513336
+cd Docker/
+#1504513337
+vim docker-compose.yml 
+#1504513502
+ansible-playbook test.yml 
+#1504513539
+ansible-playbook docker.yml 
+#1504513788
+cp docker.yml docker_crutch.yml
+#1504516509
+ansible-playbook docker_crutch.yml.yml --private-key ~/.ssh/cuttlerat.pem 
+#1504517589
+rm *.retry
+#1504517623
+vim docker-
+#1504518108
+ansible-playbook docker_crutch.yml --private-key ~/.ssh/cuttlerat.pem 
+#1504518237
+ansible-playbook docker.yml --private-key ~/.ssh/cuttlerat.pem 
+#1504518324
+ansible-playbook docker.yml --private-key ~/.ssh/cuttlerat.pem  -v
+#1504518344
+ansible-playbook docker.yml --private-key ~/.ssh/cuttlerat.pem
+#1504518506
+ansible-playbook docker-crutch.yml
+#1504518539
+sl
+#1504518575
+ansible-playbook docker_crutch.yml 
+#1504518936
+cp -r * ../Git/ansible_deploy/
+#1504518939
+cd  ../Git/ansible_deploy/
+#1504518948
+cd -
+#1504518949
+kls
+#1504518976
+scp root@testserver:~/devOps/docker-compose.yml ~/
+#1504518981
+vim d
+#1504518985
+vim
+#1504527091
+rm docker-compose.yml 
+#1504527698
+vim hosts 
+#1504527703
+ansible-playbook docker_crutch.yml
+#1504527739
+exit
+#1504513230
+nix-shell pythonPackages.docker-py
+#1504513241
+nix-shell -p pythonPackages.docker-py
+#1504513246
+nix-shell -p pythonPackages.docker_py
+#1504513249
+nix-shell -p pythonPackages.docker
+#1504513336
+cd Docker/
+#1504513337
+vim docker-compose.yml 
+#1504513502
+ansible-playbook test.yml 
+#1504513539
+ansible-playbook docker.yml 
+#1504513788
+cp docker.yml docker_crutch.yml
+#1504516509
+ansible-playbook docker_crutch.yml.yml --private-key ~/.ssh/cuttlerat.pem 
+#1504517589
+rm *.retry
+#1504517623
+vim docker-
+#1504518108
+ansible-playbook docker_crutch.yml --private-key ~/.ssh/cuttlerat.pem 
+#1504518237
+ansible-playbook docker.yml --private-key ~/.ssh/cuttlerat.pem 
+#1504518324
+ansible-playbook docker.yml --private-key ~/.ssh/cuttlerat.pem  -v
+#1504518344
+ansible-playbook docker.yml --private-key ~/.ssh/cuttlerat.pem
+#1504518506
+ansible-playbook docker-crutch.yml
+#1504518539
+sl
+#1504518948
+cd -
+#1504518949
+kls
+#1504518976
+scp root@testserver:~/devOps/docker-compose.yml ~/
+#1504518981
+vim d
+#1504518985
+vim
+#1504527091
+rm docker-compose.yml 
+#1504527739
+exit
+#1504527855
+ansible-playbook docker_crutch.yml 
+#1504527867
+cat hosts 
+#1504527874
+ssh root@92.53.101.182
+#1504527986
+ansible-playbook docker_crutch.yml --ask-pass
+#1504527988
+vim hosts 
+#1504528532
+ansible-playbook docker_crutch.yml
+#1504528629
+ansible-playbook docker_crutch.yml -vvv
+#1504528893
+las
+#1504528909
+cp -r * ../Git/ansible_deploy/
+#1504528911
+cd  ../Git/ansible_deploy/
+#1504528920
+vim .gitignore 
+#1504528994
+git status
+#1504529002
+:q
+#1504529007
+cd Git/ansible_deploy/
+#1504529195
+gcp "Add docker restarter"
+#1504529444
+cd. ./
+#1504529447
+cd
+#1504529449
+cd Ansible/n
+#1504529450
+cd Ansible/
+#1504529614
+ansible-playbook docker_crutch.yml --private-key ~/.ssh/cuttlerat.pem
+#1504529896
+cd ../Git/ansible_deploy/
+#1504529901
+vim docker_crutch.
+#1504529904
+vim docker_crutch.yml 
+#1504529974
+ks
+#1504529978
+vim docker
+#1504529984
+rm *retry
+#1504529987
+vim docker.yml 
+#1504530004
+vim test.yml 
+#1504530022
+mv test.yml apply_vars.yml
+#1504530038
+mv docker_crutch.yml docker_restart.yml
+#1504530777
+vim apply_vars.yml 
+#1504530843
+vim update_db.yml
+#1504536158
+cd vars/
+#1504536160
+vim common_vars.yml 
+#1504536188
+cd ../
+#1504536189
+vim env/
+#1504536269
+vim update_db.
+#1504539796
+vim update_db.yml 
+#1504539834
+ansible-playbook update_db.yml --private-key ~/.ssh/cuttlerat.pem
+#1504540156
+gcp "Add db_updater"
+#1504540166
+ls
+#1504273045
+for i in *; do cp $i ~/.$i; done
+#1504273045
+exit
+#1504273049
+vim 
+#1504273060
+sudo chown -R rat: /home/rat/
+#1504273066
+vim
+#1504273098
+cd .config/nvim/
+#1504273112
+cd .config/nvim/colors/
+#1504273186
+vim srcery-dark.vim
+#1504273232
+mv srcery-dark.vim srcery-drk.vim
+#1504273235
+cd. ./
+#1504273238
+vim init.vim 
+#1504273256
+cd .termite/
+#1504273259
+vim config 
+#1504273383
+cd .config/nvim/
+#1504273389
+git clone https://github.com/VundleVim/Vundle.vim.git
+#1504273402
+vim asd
+#1504273411
+cd .config/
+#1504273413
+cd nvim/
+#1504273417
+vim init.vim 
+#1504277323
+sudo vim /etc/hosts 
+#1504277443
+sudo vim /etc/nixos/configuration.nix 
+#1504277487
+sudo nixos-rebuild switch
+#1504277966
+mkdir Work
+#1504277975
+vim Test_process
+#1504278243
+rm test.retry 
+#1504280421
+scp root@testserver
+#1504280437
+scp root@testserver:~/devOps/env/com* .
+#1504280447
+mv commons-test.env ~/
+#1504280452
+cp commons-test.env Work/
+#1504280456
+rm commons-test.env 
+#1504280466
+chmod 700 Work/
+#1504280468
+cd Work/
+#1504280469
+cd ./
+#1504280470
+cd 
+#1504280473
+cd Ansible/
+#1504280484
+cp ../Work/commons-test.env .
+#1504280488
+mkdir configs
+#1504280494
+rmdir configs/
+#1504280499
+mkdir env
+#1504280503
+mv commons-test.env env/
+#1504280504
+cd env/e
+#1504280505
+cd env/
+#1504280507
+vim commons-test.env 
+#1504280625
+vim ansible.cfg 
+#1504280629
+vim test.yml 
+#1504512275
+mkdir Docker
+#1504512277
+cd D
+#1504512279
+cd Docker/
+#1504512436
+sudo docker-compose up --build\
+#1504512560
+vim docker-compose.yml
+#1504512563
+sudo docker-compose up --build
+#1504514142
+sudo mount /dev/sdb1 /mnt/
+#1504514150
+cd /mnt/
+#1504514166
+cp -r .ssh/ ~/
+#1504514168
+sudo cp -r .ssh/ ~/
+#1504514173
+;s
+#1504514203
+vim id_rsa.pub 
+#1504514238
+cd ../
+#1504514248
+sudo chown -R rat: .ssh/
+#1504515183
+ssh -i .ssh/cuttlerat.pem ral-1.compute.amazonaws.com
+#1504515193
+ssh -i .ssh/cuttlerat.pem 52.59.186.207
+#1504515235
+ssh -i .ssh/cuttlerat.pem 52.59.27.32
+#1504515248
+cd .ssh/
+#1504515249
+ls- la
+#1504515250
+ls -la
+#1504515255
+vim cuttlerat.pem 
+#1504515271
+ssh --help
+#1504515285
+cd
+#1504526692
+sudo umount /mnt 
+#1504531677
+ssh root@testserver
+#1504538862
+ls
+#1504538866
+ssh -i .ssh/cuttlerat.pem ubuntu@52.59.27.32
+#1504517589
+rm *.retry
+#1504517623
+vim docker-
+#1504518108
+ansible-playbook docker_crutch.yml --private-key ~/.ssh/cuttlerat.pem 
+#1504518237
+ansible-playbook docker.yml --private-key ~/.ssh/cuttlerat.pem 
+#1504518324
+ansible-playbook docker.yml --private-key ~/.ssh/cuttlerat.pem  -v
+#1504518344
+ansible-playbook docker.yml --private-key ~/.ssh/cuttlerat.pem
+#1504518369
+vim docker.yml 
+#1504518506
+ansible-playbook docker-crutch.yml
+#1504518539
+sl
+#1504518948
+cd -
+#1504518949
+kls
+#1504518976
+scp root@testserver:~/devOps/docker-compose.yml ~/
+#1504518980
+cd
+#1504518981
+vim d
+#1504518985
+vim
+#1504527091
+rm docker-compose.yml 
+#1504527739
+exit
+#1504527743
+cd Ansible/
+#1504527855
+ansible-playbook docker_crutch.yml 
+#1504527867
+cat hosts 
+#1504527874
+ssh root@92.53.101.182
+#1504527986
+ansible-playbook docker_crutch.yml --ask-pass
+#1504527988
+vim hosts 
+#1504528517
+vim docker_crutch.yml 
+#1504528532
+ansible-playbook docker_crutch.yml
+#1504528629
+ansible-playbook docker_crutch.yml -vvv
+#1504528748
+ansible-playbook docker_crutch.yml --private-key ~/.ssh/cuttlerat.pem
+#1504528893
+las
+#1504528901
+rm *retry
+#1504528902
+ks
+#1504528909
+cp -r * ../Git/ansible_deploy/
+#1504528911
+cd  ../Git/ansible_deploy/
+#1504528920
+vim .gitignore 
+#1504528994
+git status
+#1504529002
+:q
+#1504531908
+cd Git/bash_dump/
+#1504531999
+git pull
+#1504532003
+git describe
+#1504532007
+git describe --tags
+#1504532011
+git describe --abbrev=0
+#1504532352
+#
+#1504532354
+cd 
+#1504532359
+mkdir DB_test
+#1504532363
+cd DB_test/
+#1504532368
+mkdir test
+#1504532402
+sudo docker run -v ~+/test:/mnt/db postgres
+#1504532476
+sudo docker run -v ~+/test:/mnt/db postgres -d
+#1504532526
+sudo docker run -d -v ~+/test:/mnt/db postgres 
+#1504532555
+sudo docker ps
+#1504532567
+sudo docker stop a19d2a36cba0
+#1504532570
+sudo docker rm a19d2a36cba0
+#1504532631
+sudo docker run --rm -d -v ~+/test:/mnt/db --name update_postgres postgres 
+#1504532634
+sudo docker exec update_postgres ls
+#1504532642
+sudo docker exec update_postgres ls /mnt
+#1504532644
+sudo docker exec update_postgres ls /mnt/db
+#1504532654
+sudo docker exec update_postgres touch /mnt/db/test.sql
+#1504532664
+sudo docker stop update_postgres
+#1504533484
+sudo docker-compose up
+#1504533487
+vim docker-compose.yml
+#1504533534
+sudo docker run --rm -it postgres
+#1504533551
+sudo docker run --rm -it postgres /bin/psql
+#1504533556
+sudo docker run --rm -it postgres psql
+#1504533582
+sudo docker run --rm -it postgres sleep 10 && psql
+#1504533602
+sudo docker run --rm -it postgres sleep 10 && /bin/psql
+#1504533632
+sudo docker run --rm -it postgres "sleep 10 && psql"
+#1504533660
+sudo docker run --rm -d --name psql postgres 
+#1504533679
+sudo docker exec psql psql
+#1504533684
+sudo docker exec psql psql -u postgres
+#1504533687
+sudo docker exec psql psql -U postgres
+#1504533703
+sudo docker exec psql psql -U postgres -P
+#1504533796
+sudo docker exec psql psql -U postgres -P postgres
+#1504533802
+sudo docker exec psql psql -U postgres -P 
+#1504533804
+sudo docker exec psql psql -U postgres -p
+#1504533808
+sudo docker exec psql psql -U postgres --password
+#1504533836
+sudo docker exec psql ls
+#1504533843
+sudo docker exec psql cat docker-entrypoint.sh
+#1504533874
+sudo docker stop psql
+#1504534012
+rm test/
+#1504534017
+sudo ls test/
+#1504534024
+sudo rm test/test.sql
+#1504534027
+sudo docker run --rm -v ~+/test:/var/lib/postgresql/data --name psql postgres 
+#1504534043
+sudo docker run --rm -d -v ~+/test:/var/lib/postgresql/data --name psql postgres 
+#1504534053
+sudo docker exec psql psql --username postgres <<<"CREATE DATABASE test"
+#1504534072
+cd test/
+#1504534074
+sudo su
+#1504540199
+cd ../
+#1504540203
+rm -r DB_test/
+#1504540207
+sudo rm -r DB_test/
+#1504540210
+ls
+#1504615247
+screen
+#1504615249
+screenfetch 
+#1504622224
+pavucontrol 
+#1504540207
+sudo rm -r DB_test/
+#1504615247
+screen
+#1504615249
+screenfetch 
+#1504622224
+pavucontrol 
+#1504622574
+cd .config/nvim/
+#1504622577
+vim init.vim
+#1504626518
+cp init.vim ~/Git/nixconfig/.config/nvim/init.vim 
+#1504626585
+cd ../
+#1504626586
+ls
+#1504518976
+scp root@testserver:~/devOps/docker-compose.yml ~/
+#1504518980
+cd
+#1504518981
+vim d
+#1504527091
+rm docker-compose.yml 
+#1504527739
+exit
+#1504527743
+cd Ansible/
+#1504527855
+ansible-playbook docker_crutch.yml 
+#1504527867
+cat hosts 
+#1504527874
+ssh root@92.53.101.182
+#1504527986
+ansible-playbook docker_crutch.yml --ask-pass
+#1504527988
+vim hosts 
+#1504528517
+vim docker_crutch.yml 
+#1504528532
+ansible-playbook docker_crutch.yml
+#1504528629
+ansible-playbook docker_crutch.yml -vvv
+#1504528748
+ansible-playbook docker_crutch.yml --private-key ~/.ssh/cuttlerat.pem
+#1504528893
+las
+#1504528902
+ks
+#1504528909
+cp -r * ../Git/ansible_deploy/
+#1504528911
+cd  ../Git/ansible_deploy/
+#1504528920
+vim .gitignore 
+#1504528994
+git status
+#1504529002
+:q
+#1504531908
+cd Git/bash_dump/
+#1504531999
+git pull
+#1504532003
+git describe
+#1504532007
+git describe --tags
+#1504532011
+git describe --abbrev=0
+#1504532352
+#
+#1504532354
+cd 
+#1504532359
+mkdir DB_test
+#1504532363
+cd DB_test/
+#1504532368
+mkdir test
+#1504532402
+sudo docker run -v ~+/test:/mnt/db postgres
+#1504532476
+sudo docker run -v ~+/test:/mnt/db postgres -d
+#1504532526
+sudo docker run -d -v ~+/test:/mnt/db postgres 
+#1504532555
+sudo docker ps
+#1504532567
+sudo docker stop a19d2a36cba0
+#1504532570
+sudo docker rm a19d2a36cba0
+#1504532631
+sudo docker run --rm -d -v ~+/test:/mnt/db --name update_postgres postgres 
+#1504532634
+sudo docker exec update_postgres ls
+#1504532642
+sudo docker exec update_postgres ls /mnt
+#1504532644
+sudo docker exec update_postgres ls /mnt/db
+#1504532654
+sudo docker exec update_postgres touch /mnt/db/test.sql
+#1504532664
+sudo docker stop update_postgres
+#1504533484
+sudo docker-compose up
+#1504533487
+vim docker-compose.yml
+#1504533534
+sudo docker run --rm -it postgres
+#1504533551
+sudo docker run --rm -it postgres /bin/psql
+#1504533556
+sudo docker run --rm -it postgres psql
+#1504533582
+sudo docker run --rm -it postgres sleep 10 && psql
+#1504533602
+sudo docker run --rm -it postgres sleep 10 && /bin/psql
+#1504533632
+sudo docker run --rm -it postgres "sleep 10 && psql"
+#1504533660
+sudo docker run --rm -d --name psql postgres 
+#1504533679
+sudo docker exec psql psql
+#1504533684
+sudo docker exec psql psql -u postgres
+#1504533687
+sudo docker exec psql psql -U postgres
+#1504533703
+sudo docker exec psql psql -U postgres -P
+#1504533796
+sudo docker exec psql psql -U postgres -P postgres
+#1504533802
+sudo docker exec psql psql -U postgres -P 
+#1504533804
+sudo docker exec psql psql -U postgres -p
+#1504533808
+sudo docker exec psql psql -U postgres --password
+#1504533836
+sudo docker exec psql ls
+#1504533843
+sudo docker exec psql cat docker-entrypoint.sh
+#1504533874
+sudo docker stop psql
+#1504534012
+rm test/
+#1504534017
+sudo ls test/
+#1504534024
+sudo rm test/test.sql
+#1504534027
+sudo docker run --rm -v ~+/test:/var/lib/postgresql/data --name psql postgres 
+#1504534043
+sudo docker run --rm -d -v ~+/test:/var/lib/postgresql/data --name psql postgres 
+#1504534053
+sudo docker exec psql psql --username postgres <<<"CREATE DATABASE test"
+#1504534072
+cd test/
+#1504534074
+sudo su
+#1504540203
+rm -r DB_test/
+#1504540207
+sudo rm -r DB_test/
+#1504599796
+cd Git/ansible_deploy/
+#1504599972
+ansible-playbook docker_crutch.yml --private-key ~/.ssh/cuttlerat.pem
+#1504600193
+vim commons-test.env 
+#1504601881
+cd ../vars/
+#1504601887
+vim common_vars.yml 
+#1504601903
+vim update_vars.yml 
+#1504601912
+cd env/
+#1504601914
+vim update-test.env 
+#1504601967
+vim vars/update_vars.yml 
+#1504601970
+vim vars/common_vars.yml 
+#1504601976
+ansible-playbook apply_vars.yml --private-key ~/.ssh/cuttlerat.pem
+#1504608673
+ansible-playbook docker_restart.yml --private-key ~/.ssh/cuttlerat.pem
+#1504609696
+rm *retry
+#1504609879
+vim docker
+#1504609881
+vim docker.yml 
+#1504609966
+ansible-playbook update_db.yml --private-key ~/.ssh/cuttlerat.pem
+#1504611263
+ansible-playbook start.yml --private-key ~/.ssh/cuttlerat.pem\
+#1504611781
+vim apply_vars.yml 
+#1504611852
+vim update_db.yml 
+#1504612040
+vim docker_restart.yml 
+#1504612246
+rm * retry
+#1504612288
+cd vars/
+#1504612297
+git reset --hard
+#1504612303
+vim start.yml
+#1504612850
+vim hosts
+#1504613029
+vim start.
+#1504616417
+rm *.retry
+#1504618879
+vim start.yml 
+#1504621346
+ansible-playbook start.yml --private-key ~/.ssh/cuttlerat.pem
+#1504624280
+vim
+#1504626409
+cd ../
+#1504626409
+ls
+#1504626426
+git clone git@github.com:Cuttlerat/nixconfig.git
+#1504626522
+cd nixconfig/
+#1504626549
+gcp "Update nvim config"
+#1504532476
+sudo docker run -v ~+/test:/mnt/db postgres -d
+#1504532526
+sudo docker run -d -v ~+/test:/mnt/db postgres 
+#1504532555
+sudo docker ps
+#1504532567
+sudo docker stop a19d2a36cba0
+#1504532570
+sudo docker rm a19d2a36cba0
+#1504532631
+sudo docker run --rm -d -v ~+/test:/mnt/db --name update_postgres postgres 
+#1504532634
+sudo docker exec update_postgres ls
+#1504532642
+sudo docker exec update_postgres ls /mnt
+#1504532644
+sudo docker exec update_postgres ls /mnt/db
+#1504532654
+sudo docker exec update_postgres touch /mnt/db/test.sql
+#1504532664
+sudo docker stop update_postgres
+#1504533484
+sudo docker-compose up
+#1504533487
+vim docker-compose.yml
+#1504533534
+sudo docker run --rm -it postgres
+#1504533551
+sudo docker run --rm -it postgres /bin/psql
+#1504533556
+sudo docker run --rm -it postgres psql
+#1504533582
+sudo docker run --rm -it postgres sleep 10 && psql
+#1504533602
+sudo docker run --rm -it postgres sleep 10 && /bin/psql
+#1504533632
+sudo docker run --rm -it postgres "sleep 10 && psql"
+#1504533660
+sudo docker run --rm -d --name psql postgres 
+#1504533679
+sudo docker exec psql psql
+#1504533684
+sudo docker exec psql psql -u postgres
+#1504533687
+sudo docker exec psql psql -U postgres
+#1504533703
+sudo docker exec psql psql -U postgres -P
+#1504533796
+sudo docker exec psql psql -U postgres -P postgres
+#1504533802
+sudo docker exec psql psql -U postgres -P 
+#1504533804
+sudo docker exec psql psql -U postgres -p
+#1504533808
+sudo docker exec psql psql -U postgres --password
+#1504533836
+sudo docker exec psql ls
+#1504533843
+sudo docker exec psql cat docker-entrypoint.sh
+#1504533874
+sudo docker stop psql
+#1504534012
+rm test/
+#1504534017
+sudo ls test/
+#1504534024
+sudo rm test/test.sql
+#1504534027
+sudo docker run --rm -v ~+/test:/var/lib/postgresql/data --name psql postgres 
+#1504534043
+sudo docker run --rm -d -v ~+/test:/var/lib/postgresql/data --name psql postgres 
+#1504534053
+sudo docker exec psql psql --username postgres <<<"CREATE DATABASE test"
+#1504534072
+cd test/
+#1504534074
+sudo su
+#1504540203
+rm -r DB_test/
+#1504540207
+sudo rm -r DB_test/
+#1504599812
+cd Git/ansible_deploy/
+#1504599820
+vim commons-test.env 
+#1504599843
+cd env/
+#1504599850
+vim common_vars.yml 
+#1504599873
+cd vars/
+#1504599876
+vim default.yml 
+#1504600000
+rm default.yml 
+#1504600034
+ssh root@92.53.101.182
+#1504611216
+cd ../
+#1504611217
+ks
+#1504611497
+vim start.yml 
+#1504612725
+vun docker_restart.yml 
+#1504612854
+vim /etc/hosts
+#1504613056
+vun docker.yml 
+#1504613060
+vim update_db.yml 
+#1504613064
+vim apply_vars.yml 
+#1504613483
+gcp "Merge playbooks into one"
+#1504613495
+git push
+#1504615091
+vim docker.yml 
+#1504615094
+rm docker.yml 
+#1504615096
+gcp 
+#1504615101
+l
+#1504615115
+vim .gitignore 
+#1504615128
+git statys
+#1504615130
+git status
+#1504615333
+htop
+#1504621052
+ssh root@testserver 
+#1504621415
+vim docker_restart.yml 
+#1504622117
+vim .bash_profile 
+#1504622147
+ambient 
+#1504622213
+cd Downloads/
+#1504622216
+mpv DI.m3u 
+#1504622310
+mpv video: no
+#1504622314
+mpv http://hot.friezy.ru/?radio=di&station=00sclubhits&bitrate=320
+#1504622324
+mpv 'http://hot.friezy.ru/?radio=di&station=00sclubhits&bitrate=320'
+#1504622333
+mpv 'http://hot.friezy.ru/?radio=di&station=00ambient&bitrate=320'
+#1504622346
+mpv 'http://hot.friezy.ru/?radio=di&station=05ambient&bitrate=320'
+#1504622349
+mpv 'http://hot.friezy.ru/?radio=di&station=04ambient&bitrate=320'
+#1504622374
+for i in {00..30}; do mpv 'http://hot.friezy.ru/?radio=di&station='$i'ambient&bitrate=320'; done
+#1504622426
+mpv 'http://hot.friezy.ru/?radio=di&station=ambient&bitrate=320'
+#1504622440
+cd
+#1504622495
+. .bash_aliases 
+#1504622504
+vim .bash_aliases 
+#1504622511
+cd Git/
+#1504622513
+vim bash_dump/
+#1504622541
+cd 
+#1504622544
+cd Git/bash_dump/
+#1504622546
+gcp "Update ambient"
+#1504622556
+ls
+#1504622559
+ambient
+#1504622559
+ambient
+#1504689669
+ls
+#1504689696
+scrot
+#1504689696
+scrot
+#1504689708
+rm 2017-09-06-122107_1920x1080_scrot.png 
+#1504689709
+ls
+#1504689723
+feh 2017-09-06-122136_1920x1080_scrot.png 
+#1504688725
+ssh -i .ssh/cuttlerat.pem ubuntu@52.59.27.32
+#1504622544
+cd Git/bash_dump/
+#1504622546
+gcp "Update ambient"
+#1504622559
+ambient
+#1504698099
+ssh root@testserver 
+#1504700405
+cd Git/
+#1504700405
+ls
+#1504533804
+sudo docker exec psql psql -U postgres -p
+#1504533808
+sudo docker exec psql psql -U postgres --password
+#1504533836
+sudo docker exec psql ls
+#1504533843
+sudo docker exec psql cat docker-entrypoint.sh
+#1504533874
+sudo docker stop psql
+#1504534012
+rm test/
+#1504534017
+sudo ls test/
+#1504534024
+sudo rm test/test.sql
+#1504534027
+sudo docker run --rm -v ~+/test:/var/lib/postgresql/data --name psql postgres 
+#1504534043
+sudo docker run --rm -d -v ~+/test:/var/lib/postgresql/data --name psql postgres 
+#1504534053
+sudo docker exec psql psql --username postgres <<<"CREATE DATABASE test"
+#1504534072
+cd test/
+#1504534074
+sudo su
+#1504540203
+rm -r DB_test/
+#1504540207
+sudo rm -r DB_test/
+#1504599796
+cd Git/ansible_deploy/
+#1504599972
+ansible-playbook docker_crutch.yml --private-key ~/.ssh/cuttlerat.pem
+#1504600193
+vim commons-test.env 
+#1504601881
+cd ../vars/
+#1504601903
+vim update_vars.yml 
+#1504601914
+vim update-test.env 
+#1504601967
+vim vars/update_vars.yml 
+#1504601970
+vim vars/common_vars.yml 
+#1504601976
+ansible-playbook apply_vars.yml --private-key ~/.ssh/cuttlerat.pem
+#1504608673
+ansible-playbook docker_restart.yml --private-key ~/.ssh/cuttlerat.pem
+#1504609696
+rm *retry
+#1504609881
+vim docker.yml 
+#1504611263
+ansible-playbook start.yml --private-key ~/.ssh/cuttlerat.pem\
+#1504612246
+rm * retry
+#1504612297
+git reset --hard
+#1504612303
+vim start.yml
+#1504612850
+vim hosts
+#1504613029
+vim start.
+#1504616417
+rm *.retry
+#1504624280
+vim
+#1504626426
+git clone git@github.com:Cuttlerat/nixconfig.git
+#1504626522
+cd nixconfig/
+#1504626549
+gcp "Update nvim config"
+#1504532476
+sudo docker run -v ~+/test:/mnt/db postgres -d
+#1504532526
+sudo docker run -d -v ~+/test:/mnt/db postgres 
+#1504532555
+sudo docker ps
+#1504532567
+sudo docker stop a19d2a36cba0
+#1504532570
+sudo docker rm a19d2a36cba0
+#1504532631
+sudo docker run --rm -d -v ~+/test:/mnt/db --name update_postgres postgres 
+#1504532634
+sudo docker exec update_postgres ls
+#1504532642
+sudo docker exec update_postgres ls /mnt
+#1504532644
+sudo docker exec update_postgres ls /mnt/db
+#1504532654
+sudo docker exec update_postgres touch /mnt/db/test.sql
+#1504532664
+sudo docker stop update_postgres
+#1504533484
+sudo docker-compose up
+#1504533487
+vim docker-compose.yml
+#1504533534
+sudo docker run --rm -it postgres
+#1504533551
+sudo docker run --rm -it postgres /bin/psql
+#1504533556
+sudo docker run --rm -it postgres psql
+#1504533582
+sudo docker run --rm -it postgres sleep 10 && psql
+#1504533602
+sudo docker run --rm -it postgres sleep 10 && /bin/psql
+#1504533632
+sudo docker run --rm -it postgres "sleep 10 && psql"
+#1504533660
+sudo docker run --rm -d --name psql postgres 
+#1504533679
+sudo docker exec psql psql
+#1504533684
+sudo docker exec psql psql -u postgres
+#1504533687
+sudo docker exec psql psql -U postgres
+#1504533703
+sudo docker exec psql psql -U postgres -P
+#1504533796
+sudo docker exec psql psql -U postgres -P postgres
+#1504533802
+sudo docker exec psql psql -U postgres -P 
+#1504533804
+sudo docker exec psql psql -U postgres -p
+#1504533808
+sudo docker exec psql psql -U postgres --password
+#1504533836
+sudo docker exec psql ls
+#1504533843
+sudo docker exec psql cat docker-entrypoint.sh
+#1504533874
+sudo docker stop psql
+#1504534012
+rm test/
+#1504534017
+sudo ls test/
+#1504534024
+sudo rm test/test.sql
+#1504534027
+sudo docker run --rm -v ~+/test:/var/lib/postgresql/data --name psql postgres 
+#1504534043
+sudo docker run --rm -d -v ~+/test:/var/lib/postgresql/data --name psql postgres 
+#1504534053
+sudo docker exec psql psql --username postgres <<<"CREATE DATABASE test"
+#1504534072
+cd test/
+#1504534074
+sudo su
+#1504540203
+rm -r DB_test/
+#1504540207
+sudo rm -r DB_test/
+#1504599812
+cd Git/ansible_deploy/
+#1504599820
+vim commons-test.env 
+#1504600000
+rm default.yml 
+#1504600034
+ssh root@92.53.101.182
+#1504612725
+vun docker_restart.yml 
+#1504612854
+vim /etc/hosts
+#1504613056
+vun docker.yml 
+#1504613483
+gcp "Merge playbooks into one"
+#1504615091
+vim docker.yml 
+#1504615094
+rm docker.yml 
+#1504615096
+gcp 
+#1504615101
+l
+#1504615115
+vim .gitignore 
+#1504615128
+git statys
+#1504615130
+git status
+#1504615333
+htop
+#1504621052
+ssh root@testserver 
+#1504622117
+vim .bash_profile 
+#1504622147
+ambient 
+#1504622213
+cd Downloads/
+#1504622216
+mpv DI.m3u 
+#1504622310
+mpv video: no
+#1504622314
+mpv http://hot.friezy.ru/?radio=di&station=00sclubhits&bitrate=320
+#1504622324
+mpv 'http://hot.friezy.ru/?radio=di&station=00sclubhits&bitrate=320'
+#1504622333
+mpv 'http://hot.friezy.ru/?radio=di&station=00ambient&bitrate=320'
+#1504622346
+mpv 'http://hot.friezy.ru/?radio=di&station=05ambient&bitrate=320'
+#1504622349
+mpv 'http://hot.friezy.ru/?radio=di&station=04ambient&bitrate=320'
+#1504622374
+for i in {00..30}; do mpv 'http://hot.friezy.ru/?radio=di&station='$i'ambient&bitrate=320'; done
+#1504622426
+mpv 'http://hot.friezy.ru/?radio=di&station=ambient&bitrate=320'
+#1504622440
+cd
+#1504622495
+. .bash_aliases 
+#1504622504
+vim .bash_aliases 
+#1504622513
+vim bash_dump/
+#1504622544
+cd Git/bash_dump/
+#1504622546
+gcp "Update ambient"
+#1504622559
+ambient
+#1504681055
+sudo nix-env -qa | grep dexty
+#1504681983
+cd Ansible/
+#1504681985
+vim env/
+#1504681989
+cd env/
+#1504682059
+cd ../Git/ansible_deploy/
+#1504682064
+;s
+#1504682104
+cd 
+#1504682117
+cd Git/
+#1504682118
+cd ansible_deploy/
+#1504685399
+vim apply_vars.yml 
+#1504685481
+vim start.yml 
+#1504685502
+ansible-playbook start.yml --private-key ~/.ssh/cuttlerat.pem
+#1504688441
+gcp ""
+#1504688456
+git push
+#1504690927
+cd teamcity/
+#1504691579
+sudo docker-compose logs -f agent
+#1504691598
+sudo docker-compose build agent
+#1504691602
+sudo docker-compose up agent
+#1504691631
+sudo docker-compose ps
+#1504692147
+sudo docker exec teamcity_server_1 sl
+#1504692159
+sudo docker exec teamcity_server_1 cat /etc/os-release
+#1504692168
+sudo docker exec teamcity_server_1 apt-get install ansible
+#1504696728
+sudo docker exec teamcity_server_1 ps -aux
+#1504696737
+sudo docker exec teamcity_server_1 kill 229
+#1504696739
+sudo docker exec teamcity_server_1 apt-get install -y ansible
+#1504696884
+sudo docker exec teamcity_server_1 apt-get update
+#1504696890
+sudo docker exec teamcity_server_1 apt-get install -y ansible --fix-missing
+#1504696948
+cd data/
+#1504696952
+mkdir ansible
+#1504696954
+sudo mkdir ansible
+#1504696963
+sudo cp -r ../../ansible_deploy/* ansible/
+#1504697072
+sudo docker exec teamcity_server_1 ls
+#1504697080
+sudo docker exec teamcity_server_1 ansible-playbook
+#1504697160
+sudo docker stop agent
+#1504697166
+sudo docker-compose stop agent
+#1504697182
+mv data/ansible/ .
+#1504697186
+sudo ls
+#1504697191
+sudo mv data/ansible/ .
+#1504697224
+sudo docker-compose start agent
+#1504697330
+vim docker_restart.yml 
+#1504697512
+sudo docker exec teamcity_agent_1 apt-get update
+#1504697519
+sudo docker exec teamcity_agent_1 apt-get install -y ansible
+#1504697597
+vim hosts 
+#1504697750
+sudo docker exec teamcity_agent_1 ls
+#1504697755
+sudo docker exec teamcity_agent_1 python -v
+#1504697765
+sudo docker exec teamcity_agent_1 apt-get install python3
+#1504697773
+sudo docker exec teamcity_agent_1 apt-get install -y python36
+#1504697780
+sudo docker exec teamcity_agent_1 apt-get install -y python35
+#1504697783
+sudo docker exec teamcity_agent_1 apt-get install -y python3.5
+#1504697891
+vim default.yml 
+#1504698035
+ansible-playbook update_db.yml 
+#1504698088
+ks
+#1504698152
+ansible-playbook update_db.yml --private-key ~/.ssh/cuttlerat.pem
+#1504698316
+Ls
+#1504698427
+sudo docker exec teamcity_agent_1 apt-get install -y sshpass
+#1504698479
+sudo docker exec teamcity_agent_1 'yes|ssh 92.53.101.182'
+#1504698489
+sudo docker exec teamcity_agent_1 ssh 92.53.101.182
+#1504698498
+sudo docker exec teamcity_agent_1 bash
+#1504698689
+sudo docker run --rm -it jetbrains/teamcity_agent
+#1504698703
+sudo docker run --rm -it jetbrains/teamcity-agent
+#1504698711
+sudo docker run --rm -it jetbrains/teamcity-agent /bin/bash
+#1504698843
+sudo docker exec teamcity_agent_1 ssh -oStrictHostKeyChecking=no 92.53.101.182
+#1504698896
+sudo vim update_db.yml p
+#1504698899
+sudo vim update_db.yml
+#1504698955
+vim common_vars.yml 
+#1504698958
+cd ansible/
+#1504698961
+cd vars/
+#1504698965
+sl
+#1504699024
+vim update_db.yml 
+#1504699040
+sudo vim update_db.yml 
+#1504700373
+ды
+#1504700384
+mkdir dockerfiles
+#1504700388
+cd  dockerfiles
+#1504700388
+ls
+#1504700396
+vim agent.Dockerfile
+#1504700591
+cd ../
+#1504700592
+vim docker
+#1504700594
+vim docker-compose.yml 
+#1504700763
+cd dockerfiles/
+#1504700767
+vim agent.Dockerfile 
+#1504707111
+ssh root@testserver 
+#1504713186
+ls
+#1504711851
+ambient 
+#1504699040
+sudo vim update_db.yml 
+#1504700373
+ды
+#1504700384
+mkdir dockerfiles
+#1504700388
+cd  dockerfiles
+#1504700396
+vim agent.Dockerfile
+#1504700592
+vim docker
+#1504700594
+vim docker-compose.yml 
+#1504700763
+cd dockerfiles/
+#1504700767
+vim agent.Dockerfile 
+#1504707031
+nix-env -u '*'
+#1504707088
+rm 2
+#1504707090
+rm 2017-09-06-122136_1920x1080_scrot.png 
+#1504707096
+cd Ansible/
+#1504707099
+rm -r *
+#1504707104
+rmdir Ansible/
+#1504707189
+cd Git/ansible_deploy/
+#1504707192
+cd ansible/
+#1504707194
+vim start.yml 
+#1504708282
+vim update_db.yml 
+#1504713174
+cd ../
+#1504713176
+gcp
+#1504713183
+ls
+#1504533687
+sudo docker exec psql psql -U postgres
+#1504533703
+sudo docker exec psql psql -U postgres -P
+#1504533796
+sudo docker exec psql psql -U postgres -P postgres
+#1504533802
+sudo docker exec psql psql -U postgres -P 
+#1504533804
+sudo docker exec psql psql -U postgres -p
+#1504533808
+sudo docker exec psql psql -U postgres --password
+#1504533836
+sudo docker exec psql ls
+#1504533843
+sudo docker exec psql cat docker-entrypoint.sh
+#1504533874
+sudo docker stop psql
+#1504534012
+rm test/
+#1504534017
+sudo ls test/
+#1504534024
+sudo rm test/test.sql
+#1504534027
+sudo docker run --rm -v ~+/test:/var/lib/postgresql/data --name psql postgres 
+#1504534043
+sudo docker run --rm -d -v ~+/test:/var/lib/postgresql/data --name psql postgres 
+#1504534053
+sudo docker exec psql psql --username postgres <<<"CREATE DATABASE test"
+#1504534072
+cd test/
+#1504534074
+sudo su
+#1504540203
+rm -r DB_test/
+#1504540207
+sudo rm -r DB_test/
+#1504599812
+cd Git/ansible_deploy/
+#1504599820
+vim commons-test.env 
+#1504599843
+cd env/
+#1504599850
+vim common_vars.yml 
+#1504599873
+cd vars/
+#1504599876
+vim default.yml 
+#1504600000
+rm default.yml 
+#1504600034
+ssh root@92.53.101.182
+#1504611217
+ks
+#1504612725
+vun docker_restart.yml 
+#1504612854
+vim /etc/hosts
+#1504613056
+vun docker.yml 
+#1504613064
+vim apply_vars.yml 
+#1504613483
+gcp "Merge playbooks into one"
+#1504615091
+vim docker.yml 
+#1504615094
+rm docker.yml 
+#1504615096
+gcp 
+#1504615101
+l
+#1504615128
+git statys
+#1504615333
+htop
+#1504621052
+ssh root@testserver 
+#1504622117
+vim .bash_profile 
+#1504622147
+ambient 
+#1504622213
+cd Downloads/
+#1504622216
+mpv DI.m3u 
+#1504622310
+mpv video: no
+#1504622314
+mpv http://hot.friezy.ru/?radio=di&station=00sclubhits&bitrate=320
+#1504622324
+mpv 'http://hot.friezy.ru/?radio=di&station=00sclubhits&bitrate=320'
+#1504622333
+mpv 'http://hot.friezy.ru/?radio=di&station=00ambient&bitrate=320'
+#1504622346
+mpv 'http://hot.friezy.ru/?radio=di&station=05ambient&bitrate=320'
+#1504622349
+mpv 'http://hot.friezy.ru/?radio=di&station=04ambient&bitrate=320'
+#1504622374
+for i in {00..30}; do mpv 'http://hot.friezy.ru/?radio=di&station='$i'ambient&bitrate=320'; done
+#1504622426
+mpv 'http://hot.friezy.ru/?radio=di&station=ambient&bitrate=320'
+#1504622440
+cd
+#1504622495
+. .bash_aliases 
+#1504622504
+vim .bash_aliases 
+#1504622513
+vim bash_dump/
+#1504622544
+cd Git/bash_dump/
+#1504622546
+gcp "Update ambient"
+#1504622559
+ambient
+#1504682520
+cd Git/nixconfig/
+#1504682523
+git status
+#1504682528
+git pull
+#1504682534
+git push
+#1504682610
+git global
+#1504682613
+git global --help
+#1504682617
+git --help
+#1504682708
+vim script
+#1504682872
+cd ..
+#1504682873
+rm -rf repo.git
+#1504682876
+cd -
+#1504682886
+vim script 
+#1504682947
+mv script ../bash_dump/
+#1504682949
+cd  ../bash_dump/
+#1504682951
+bash script 
+#1504682955
+git push --force --tags origin 'refs/heads/*'
+#1504683125
+rm script 
+#1504683132
+cd bash_dump/
+#1504683134
+ls -la
+#1504683141
+cd nixconfig/
+#1504683163
+git config user.email=avkioller@gmail.com
+#1504683171
+git config user.name=Cuttlerat
+#1504683173
+git config user.name=cuttlerat
+#1504683202
+git config user.name cuttlerat
+#1504683206
+git config user.email avkioller@gmail.com
+#1504683207
+git config --list
+#1504683731
+cd .i3status/
+#1504683733
+vim config 
+#1504684098
+cd 
+#1504684099
+cd Git/
+#1504684104
+vim teamcity
+#1504684203
+mv teamcity docker-compose.yml
+#1504684207
+mkdir teamcity
+#1504684210
+mv docker-compose.yml teamcity/
+#1504684211
+cd  teamcity/
+#1504684904
+# Запустить тимсити
+#1504688742
+vim docker-compose.yml 
+#1504690692
+sl
+#1504691055
+cd ../teamcity/
+#1504691055
+;s
+#1504691061
+sudo docker-compose up
+#1504703637
+rm -r postgres_data/
+#1504703642
+sudo rm -r postgres_data/
+#1504703649
+cd ansible/
+#1504703656
+vim update_db.yml 
+#1504703667
+sudo vim docker_restart.yml 
+#1504703688
+sudo vim apply_vars.yml 
+#1504703718
+ansible-playbook update_db.yml --private-key ~/.ssh/cuttlerat.pem
+#1504703734
+ansible-playbook apply_vars.yml --private-key ~/.ssh/cuttlerat.pem
+#1504703746
+vim docker_restart.yml 
+#1504703753
+vim start.yml 
+#1504703760
+sudo vim start.yml 
+#1504706399
+cd ../
+#1504706402
+cd ansible_deploy/
+#1504706408
+sudo rm -r *
+#1504706412
+cd ,,.
+#1504706420
+cp -r ../teamcity/* .
+#1504706430
+gcp "Add teamcity"
+#1504706444
+vim .gitignore 
+#1504706564
+ls
+#1504706586
+sudo docker-compose up --build
+#1504770140
+vim .bash_aliases 
+#1504770683
+sudo vim /etc/host
+#1504770689
+sudo vim /etc/hosts
+#1504789666
+pavucontrol 
+#1504706586
+sudo docker-compose up --build
+#1504768343
+cd Git/
+#1504768344
+ls
+#1504768350
+mkdir kubernetes
+#1504768352
+cd  kubernetes
+#1504769040
+mpv https://www.youtube.com/watch?v=_vHTaIJm9uY
+#1504789660
+am
+#1504789661
+ambient 
+#1504788075
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@ral-1.compute.amazonaws.com
+#1504788087
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@52.29.96.28
+#1504790159
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@18.194.61.207
+#1504790277
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@ntral-1.compute.amazonaws.com
+#1504790288
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@18.196.0.179
+#1504791382
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@52.28.7.66
+#1504791818
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@35.157.187.165
+#1504791852
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@52.29.247.68
+#1504792363
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@tral-1.compute.amazonaws.com
+#1504792371
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@52.57.168.14
+#1504792377
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@52.57.168.143
+#1504794595
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@35.158.72.15
+#1504795200
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@35.157.188.168
+#1504796987
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@35.156.31.3
+#1504797942
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@35.158.224.85
+#1504788229
+ssh -i .ssh/cuttlerat.pem ubuntu@35.156.101.41
+#1504788235
+ssh -i .ssh/cuttlerat.pem ubuntu@entral-1.compute.amazonaws.com
+#1504788241
+ssh -i .ssh/cuttlerat.pem ubuntu@35.158.251.10
+#1504791797
+ssh -i .ssh/cuttlerat.pem ubuntu@35.157.187.165
+#1504794619
+ssh -i .ssh/cuttlerat.pem ubuntu@35.158.242.104
+#1504797029
+ssh -i .ssh/cuttlerat.pem ubuntu@35.158.192.123
+#1504797943
+ssh -i .ssh/cuttlerat.pem ubuntu@18.194.20.143
+#1504788208
+ssh -i .ssh/cuttlerat.pem ubuntu@35.156.101.41
+#1504791808
+ssh -i .ssh/cuttlerat.pem ubuntu@35.157.187.165
+#1504791862
+ssh -i .ssh/cuttlerat.pem ubuntu@18.194.23.145
+#1504794608
+ssh -i .ssh/cuttlerat.pem ubuntu@52.29.107.204
+#1504797010
+ssh -i .ssh/cuttlerat.pem ubuntu@18.194.62.175
+#1504797943
+ssh -i .ssh/cuttlerat.pem ubuntu@18.194.12.66
+#1504699040
+sudo vim update_db.yml 
+#1504700384
+mkdir dockerfiles
+#1504700388
+cd  dockerfiles
+#1504700396
+vim agent.Dockerfile
+#1504700592
+vim docker
+#1504700594
+vim docker-compose.yml 
+#1504700763
+cd dockerfiles/
+#1504700767
+vim agent.Dockerfile 
+#1504707111
+ssh root@testserver 
+#1504711851
+ambient 
+#1504699040
+sudo vim update_db.yml 
+#1504700384
+mkdir dockerfiles
+#1504700388
+cd  dockerfiles
+#1504700396
+vim agent.Dockerfile
+#1504700592
+vim docker
+#1504700594
+vim docker-compose.yml 
+#1504700763
+cd dockerfiles/
+#1504700767
+vim agent.Dockerfile 
+#1504707031
+nix-env -u '*'
+#1504707088
+rm 2
+#1504707090
+rm 2017-09-06-122136_1920x1080_scrot.png 
+#1504707096
+cd Ansible/
+#1504707099
+rm -r *
+#1504707104
+rmdir Ansible/
+#1504707189
+cd Git/ansible_deploy/
+#1504707192
+cd ansible/
+#1504707194
+vim start.yml 
+#1504708282
+vim update_db.yml 
+#1504713176
+gcp
+#1504533687
+sudo docker exec psql psql -U postgres
+#1504533703
+sudo docker exec psql psql -U postgres -P
+#1504533796
+sudo docker exec psql psql -U postgres -P postgres
+#1504533802
+sudo docker exec psql psql -U postgres -P 
+#1504533804
+sudo docker exec psql psql -U postgres -p
+#1504533808
+sudo docker exec psql psql -U postgres --password
+#1504533836
+sudo docker exec psql ls
+#1504533843
+sudo docker exec psql cat docker-entrypoint.sh
+#1504533874
+sudo docker stop psql
+#1504534012
+rm test/
+#1504534017
+sudo ls test/
+#1504534024
+sudo rm test/test.sql
+#1504534027
+sudo docker run --rm -v ~+/test:/var/lib/postgresql/data --name psql postgres 
+#1504534043
+sudo docker run --rm -d -v ~+/test:/var/lib/postgresql/data --name psql postgres 
+#1504534053
+sudo docker exec psql psql --username postgres <<<"CREATE DATABASE test"
+#1504534072
+cd test/
+#1504534074
+sudo su
+#1504540203
+rm -r DB_test/
+#1504540207
+sudo rm -r DB_test/
+#1504599812
+cd Git/ansible_deploy/
+#1504599820
+vim commons-test.env 
+#1504599843
+cd env/
+#1504599850
+vim common_vars.yml 
+#1504599873
+cd vars/
+#1504599876
+vim default.yml 
+#1504600000
+rm default.yml 
+#1504600034
+ssh root@92.53.101.182
+#1504611217
+ks
+#1504612725
+vun docker_restart.yml 
+#1504613056
+vun docker.yml 
+#1504613064
+vim apply_vars.yml 
+#1504613483
+gcp "Merge playbooks into one"
+#1504615091
+vim docker.yml 
+#1504615094
+rm docker.yml 
+#1504615096
+gcp 
+#1504615101
+l
+#1504615128
+git statys
+#1504615333
+htop
+#1504621052
+ssh root@testserver 
+#1504622147
+ambient 
+#1504622213
+cd Downloads/
+#1504622216
+mpv DI.m3u 
+#1504622310
+mpv video: no
+#1504622314
+mpv http://hot.friezy.ru/?radio=di&station=00sclubhits&bitrate=320
+#1504622324
+mpv 'http://hot.friezy.ru/?radio=di&station=00sclubhits&bitrate=320'
+#1504622333
+mpv 'http://hot.friezy.ru/?radio=di&station=00ambient&bitrate=320'
+#1504622346
+mpv 'http://hot.friezy.ru/?radio=di&station=05ambient&bitrate=320'
+#1504622349
+mpv 'http://hot.friezy.ru/?radio=di&station=04ambient&bitrate=320'
+#1504622374
+for i in {00..30}; do mpv 'http://hot.friezy.ru/?radio=di&station='$i'ambient&bitrate=320'; done
+#1504622426
+mpv 'http://hot.friezy.ru/?radio=di&station=ambient&bitrate=320'
+#1504622513
+vim bash_dump/
+#1504622544
+cd Git/bash_dump/
+#1504622546
+gcp "Update ambient"
+#1504622559
+ambient
+#1504682520
+cd Git/nixconfig/
+#1504682523
+git status
+#1504682528
+git pull
+#1504682534
+git push
+#1504682610
+git global
+#1504682613
+git global --help
+#1504682617
+git --help
+#1504682708
+vim script
+#1504682872
+cd ..
+#1504682873
+rm -rf repo.git
+#1504682876
+cd -
+#1504682886
+vim script 
+#1504682947
+mv script ../bash_dump/
+#1504682949
+cd  ../bash_dump/
+#1504682951
+bash script 
+#1504682955
+git push --force --tags origin 'refs/heads/*'
+#1504683125
+rm script 
+#1504683132
+cd bash_dump/
+#1504683141
+cd nixconfig/
+#1504683163
+git config user.email=avkioller@gmail.com
+#1504683171
+git config user.name=Cuttlerat
+#1504683173
+git config user.name=cuttlerat
+#1504683202
+git config user.name cuttlerat
+#1504683206
+git config user.email avkioller@gmail.com
+#1504683207
+git config --list
+#1504683731
+cd .i3status/
+#1504683733
+vim config 
+#1504684104
+vim teamcity
+#1504684203
+mv teamcity docker-compose.yml
+#1504684207
+mkdir teamcity
+#1504684210
+mv docker-compose.yml teamcity/
+#1504684211
+cd  teamcity/
+#1504684904
+# Запустить тимсити
+#1504688742
+vim docker-compose.yml 
+#1504690692
+sl
+#1504691055
+cd ../teamcity/
+#1504691055
+;s
+#1504691061
+sudo docker-compose up
+#1504703637
+rm -r postgres_data/
+#1504703642
+sudo rm -r postgres_data/
+#1504703649
+cd ansible/
+#1504703656
+vim update_db.yml 
+#1504703667
+sudo vim docker_restart.yml 
+#1504703688
+sudo vim apply_vars.yml 
+#1504703718
+ansible-playbook update_db.yml --private-key ~/.ssh/cuttlerat.pem
+#1504703734
+ansible-playbook apply_vars.yml --private-key ~/.ssh/cuttlerat.pem
+#1504703746
+vim docker_restart.yml 
+#1504703753
+vim start.yml 
+#1504703760
+sudo vim start.yml 
+#1504706402
+cd ansible_deploy/
+#1504706408
+sudo rm -r *
+#1504706412
+cd ,,.
+#1504706420
+cp -r ../teamcity/* .
+#1504706430
+gcp "Add teamcity"
+#1504706444
+vim .gitignore 
+#1504706586
+sudo docker-compose up --build
+#1504768360
+cd 
+#1504768370
+vim .bash_profile 
+#1504768381
+vim .bashrc 
+#1504768399
+vim .inputrc 
+#1504769288
+pav
+#1504769289
+pavucontrol 
+#1504769532
+ssh ubuntu@kworker_1
+#1504769540
+@kworker_1 
+#1504769593
+vim .bash_functions 
+#1504769763
+vim .bash_aliases 
+#1504769885
+. .bash_aliases 
+#1504770088
+sudo vim /etc/nixos/configuration.nix 
+#1504770172
+sudo nixos-rebuild swithc
+#1504770295
+vim /etc/hosts
+#1504770332
+vim kubernetes/
+#1504770334
+cd l
+#1504770644
+vim hosts
+#1504770734
+vim ansible.cfg
+#1504770861
+kworker_1 
+#1504770873
+ansible-playbook install_docker.yml 
+#1504770884
+vim ansible.cfg 
+#1504770899
+ansible-playbook update_db.yml --private-key ~/.ssh/cuttlerat.pem
+#1504770905
+ansible-playbook install_docker. --private-key ~/.ssh/cuttlerat.pem
+#1504770982
+ssh kworker_
+#1504770984
+ssh kworker_1
+#1504771647
+rm *retry
+#1504772423
+vim install_docker.yml
+#1504772669
+wget https://github.com/GoogleCloudPlatform/kubernetes/releases/download/v0.17.0/kubernetes.tar.gz
+#1504772931
+tar xzf ./kubernetes.tar.gz
+#1504772948
+vim cluster/ubuntu/build.sh 
+#1504773075
+cd cluster/ubuntu/
+#1504773090
+./build.sh 
+#1504773186
+ls -la
+#1504773229
+vim build.sh 
+#1504773242
+cd server/
+#1504773315
+cat /proc/cpuinfo | grep 'vmx\|svm'
+#1504773353
+nix-env -iA nixos.virtualbox
+#1504773373
+curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.20.0/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube ~/bin/
+#1504773417
+curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl && chmod +x kubectl && sudo mv kubectl ~/bin/
+#1504773486
+cd
+#1504773487
+minikube 
+#1504773496
+minikube start\
+#1504773498
+minikube start
+#1504773503
+cd /home/rat/bin/
+#1504773505
+vim minikube 
+#1504773613
+rm minikube kubectl 
+#1504773614
+cd ../
+#1504773615
+cd Git/
+#1504773618
+cd kubernetes/
+#1504773621
+rm -r kubernetes
+#1504773931
+ansible-playbook install_docker.yml --private-key ~/k8s
+#1504774541
+vim install_k8s.yml
+#1504777314
+sudo nixos-rebuild switch
+#1504778152
+vim ~/.bash_aliases 
+#1504778219
+kmaster sudo apt-get install -y python
+#1504778240
+kworker_1 sudo apt-get install -y python
+#1504778257
+kworker_2 sudo apt-get install -y python
+#1504778270
+vim install_docker.
+#1504778349
+kmaster 
+#1504778354
+vim hosts 
+#1504778380
+ansible-playbook install_docker.yml --private-key ~/.ssh/cuttlerat.pem
+#1504778532
+kworker_1
+#1504778644
+kworker_2
+#1504779517
+vim install_docker.yml 
+#1504779800
+ansible-playbook setting_master.yml --private-key ~/k8s\
+#1504780133
+vim setting_master.yml
+#1504780717
+ssh -i ~/k8s -f -N -L 8001:52.58.228.112:8001 k8s@kmaster
+#1504784320
+ды
+#1504784539
+. ~/.bash_aliases 
+#1504784623
+sudo docker run --rm -it ubuntu
+#1504784647
+sudo docker run --rm -v /home/rat/k8s:/k8s -it ubuntu
+#1504786577
+ansible-playbook setting_master. --private-key ~/k8s
+#1504786634
+vim setting_master.
+#1504786637
+vim setting_master.yml 
+#1504786679
+ls
+#1504786684
+vim install_k8s.
+#1504786686
+vim install_k8s.yml 
+#1504786706
+ansible-playbook install_k8s.yml --private-key ~/k8s
+#1504786721
+ansible-playbook setting_master.yml --private-key ~/k8s
+#1504700763
+cd dockerfiles/
+#1504700767
+vim agent.Dockerfile 
+#1504707111
+ssh root@testserver 
+#1504711851
+ambient 
+#1504699040
+sudo vim update_db.yml 
+#1504700384
+mkdir dockerfiles
+#1504700388
+cd  dockerfiles
+#1504700396
+vim agent.Dockerfile
+#1504700592
+vim docker
+#1504700594
+vim docker-compose.yml 
+#1504700763
+cd dockerfiles/
+#1504700767
+vim agent.Dockerfile 
+#1504707031
+nix-env -u '*'
+#1504707088
+rm 2
+#1504707090
+rm 2017-09-06-122136_1920x1080_scrot.png 
+#1504707096
+cd Ansible/
+#1504707099
+rm -r *
+#1504707104
+rmdir Ansible/
+#1504708282
+vim update_db.yml 
+#1504713176
+gcp
+#1504533687
+sudo docker exec psql psql -U postgres
+#1504533703
+sudo docker exec psql psql -U postgres -P
+#1504533796
+sudo docker exec psql psql -U postgres -P postgres
+#1504533802
+sudo docker exec psql psql -U postgres -P 
+#1504533804
+sudo docker exec psql psql -U postgres -p
+#1504533808
+sudo docker exec psql psql -U postgres --password
+#1504533836
+sudo docker exec psql ls
+#1504533843
+sudo docker exec psql cat docker-entrypoint.sh
+#1504533874
+sudo docker stop psql
+#1504534012
+rm test/
+#1504534017
+sudo ls test/
+#1504534024
+sudo rm test/test.sql
+#1504534027
+sudo docker run --rm -v ~+/test:/var/lib/postgresql/data --name psql postgres 
+#1504534043
+sudo docker run --rm -d -v ~+/test:/var/lib/postgresql/data --name psql postgres 
+#1504534053
+sudo docker exec psql psql --username postgres <<<"CREATE DATABASE test"
+#1504534072
+cd test/
+#1504534074
+sudo su
+#1504540203
+rm -r DB_test/
+#1504540207
+sudo rm -r DB_test/
+#1504599820
+vim commons-test.env 
+#1504599843
+cd env/
+#1504599850
+vim common_vars.yml 
+#1504599873
+cd vars/
+#1504599876
+vim default.yml 
+#1504600000
+rm default.yml 
+#1504600034
+ssh root@92.53.101.182
+#1504611217
+ks
+#1504612725
+vun docker_restart.yml 
+#1504612854
+vim /etc/hosts
+#1504613056
+vun docker.yml 
+#1504613064
+vim apply_vars.yml 
+#1504613483
+gcp "Merge playbooks into one"
+#1504615091
+vim docker.yml 
+#1504615094
+rm docker.yml 
+#1504615101
+l
+#1504615128
+git statys
+#1504615333
+htop
+#1504621052
+ssh root@testserver 
+#1504622117
+vim .bash_profile 
+#1504622147
+ambient 
+#1504622213
+cd Downloads/
+#1504622216
+mpv DI.m3u 
+#1504622310
+mpv video: no
+#1504622314
+mpv http://hot.friezy.ru/?radio=di&station=00sclubhits&bitrate=320
+#1504622324
+mpv 'http://hot.friezy.ru/?radio=di&station=00sclubhits&bitrate=320'
+#1504622333
+mpv 'http://hot.friezy.ru/?radio=di&station=00ambient&bitrate=320'
+#1504622346
+mpv 'http://hot.friezy.ru/?radio=di&station=05ambient&bitrate=320'
+#1504622349
+mpv 'http://hot.friezy.ru/?radio=di&station=04ambient&bitrate=320'
+#1504622374
+for i in {00..30}; do mpv 'http://hot.friezy.ru/?radio=di&station='$i'ambient&bitrate=320'; done
+#1504622426
+mpv 'http://hot.friezy.ru/?radio=di&station=ambient&bitrate=320'
+#1504622513
+vim bash_dump/
+#1504622544
+cd Git/bash_dump/
+#1504622546
+gcp "Update ambient"
+#1504622559
+ambient
+#1504682520
+cd Git/nixconfig/
+#1504682523
+git status
+#1504682528
+git pull
+#1504682534
+git push
+#1504682610
+git global
+#1504682613
+git global --help
+#1504682617
+git --help
+#1504682708
+vim script
+#1504682872
+cd ..
+#1504682873
+rm -rf repo.git
+#1504682876
+cd -
+#1504682886
+vim script 
+#1504682947
+mv script ../bash_dump/
+#1504682949
+cd  ../bash_dump/
+#1504682951
+bash script 
+#1504682955
+git push --force --tags origin 'refs/heads/*'
+#1504683125
+rm script 
+#1504683132
+cd bash_dump/
+#1504683134
+ls -la
+#1504683141
+cd nixconfig/
+#1504683163
+git config user.email=avkioller@gmail.com
+#1504683171
+git config user.name=Cuttlerat
+#1504683173
+git config user.name=cuttlerat
+#1504683202
+git config user.name cuttlerat
+#1504683206
+git config user.email avkioller@gmail.com
+#1504683207
+git config --list
+#1504683731
+cd .i3status/
+#1504683733
+vim config 
+#1504684098
+cd 
+#1504684099
+cd Git/
+#1504684104
+vim teamcity
+#1504684203
+mv teamcity docker-compose.yml
+#1504684207
+mkdir teamcity
+#1504684210
+mv docker-compose.yml teamcity/
+#1504684211
+cd  teamcity/
+#1504684904
+# Запустить тимсити
+#1504688742
+vim docker-compose.yml 
+#1504690692
+sl
+#1504691055
+cd ../teamcity/
+#1504691055
+;s
+#1504691061
+sudo docker-compose up
+#1504703637
+rm -r postgres_data/
+#1504703642
+sudo rm -r postgres_data/
+#1504703656
+vim update_db.yml 
+#1504703667
+sudo vim docker_restart.yml 
+#1504703688
+sudo vim apply_vars.yml 
+#1504703718
+ansible-playbook update_db.yml --private-key ~/.ssh/cuttlerat.pem
+#1504703734
+ansible-playbook apply_vars.yml --private-key ~/.ssh/cuttlerat.pem
+#1504703746
+vim docker_restart.yml 
+#1504703760
+sudo vim start.yml 
+#1504706402
+cd ansible_deploy/
+#1504706408
+sudo rm -r *
+#1504706412
+cd ,,.
+#1504706420
+cp -r ../teamcity/* .
+#1504706430
+gcp "Add teamcity"
+#1504706444
+vim .gitignore 
+#1504706586
+sudo docker-compose up --build
+#1504770683
+sudo vim /etc/host
+#1504770689
+sudo vim /etc/hosts
+#1504770719
+cd Git/ansible_deploy/
+#1504770722
+cd ansible/
+#1504770724
+vim a
+#1504770727
+vim ansible.cfg 
+#1504770789
+vim start.yml 
+#1504772271
+ssh-keygen 
+#1504772495
+ssh -i ~/k8s k8s@35.158.40.155
+#1504772531
+ssh -i ~/k8s.pub k8s@35.158.40.155
+#1504772547
+ssh -i ~/k8s.pub k8s@35.158.12.192
+#1504772554
+ssh -i ~/k8s.pub k8s@35.158.12.182
+#1504772559
+ssh -i ~/k8s k8s@35.158.12.182
+#1504777329
+cd
+#1504777332
+vim .bash_aliases 
+#1504777396
+. .bash_aliases 
+#1504777408
+cd Git/l
+#1504777410
+cd Git/kubernetes/
+#1504777451
+ping kmaster 
+#1504777670
+dmesg 
+#1504784330
+sudo vim /etc/nixos/configuration.nix 
+#1504784474
+vim ~/.bashrc 
+#1504784478
+vim ~/.bash_aliases 
+#1504784526
+. ~/.bash_aliases 
+#1504784544
+sudo nixos-rebuild switch
+#1504785595
+vim /etc/hosts 
+#1504785813
+cat /etc/hosts
+#1504785868
+kmaster apt-get install -y python
+#1504785873
+kmaster sudo apt-get install -y python
+#1504785888
+kworker_1 sudo apt-get install -y python
+#1504785905
+kworker_2 sudo apt-get install -y python
+#1504786159
+kworker_
+#1504786159
+kworker_1
+#1504786183
+kworker_2
+#1504786514
+kmaster 
+#1504788361
+ды
+#1504788364
+vim install_
+#1504788510
+mkdir repo
+#1504788512
+cd repo/
+#1504788516
+vim k8s.repo
+#1504788552
+rm -r repo/
+#1504788629
+vim install_docker.
+#1504789213
+vim install_docker.yml 
+#1504794676
+vim install_k8s.yml 
+#1504795712
+ssh -i ~/k8s -f -N -L 80:127.0.0.1:8001 k8s@35.157.188.168
+#1504795716
+sudo ssh -i ~/k8s -f -N -L 80:127.0.0.1:8001 k8s@35.157.188.168
+#1504797522
+vim hosts 
+#1504797679
+vim setting_master.
+#1504797728
+vim hosts
+#1504797979
+ansible-playbook install_docker.yml --private-key ~/.ssh/cuttlerat.pem
+#1504798024
+ansible-playbook install_k8s.yml --private-key ~/k8s
+#1504798286
+ansible-playbook setting_master.yml --private-key ~/k8s
+#1504798291
+vim setting_master.yml 
+#1504798606
+rm *retry
+#1504798609
+cd ../
+#1504798622
+mv kubernetes/ kubernetes1/
+#1504798624
+git clone https://Aleksei_Kioller@bitbucket.org/Aleksei_Kioller/kubernetes.git
+#1504798637
+mv kubernetes1/* kubernetes
+#1504798641
+cd kubernetes
+#1504798644
+gcp 
+#1504798666
+rm kubernetes.tar.gz 
+#1504798667
+gcp ""
+#1504798723
+ls
+#1504799481
+ssh -i ~/k8s -f -N -L 80:127.0.0.1:8001 k8s@35.158.224.85
+#1504799484
+sudo ssh -i ~/k8s -f -N -L 80:127.0.0.1:8001 k8s@35.158.224.85
+#1504799624
+sudo ssh -i ~/k8s -f -N -L 81:127.0.0.1:80 k8s@35.158.224.85
+#1504853271
+sshpass --help
+#1504853278
+man sshpass
+#1504870310
+echo $[14,8 * 57]
+#1504870316
+echo $[247 * 57]
+#1504870320
+ls
+#1504879930
+cat .ssh/id_rsa.pub 
+#1504853278
+man sshpass
+#1504856363
+ssh -i ~/k8s k8s@52.57.155.104
+#1504878577
+cd Git/
+#1504878578
+ls
+#1504684203
+mv teamcity docker-compose.yml
+#1504684207
+mkdir teamcity
+#1504684210
+mv docker-compose.yml teamcity/
+#1504684211
+cd  teamcity/
+#1504684904
+# Запустить тимсити
+#1504691055
+cd ../teamcity/
+#1504691055
+;s
+#1504691061
+sudo docker-compose up
+#1504703637
+rm -r postgres_data/
+#1504703642
+sudo rm -r postgres_data/
+#1504703667
+sudo vim docker_restart.yml 
+#1504703688
+sudo vim apply_vars.yml 
+#1504703718
+ansible-playbook update_db.yml --private-key ~/.ssh/cuttlerat.pem
+#1504703734
+ansible-playbook apply_vars.yml --private-key ~/.ssh/cuttlerat.pem
+#1504703760
+sudo vim start.yml 
+#1504706408
+sudo rm -r *
+#1504706412
+cd ,,.
+#1504706420
+cp -r ../teamcity/* .
+#1504706430
+gcp "Add teamcity"
+#1504706444
+vim .gitignore 
+#1504706586
+sudo docker-compose up --build
+#1504770683
+sudo vim /etc/host
+#1504770689
+sudo vim /etc/hosts
+#1504772271
+ssh-keygen 
+#1504772495
+ssh -i ~/k8s k8s@35.158.40.155
+#1504772531
+ssh -i ~/k8s.pub k8s@35.158.40.155
+#1504772547
+ssh -i ~/k8s.pub k8s@35.158.12.192
+#1504772554
+ssh -i ~/k8s.pub k8s@35.158.12.182
+#1504772559
+ssh -i ~/k8s k8s@35.158.12.182
+#1504777329
+cd
+#1504777332
+vim .bash_aliases 
+#1504777396
+. .bash_aliases 
+#1504777408
+cd Git/l
+#1504777410
+cd Git/kubernetes/
+#1504777451
+ping kmaster 
+#1504777670
+dmesg 
+#1504784330
+sudo vim /etc/nixos/configuration.nix 
+#1504784474
+vim ~/.bashrc 
+#1504784478
+vim ~/.bash_aliases 
+#1504784526
+. ~/.bash_aliases 
+#1504784544
+sudo nixos-rebuild switch
+#1504785595
+vim /etc/hosts 
+#1504785813
+cat /etc/hosts
+#1504785868
+kmaster apt-get install -y python
+#1504785873
+kmaster sudo apt-get install -y python
+#1504785888
+kworker_1 sudo apt-get install -y python
+#1504785905
+kworker_2 sudo apt-get install -y python
+#1504786159
+kworker_
+#1504786159
+kworker_1
+#1504786183
+kworker_2
+#1504786514
+kmaster 
+#1504788364
+vim install_
+#1504788510
+mkdir repo
+#1504788512
+cd repo/
+#1504788516
+vim k8s.repo
+#1504788552
+rm -r repo/
+#1504788629
+vim install_docker.
+#1504789213
+vim install_docker.yml 
+#1504794676
+vim install_k8s.yml 
+#1504795712
+ssh -i ~/k8s -f -N -L 80:127.0.0.1:8001 k8s@35.157.188.168
+#1504795716
+sudo ssh -i ~/k8s -f -N -L 80:127.0.0.1:8001 k8s@35.157.188.168
+#1504797679
+vim setting_master.
+#1504797979
+ansible-playbook install_docker.yml --private-key ~/.ssh/cuttlerat.pem
+#1504798024
+ansible-playbook install_k8s.yml --private-key ~/k8s
+#1504798286
+ansible-playbook setting_master.yml --private-key ~/k8s
+#1504798606
+rm *retry
+#1504798622
+mv kubernetes/ kubernetes1/
+#1504798624
+git clone https://Aleksei_Kioller@bitbucket.org/Aleksei_Kioller/kubernetes.git
+#1504798637
+mv kubernetes1/* kubernetes
+#1504798641
+cd kubernetes
+#1504798644
+gcp 
+#1504798666
+rm kubernetes.tar.gz 
+#1504798667
+gcp ""
+#1504799481
+ssh -i ~/k8s -f -N -L 80:127.0.0.1:8001 k8s@35.158.224.85
+#1504799484
+sudo ssh -i ~/k8s -f -N -L 80:127.0.0.1:8001 k8s@35.158.224.85
+#1504799624
+sudo ssh -i ~/k8s -f -N -L 81:127.0.0.1:80 k8s@35.158.224.85
+#1504853271
+sshpass --help
+#1504853278
+man sshpass
+#1504853346
+sshpass -p "276zcgdxzn" ssh root@testserver
+#1504853370
+ssh root@92.53.101.182
+#1504853378
+sshpass -p "276zcgdxzn" ssh root@92.53.101.182
+#1504853458
+sshpass -p "276zcgdxzn" ssh -o StrictHostKeyChecking=no root@92.53.101.182
+#1504853661
+cd Git/kubernetes
+#1504853664
+vim setting_master.yml 
+#1504853795
+cd ansible_deploy/
+#1504853797
+vim docker
+#1504853799
+vim docker-compose.yml 
+#1504853848
+vim start.yml 
+#1504855898
+scp -R ./ansible/ root@testserver:~/ansible/
+#1504855903
+scp -r ./ansible/ root@testserver:~/ansible/
+#1504855916
+ssh root@testserver
+#1504863063
+d ansible/
+#1504863072
+cd u
+#1504863577
+cd nixconfig/
+#1504863583
+vim README.md 
+#1504863592
+git add .
+#1504863647
+git commit -m "Fast commit by Cuttlerat" --date="2017-09-07T22:34:10+0300"
+#1504868242
+git clone git@github.com:dreamkas/dreamhub.git
+#1504868251
+cd dreamhub/
+#1504868253
+git diff
+#1504868284
+git diff a0168883a5ca271904b843e21f93dd6551ce78e8 c000eaf2d40527d8f43011177a457fb652305976
+#1504868458
+git diff c000eaf2d40527d8f43011177a457fb652305976 ff41073b937000172ed933476aca0842a69d7877
+#1504868473
+git log | grep "commit"
+#1504868490
+git log | grep "^commit"
+#1504868494
+git log | grep "^commit" | head 2
+#1504868497
+git log | grep "^commit" | head -2
+#1504868506
+git log | grep "^commit" | head -2 | awk '$0=$2'
+#1504868516
+git log | grep "^commit" | head -2 | awk '$0=$2' | xargs git diff
+#1504868538
+git log | grep "^commit" | head -2 | awk '$0=$2' | xargs git diff | grep '/hub/src/main/resources/db_updates/'
+#1504868566
+git log | grep "^commit" | head -2 | awk '$0=$2' | xargs git diff | grep '/hub/src/main/resources/db_updates/' | sed 's/^[^/]+//'
+#1504868570
+git log | grep "^commit" | head -2 | awk '$0=$2' | xargs git diff | grep '/hub/src/main/resources/db_updates/' | sed 's/^[^/]\+//'
+#1504868622
+git log | grep "^commit" | head -2 | awk '$0=$2' | xargs git diff | grep '/hub/src/main/resources/db_updates/' | sed 's/^[^/]\+//' | tail -1
+#1504868636
+cd 
+#1504868646
+cd Git/ansible_deploy/
+#1504868648
+cd ansible/
+#1504868658
+vim get_sql_path.sh
+#1504868672
+gcp
+#1504868891
+
+#1504868897
+
+#1504868903
+vim hosts \
+#1504868906
+vim hosts
+#1504869100
+ssh root@testserver 
+#1504869946
+vim a
+#1504869959
+vim hosts 
+#1504869963
+vim ansible.cfg 
+#1504869969
+vim get_sql_path.sh 
+#1504869979
+vim update_db.yml 
+#1504870037
+vim vars
+#1504875285
+ды
+#1504875348
+cd vars/
+#1504875524
+vim update_vars.yml 
+#1504875572
+vim common_vars.yml 
+#1504875576
+vim default.yml 
+#1504875580
+vim apply_vars.yml 
+#1504875601
+vim docker_restart.yml 
+#1504875710
+vim vars/default.yml 
+#1504875778
+sudo nix-env -iA nixos.ntpdate
+#1504875783
+sudo nix-env -iA nixos.ntpd
+#1504875785
+sudo nix-env -iA nixos.ntp
+#1504875792
+ntpdate 
+#1504875816
+ntpdate 0.europe.pool.ntp.org
+#1504875820
+sudo ntpdate 0.europe.pool.ntp.org
+#1504875860
+watch -n 0.3 date
+#1504875997
+sl
+#1504875999
+vim bash_dump/
+#1504876006
+cd Working/
+#1504876008
+vim start_daemon 
+#1504876021
+rm start_daemon 
+#1504876023
+rm auto_builder 
+#1504876027
+cd Everyday\ Scripts/
+#1504876052
+gcp "Don't need that anymore"
+#1504876069
+git push
+#1504878762
+git push --force --tags origin HEAD:master
+#1504878788
+vim test.sh
+#1504878801
+bash ./test.sh 
+#1504878821
+cd ../
+#1504878829
+ls -la
+#1504878854
+cd ..
+#1504878875
+cd bash_dump/
+#1504878877
+git log
+#1504878911
+vim test.sh 
+#1504878916
+bash test.sh 
+#1504878920
+git push --force --tags origin 'refs/heads/*'
+#1504880206
+cd ../ansible_deploy/
+#1504880206
+ls
+#1504880231
+scp -r ansible/* root@start-ci.dreamkas.ru:/ansible
+#1504880240
+ssh root@start-ci.dreamkas.ru
+#1504880671
+ssh root@testserver 
+#1505112962
+ssh te
+#1505112964
+ssh testserver 
+#1505112971
+ssh root@testserver 
+#1505113221
+. .xsession 
+#1505113519
+ssh root@testserver 
+#1505112878
+ssh root@start-ci.dreamkas.ru
+#1504876069
+git push
+#1504878762
+git push --force --tags origin HEAD:master
+#1504878788
+vim test.sh
+#1504878801
+bash ./test.sh 
+#1504878829
+ls -la
+#1504878854
+cd ..
+#1504878875
+cd bash_dump/
+#1504878877
+git log
+#1504878911
+vim test.sh 
+#1504878916
+bash test.sh 
+#1504878920
+git push --force --tags origin 'refs/heads/*'
+#1504880206
+cd ../ansible_deploy/
+#1504880231
+scp -r ansible/* root@start-ci.dreamkas.ru:/ansible
+#1504880671
+ssh root@testserver 
+#1505114629
+ssh root@start-ci.dreamkas.ru
+#1505117145
+cd GF
+#1505117147
+cd Git/
+#1505117153
+rm -r kubernetes1/
+#1505117168
+git clone git@github.com:kosc/fastpost.git
+#1505117177
+cd fastpost/
+#1505117181
+vim .travis.yml 
+#1505122974
+vim README.md 
+#1505122990
+cd dreamhub/
+#1505122994
+cd deploy/
+#1505122996
+cd kibana/
+#1505122998
+vim export.json 
+#1505123417
+cd ../
+#1505123419
+cd utils/
+#1505123421
+vim iptables.
+#1505123423
+vim iptables.dreamhub.back 
+#1505123434
+ls
+#1504880206
+cd ../ansible_deploy/
+#1504880231
+scp -r ansible/* root@start-ci.dreamkas.ru:/ansible
+#1504880240
+ssh root@start-ci.dreamkas.ru
+#1505112620
+sudo nixos-rebuild switch --update
+#1505112628
+sudo nixos-rebuild switch --upgrade
+#1505116725
+ssh root@testserver 
+#1505117583
+cd Git/
+#1505117586
+cd py
+#1505117602
+git clone git@github.com:Cuttlerat/pybot.git
+#1505117607
+ls
+#1505117609
+cd pu
+#1505117611
+cd pybot/
+#1505117614
+vim .travis.yml 
+#1504875601
+vim docker_restart.yml 
+#1504875710
+vim vars/default.yml 
+#1504875778
+sudo nix-env -iA nixos.ntpdate
+#1504875783
+sudo nix-env -iA nixos.ntpd
+#1504875785
+sudo nix-env -iA nixos.ntp
+#1504875792
+ntpdate 
+#1504875816
+ntpdate 0.europe.pool.ntp.org
+#1504875820
+sudo ntpdate 0.europe.pool.ntp.org
+#1504875860
+watch -n 0.3 date
+#1504875997
+sl
+#1504875999
+vim bash_dump/
+#1504876006
+cd Working/
+#1504876008
+vim start_daemon 
+#1504876021
+rm start_daemon 
+#1504876023
+rm auto_builder 
+#1504876027
+cd Everyday\ Scripts/
+#1504876052
+gcp "Don't need that anymore"
+#1504876069
+git push
+#1504878762
+git push --force --tags origin HEAD:master
+#1504878788
+vim test.sh
+#1504878801
+bash ./test.sh 
+#1504878854
+cd ..
+#1504878875
+cd bash_dump/
+#1504878877
+git log
+#1504878911
+vim test.sh 
+#1504878916
+bash test.sh 
+#1504878920
+git push --force --tags origin 'refs/heads/*'
+#1504880206
+cd ../ansible_deploy/
+#1504880231
+scp -r ansible/* root@start-ci.dreamkas.ru:/ansible
+#1504880671
+ssh root@testserver 
+#1505112962
+ssh te
+#1505112964
+ssh testserver 
+#1505112971
+ssh root@testserver 
+#1505113140
+cd Git/ansible_deploy/ansible/
+#1505113147
+touch test.yml
+#1505113281
+vim hosts 
+#1505113304
+vim test.yml 
+#1505113308
+ansible-playbook setting_master.yml --private-key ~/k8s
+#1505113328
+ansible-playbook test.yml --private-key ~/k8s
+#1505113349
+ansible-playbook test.yml --private-key ~/k8s && echo 1 || echo 0
+#1505116460
+sudo nix-env -u '*'
+#1505118335
+ssh root@hotkosc.ru
+#1505118352
+ssh root@hotkosc.ru -p 10440
+#1505118355
+ssh root@hotkosc.ru -p 10040
+#1505118356
+ssh root@hotkosc.ru -p 10042
+#1505118358
+ssh root@hotkosc.ru -p 10044
+#1505118391
+ssh root@hotkosc.ru -p 1044
+#1505118394
+ssh root@hotkosc.ru -p 10022
+#1505118406
+ssh -p 10044 root@hotkosc.ru
+#1505118557
+ssh -p 10020 root@hotkosc.ru
+#1505118559
+ssh -p 10022 root@hotkosc.ru
+#1505118563
+ssh -p 10040 root@hotkosc.ru
+#1505118573
+ssh -p 10040 kioller_a@hotkosc.ru
+#1505118576
+ssh -p 10044 kioller_a@hotkosc.ru
+#1505118927
+ssh root@start-ci.dreamkas.ru
+#1505119459
+scp root@start-ci.dreamkas.ru:/ansible/*.yml ~/
+#1505119483
+scp -r root@start-ci.dreamkas.ru:/ansible/env ~/
+#1505119571
+scp -r root@start-ci.dreamkas.ru:/ansible ~/
+#1505119579
+cd
+#1505119588
+rm *retry
+#1505119594
+cd updates/
+#1505119605
+cd env/
+#1505119621
+sudo nix-env -iA nixos.zip
+#1505119632
+zip ansible/
+#1505119639
+zip ansible.zip ansible/
+#1505119642
+ls -la
+#1505119653
+cp ansible.zip Docker
+#1505119656
+cd Docker/
+#1505119670
+sudo nix-env -iA nixos.unzip
+#1505119672
+unzip ansible.zip 
+#1505119673
+;s
+#1505119692
+rm -r ansible*
+#1505119693
+cd 
+#1505119695
+cd ansible/
+#1505119697
+cd ../
+#1505119700
+zip --help
+#1505119747
+zip -r ansible.zip ansible/
+#1505119753
+vim ansible.zip 
+#1505120136
+dig hotkosc.ru
+#1505120154
+ssh -p 10042 root@46.101.237.91
+#1505120157
+ssh -p 10022 root@46.101.237.91
+#1505120159
+ssh -p 10021 root@46.101.237.91
+#1505120161
+ssh -p 10023 root@46.101.237.91
+#1505120164
+ssh -p 10046 root@46.101.237.91
+#1505120168
+ssh -p 10644 root@46.101.237.91
+#1505120206
+ssh -p 22 root@46.101.237.91
+#1505120217
+ssh -p 1044 root@46.101.237.91
+#1505120222
+ssh -p 1000 root@46.101.237.91
+#1505120227
+ssh -p 20044 root@46.101.237.91
+#1505120230
+ssh -p 10044 root@46.101.237.91
+#1505120236
+ssh -p 10048 root@46.101.237.91
+#1505120563
+rm ansible.zip 
+#1505120566
+rm -r ansible/
+#1505120574
+rm *yml
+#1505120575
+ks
+#1505120575
+ls
+#1505200600
+pavucontrol 
+#1505207025
+cd Git/pybot/
+#1505207026
+;s
+#1505207027
+ls
+#1505207029
+cd dockerfiles/
+#1505207040
+mv pybot.Dockerfile pybot_preinstall.Dockerfile 
+#1505207048
+vim pybot.Dockerfile 
+#1505208711
+sudo docker run --rm -it python:3.6
+#1505120574
+rm *yml
+#1505120575
+ks
+#1505200600
+pavucontrol 
+#1505204051
+cd Git/pybot/
+#1505204062
+vim pybot.py 
+#1505204075
+vim tokens.py
+#1505204168
+sudo docker-compose up --buidl
+#1505204591
+vim tokens.py 
+#1505207993
+ls
+#1505207994
+cd ../
+#1505207996
+cd fastpost/
+#1505207998
+vim docker
+#1505208001
+vim docker-compose.yml 
+#1505208025
+cd -
+#1505208028
+cd pybot/
+#1505208033
+sudo docker-compose up --build
+#1505214347
+ls
+#1505214349
+mkdir ssh
+#1505208033
+sudo docker-compose up --build
+#1505213294
+ssh -i .ssh/cuttlerat.pem ubuntu@Balancer
+#1505214352
+scp -r ubuntu@Balancer:/root/.ssh/ ssh/
+#1505214370
+ssh ubuntu@Master
+#1505214383
+scp -i ~/.ssh/cuttlerat.pem -r ubuntu@Balancer:/root/.ssh/ ssh/
+#1505214454
+scp -i ~/.ssh/cuttlerat.pem -r ubuntu@Balancer:~/ssh/ ssh/
+#1505214457
+ls
+#1505214542
+scp -i ~/.ssh/cuttlerat.pem -r ssh/ssh/ ubuntu@Master:~/
+#1505214559
+scp -i ~/.ssh/cuttlerat.pem -r ssh/ssh/ ubuntu@Slave:~/
+#1505214566
+scp -i ~/.ssh/cuttlerat.pem -r ssh/ssh/ ubuntu@Replica:~/
+#1505214639
+ssh ubuntu@Balancer
+#1505214647
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@Balancer
+#1505215524
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@Replica
+#1505217734
+cd Git/pybot/
+#1505217740
+vim tokens.py
+#1505217750
+sudo docker-compose up --build
+#1505120159
+ssh -p 10021 root@46.101.237.91
+#1505120161
+ssh -p 10023 root@46.101.237.91
+#1505120164
+ssh -p 10046 root@46.101.237.91
+#1505120168
+ssh -p 10644 root@46.101.237.91
+#1505120206
+ssh -p 22 root@46.101.237.91
+#1505120217
+ssh -p 1044 root@46.101.237.91
+#1505120222
+ssh -p 1000 root@46.101.237.91
+#1505120227
+ssh -p 20044 root@46.101.237.91
+#1505120230
+ssh -p 10044 root@46.101.237.91
+#1505120236
+ssh -p 10048 root@46.101.237.91
+#1505120563
+rm ansible.zip 
+#1505120566
+rm -r ansible/
+#1505120574
+rm *yml
+#1505120575
+ks
+#1505200600
+pavucontrol 
+#1505203627
+cd pybot/
+#1505204919
+nix-env -iA nixos.pythonpip
+#1505204926
+nix-env -qa | grep pip
+#1505205002
+vim requirements 
+#1505206982
+vim dockerfiles/pybot.Dockerfile 
+#1505207065
+vim dockerfiles/pybot_preinstall.Dockerfile 
+#1505207218
+mv pybot.Dockerfile dockerfiles/
+#1505207223
+vim docker-compose.yml
+#1505208101
+vim pybot.py 
+#1505210542
+gcp "Add cmd command"
+#1505211991
+cd Git/
+#1505211992
+ls
+#1505211997
+cd 
+#1505212000
+cd /etc/nixos/
+#1505212178
+ssh -i ~/.ssh/cuttlerat.pem 
+#1505214404
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@Balancer
+#1505214792
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@Replica
+#1505217391
+sudo vim configuration.nix 
+#1505217991
+sudo nixos-rebuild switch
+#1505218116
+cd
+#1505218127
+sed 57d .ssh/known_hosts 
+#1505218130
+sed -i 57d .ssh/known_hosts 
+#1505218131
+ssh -i ~/.ssh/cuttlerat.pem ububntu@Master
+#1505218138
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@Master
+#1505218414
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@Slave
+#1505218414
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@Slave
+#1505224253
+sed -i 57d ~/.ssh/known_hosts 
+#1505224254
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@Balancer
+#1505228478
+scp -i ~/.ssh/cuttlerat.pem ubuntu@Master:~/pg* .
+#1505228479
+ls
+#1505220202
+sed -i 59d ~/.ssh/known_hosts 
+#1505220203
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@Slave
+#1505218414
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@Slave
+#1505220023
+cd /etc/nixos/
+#1505220026
+sudo vim configuration.nix 
+#1505220062
+sudo nixos-rebuild switch
+#1505220181
+sed 59d ~/.ssh/known_hosts
+#1505220185
+sed -i 59d ~/.ssh/known_hosts
+#1505220186
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@Master
+#1505200600
+pavucontrol 
+#1505204093
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@35.158.224.85
+#1505217551
+cd Git/pybot/
+#1505217552
+ls
+#1505217554
+vim pybot.py 
+#1505217937
+gcp "Fixed pinger delete"
+#1505224342
+vim change.sh
+#1505224392
+bash change.sh 
+#1505224400
+git push --force --tags origin 'refs/heads/*'
+#1505224429
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@cuttlerat.ru
+#1505200587
+ambient 
+#1505217551
+cd Git/pybot/
+#1505217554
+vim pybot.py 
+#1505217937
+gcp "Fixed pinger delete"
+#1505224342
+vim change.sh
+#1505224392
+bash change.sh 
+#1505224400
+git push --force --tags origin 'refs/heads/*'
+#1505224429
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@cuttlerat.ru
+#1505200587
+ambient 
+#1505296752
+sudo nix-env -u '*'
+#1505298582
+cd Git/
+#1505298585
+cd teamcity/
+#1505301274
+cd ansible/n
+#1505301276
+cd ansible/
+#1505301300
+cd env/
+#1505301303
+vim commons-test.env 
+#1505301313
+sudo vim commons-test.env 
+#1505301322
+cd ../../
+#1505301324
+vim docker
+#1505301326
+vim docker-compose.yml 
+#1505303210
+sudo nix-env -iA nixos.minikube
+#1505303524
+sudo nix-env -iA nixos.kubectl
+#1505303534
+sudo nix-env -qa | grep kubectl
+#1505303696
+mkdir kubectl
+#1505303697
+cd kubectl/
+#1505303698
+curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+#1505303719
+ls
+#1505303724
+chmod u+x kubectl 
+#1505303731
+mv kubectl ~/bin/
+#1505303733
+cd
+#1505303737
+rm -r kubectl/
+#1505303741
+kubectl --version
+#1505304041
+n
+#1505304052
+minikube version
+#1505304065
+VirtualBox --version
+#1505304125
+nix-env -qa description='.*VirtualBox.*''
+#1505304127
+nix-env -qa description='.*VirtualBox.*'
+#1505304134
+nix-env -qa description='*VirtualBox*'
+#1505304145
+nix-env -qa | grep VirtualBox
+#1505304164
+nix-env --uninstall VirtualBox
+#1505304174
+nix-env -iA nixos.VirtualBox
+#1505304181
+nix-env -iA nixos.virtualbox
+#1505304208
+minikube start
+#1505304252
+sudo minikube start
+#1505304357
+VirtualBox 
+#1505304357
+VirtualBox 
+#1505305761
+cd Git/
+#1505305763
+cd kubernetes/
+#1505305763
+ls
+#1505313624
+ssh dreamkas@beta.dreamkas.ru
+#1505305763
+ls
+#1505313448
+cd .ssh/
+#1505313452
+cat id_rsa.pub 
+#1505313494
+echo $[1024 * 8]
+#1505313502
+ssh-keygen 
+#1505313517
+ssh-keygen --help
+#1505313523
+ssh-keygen -b 8192
+#1505313535
+cd
+#1505313550
+cat ~/.ssh/id_rsa.pub 
+#1505313558
+ssh-keygen -b 28192
+#1505313563
+ssh-keygen -b 16384
+#1505313581
+cat test.pub 
+#1505307453
+cd Git/pybot/
+#1505307453
+ls
+#1505307455
+vim pybot.py 
+#1505307459
+vim docker
+#1505307462
+vim docker-compose.yml 
+#1505120575
+ks
+#1505200600
+pavucontrol 
+#1505204051
+cd Git/pybot/
+#1505204075
+vim tokens.py
+#1505204168
+sudo docker-compose up --buidl
+#1505204591
+vim tokens.py 
+#1505207996
+cd fastpost/
+#1505207998
+vim docker
+#1505208025
+cd -
+#1505214349
+mkdir ssh
+#1505213294
+ssh -i .ssh/cuttlerat.pem ubuntu@Balancer
+#1505214352
+scp -r ubuntu@Balancer:/root/.ssh/ ssh/
+#1505214370
+ssh ubuntu@Master
+#1505214383
+scp -i ~/.ssh/cuttlerat.pem -r ubuntu@Balancer:/root/.ssh/ ssh/
+#1505214454
+scp -i ~/.ssh/cuttlerat.pem -r ubuntu@Balancer:~/ssh/ ssh/
+#1505214542
+scp -i ~/.ssh/cuttlerat.pem -r ssh/ssh/ ubuntu@Master:~/
+#1505214559
+scp -i ~/.ssh/cuttlerat.pem -r ssh/ssh/ ubuntu@Slave:~/
+#1505214566
+scp -i ~/.ssh/cuttlerat.pem -r ssh/ssh/ ubuntu@Replica:~/
+#1505214639
+ssh ubuntu@Balancer
+#1505214647
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@Balancer
+#1505215524
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@Replica
+#1505217734
+cd Git/pybot/
+#1505217740
+vim tokens.py
+#1505120159
+ssh -p 10021 root@46.101.237.91
+#1505120161
+ssh -p 10023 root@46.101.237.91
+#1505120164
+ssh -p 10046 root@46.101.237.91
+#1505120168
+ssh -p 10644 root@46.101.237.91
+#1505120206
+ssh -p 22 root@46.101.237.91
+#1505120217
+ssh -p 1044 root@46.101.237.91
+#1505120222
+ssh -p 1000 root@46.101.237.91
+#1505120227
+ssh -p 20044 root@46.101.237.91
+#1505120230
+ssh -p 10044 root@46.101.237.91
+#1505120236
+ssh -p 10048 root@46.101.237.91
+#1505120563
+rm ansible.zip 
+#1505120566
+rm -r ansible/
+#1505120574
+rm *yml
+#1505120575
+ks
+#1505200600
+pavucontrol 
+#1505204919
+nix-env -iA nixos.pythonpip
+#1505204926
+nix-env -qa | grep pip
+#1505205002
+vim requirements 
+#1505206982
+vim dockerfiles/pybot.Dockerfile 
+#1505207065
+vim dockerfiles/pybot_preinstall.Dockerfile 
+#1505207218
+mv pybot.Dockerfile dockerfiles/
+#1505207223
+vim docker-compose.yml
+#1505210542
+gcp "Add cmd command"
+#1505211991
+cd Git/
+#1505212000
+cd /etc/nixos/
+#1505212178
+ssh -i ~/.ssh/cuttlerat.pem 
+#1505214404
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@Balancer
+#1505214792
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@Replica
+#1505217391
+sudo vim configuration.nix 
+#1505217991
+sudo nixos-rebuild switch
+#1505218116
+cd
+#1505218127
+sed 57d .ssh/known_hosts 
+#1505218130
+sed -i 57d .ssh/known_hosts 
+#1505218131
+ssh -i ~/.ssh/cuttlerat.pem ububntu@Master
+#1505218138
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@Master
+#1505218414
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@Slave
+#1505218414
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@Slave
+#1505224253
+sed -i 57d ~/.ssh/known_hosts 
+#1505224254
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@Balancer
+#1505228478
+scp -i ~/.ssh/cuttlerat.pem ubuntu@Master:~/pg* .
+#1505220202
+sed -i 59d ~/.ssh/known_hosts 
+#1505220203
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@Slave
+#1505218414
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@Slave
+#1505220023
+cd /etc/nixos/
+#1505220026
+sudo vim configuration.nix 
+#1505220062
+sudo nixos-rebuild switch
+#1505220181
+sed 59d ~/.ssh/known_hosts
+#1505220185
+sed -i 59d ~/.ssh/known_hosts
+#1505220186
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@Master
+#1505200600
+pavucontrol 
+#1505204093
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@35.158.224.85
+#1505217551
+cd Git/pybot/
+#1505217937
+gcp "Fixed pinger delete"
+#1505224342
+vim change.sh
+#1505200587
+ambient 
+#1505217551
+cd Git/pybot/
+#1505217937
+gcp "Fixed pinger delete"
+#1505224342
+vim change.sh
+#1505200587
+ambient 
+#1505296752
+sudo nix-env -u '*'
+#1505298582
+cd Git/
+#1505298585
+cd teamcity/
+#1505301274
+cd ansible/n
+#1505301276
+cd ansible/
+#1505301300
+cd env/
+#1505301303
+vim commons-test.env 
+#1505301313
+sudo vim commons-test.env 
+#1505301322
+cd ../../
+#1505301324
+vim docker
+#1505303210
+sudo nix-env -iA nixos.minikube
+#1505303524
+sudo nix-env -iA nixos.kubectl
+#1505303534
+sudo nix-env -qa | grep kubectl
+#1505303696
+mkdir kubectl
+#1505303697
+cd kubectl/
+#1505303698
+curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+#1505303724
+chmod u+x kubectl 
+#1505303731
+mv kubectl ~/bin/
+#1505303733
+cd
+#1505303737
+rm -r kubectl/
+#1505303741
+kubectl --version
+#1505304041
+n
+#1505304052
+minikube version
+#1505304065
+VirtualBox --version
+#1505304125
+nix-env -qa description='.*VirtualBox.*''
+#1505304127
+nix-env -qa description='.*VirtualBox.*'
+#1505304134
+nix-env -qa description='*VirtualBox*'
+#1505304145
+nix-env -qa | grep VirtualBox
+#1505304164
+nix-env --uninstall VirtualBox
+#1505304174
+nix-env -iA nixos.VirtualBox
+#1505304181
+nix-env -iA nixos.virtualbox
+#1505304357
+VirtualBox 
+#1505304907
+minikube start
+#1505305119
+kubectl get pods
+#1505305351
+cd .minikube/
+#1505305353
+ls -la
+#1505305356
+cd certs/
+#1505305391
+sudo kubectl config set-cluster minikube --server=https://kubernetes:8443 --certificate-authority=~/.minikube/ca.crt
+#1505305410
+sudo kubectl config set-cluster minikube --server=https://kubernetes:8443 --certificate-authority=/.minikube/ca.crt
+#1505305412
+sudo kubectl config set-cluster minikube --server=https://kubernetes:8443 --certificate-authority=.minikube/ca.crt
+#1505305426
+sudo kubectl config set-cluster minikube --server=https://kubernetes:8443 --certificate-authority=.minikube/certs/ca.crt
+#1505305441
+cd .minikube/certs/
+#1505305458
+sudo kubectl config set-cluster minikube --server=https://kubernetes:8443 --certificate-authority=/home/rat/.minikube/certs/ca.pem
+#1505305459
+pwd
+#1505305462
+cd 
+#1505305486
+sudo minikube status
+#1505305524
+minikube ip
+#1505305529
+sudo minikube ip
+#1505305540
+sudo kubectl config set-cluster minikube --server=https://192.168.99.100:8443 --certificate-authority=/home/rat/.minikube/certs/ca.pem
+#1505305580
+sudo kubectl config set-cluster minikube --server=https://192.168.99.100:8443 --certificate-authority=/home/rat/.minikube/certs/ca.crt
+#1505305590
+cd /home/rat/.minikube/c
+#1505305591
+cd /home/rat/.minikube/certs/
+#1505305615
+cd config/
+#1505305631
+sudo kubectl config set-cluster minikube
+#1505305640
+minikube stop
+#1505305645
+sudo minikube stop
+#1505305671
+sudo minikube start
+#1505305851
+sudo kubectl get nodes
+#1505306650
+sudo minikube docker-env | Invoke-Expression
+#1505306653
+sudo minikube docker-env 
+#1505306680
+eval $(sudo minikube docker-env)
+#1505306689
+docekr ps
+#1505306721
+cd ../Git/pybot/
+#1505306726
+sudo docker-compose down
+#1505306784
+docker ps
+#1505306786
+sudo docker ps
+#1505306798
+sudo echo $DOCKER_HOST 
+#1505306850
+sudo docker-compose up --buld
+#1505306852
+sudo docker-compose up --build
+#1505306884
+docker images
+#1505307013
+gcp "Update docker-compose.yml"
+#1505307021
+git pull
+#1505307030
+git push
+#1505307079
+git config --global user.name cuttlerat
+#1505307088
+git config --global user.email avkioller@gmail.co,
+#1505307089
+git config --global user.email avkioller@gmail.com
+#1505307092
+git config 
+#1505307097
+git config --get
+#1505307101
+git config --get-all
+#1505307109
+git config -l
+#1505307136
+cd pybot/
+#1505307138
+cd .git/
+#1505307142
+cd refs/original/
+#1505307145
+rm -r refs/
+#1505307152
+bash change.sh 
+#1505307164
+git push --force --tags origin 'refs/heads/*'
+#1505307177
+rm change.sh 
+#1505307179
+git status
+#1505307185
+gcp
+#1505307238
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@cuttlerat.ru
+#1505307370
+gbc dev_kubernetes
+#1505307384
+vim pybot_k8s.yml
+#1505312808
+sudo minikube dashboard 
+#1505312850
+sudo kubectl get services
+#1505312864
+sudo kubectl get deployment
+#1505312866
+sudo kubectl get deploy
+#1505313365
+sudo kubectl delete deployments
+#1505313371
+sudo kubectl get deployments
+#1505313376
+sudo kubectl delete deployments demo-backend-deployment
+#1505313387
+sudo kubectl delete service demo-backend-service
+#1505313771
+sudo docker-compose build -f
+#1505313775
+sudo docker-compose -f build 
+#1505313778
+sudo docker-compose build 
+#1505313784
+sudo docker-compose push
+#1505313806
+sudo kubectl help
+#1505313816
+sudo kubectl update
+#1505313851
+docker run --rm -it pybot
+#1505313887
+ды
+#1505313894
+rm \\ 
+#1505313898
+cd data/
+#1505313902
+vim pybot
+#1505314409
+vim pybot.py 
+#1505314638
+cd dockerfiles/
+#1505314641
+vim pybot.Dockerfile 
+#1505314670
+sudo docker run --rm -it pybot
+#1505314723
+cd ../
+#1505314732
+sudo kubectl get al
+#1505314733
+sudo kubectl get all
+#1505314745
+sudo kubectl delete svc/pyservice
+#1505314772
+sudo docker images
+#1505314905
+vim pybot_k8s.yml 
+#1505314916
+vim docker-compose.yml 
+#1505314926
+sudo docker-compose build
+#1505314933
+sudo kubectl delete deploy/pybot
+#1505314938
+sudo kubectl apply -f pybot_k8s.yml 
+#1505314942
+sudo kubectl get pods
+#1505314983
+sudo kubectl describe pod pybot-2433174331-ncmp9
+#1505315060
+eval $(minikube docker-env)
+#1505315064
+sudo eval $(minikube docker-env)
+#1505315068
+sudo eval $(sudo minikube docker-env)
+#1505315099
+docker-compose version
+#1505315120
+ls
+#1505315122
+sudo su
+#1505308289
+ambient
+#1505375208
+netstat -tunalp
+#1505312808
+sudo minikube dashboard 
+#1505312850
+sudo kubectl get services
+#1505312864
+sudo kubectl get deployment
+#1505312866
+sudo kubectl get deploy
+#1505313365
+sudo kubectl delete deployments
+#1505313371
+sudo kubectl get deployments
+#1505313376
+sudo kubectl delete deployments demo-backend-deployment
+#1505313387
+sudo kubectl delete service demo-backend-service
+#1505313771
+sudo docker-compose build -f
+#1505313775
+sudo docker-compose -f build 
+#1505313778
+sudo docker-compose build 
+#1505313784
+sudo docker-compose push
+#1505313806
+sudo kubectl help
+#1505313816
+sudo kubectl update
+#1505313851
+docker run --rm -it pybot
+#1505313887
+ды
+#1505313894
+rm \\ 
+#1505313898
+cd data/
+#1505313902
+vim pybot
+#1505314409
+vim pybot.py 
+#1505314638
+cd dockerfiles/
+#1505314641
+vim pybot.Dockerfile 
+#1505314670
+sudo docker run --rm -it pybot
+#1505314732
+sudo kubectl get al
+#1505314733
+sudo kubectl get all
+#1505314745
+sudo kubectl delete svc/pyservice
+#1505314772
+sudo docker images
+#1505314905
+vim pybot_k8s.yml 
+#1505314933
+sudo kubectl delete deploy/pybot
+#1505314938
+sudo kubectl apply -f pybot_k8s.yml 
+#1505314942
+sudo kubectl get pods
+#1505314983
+sudo kubectl describe pod pybot-2433174331-ncmp9
+#1505315060
+eval $(minikube docker-env)
+#1505315064
+sudo eval $(minikube docker-env)
+#1505315068
+sudo eval $(sudo minikube docker-env)
+#1505315099
+docker-compose version
+#1505315122
+sudo su
+#1505308289
+ambient
+#1505373431
+sudo minikube start
+#1505373758
+cd Git/pybot/
+#1505373769
+sudo /home/rat/bin/kubectl replace --force -f pybot_k8s.yml 
+#1505373802
+sudo /home/rat/bin/kubectl logs pybot-3304411659-hs6fm
+#1505373985
+sudo /home/rat/bin/kubectl delete rs/pybot-2433174331
+#1505373991
+
+#1505374005
+sudo /home/rat/bin/kubectl logs -f pybot-3304411659-hs6fm
+#1505374021
+sudo /home/rat/bin/kubectl logs -f pybot-3304411659-c2xw0
+#1505374096
+sudo /home/rat/bin/kubectl logs pybot
+#1505374102
+sudo /home/rat/bin/kubectl logs deploy/pybot
+#1505374242
+sudo /home/rat/bin/kubectl delete rs/pybot-3304411659
+#1505374662
+git clone NAME                  DESIRED   CURRENT   READY     AGE
+#1505374673
+git clone git@github.com:paunin/PostDock.git
+#1505374697
+cd P
+#1505374701
+cd PostDock/
+#1505374717
+sudo docker-compose build
+#1505374815
+vim docker-compose
+#1505374818
+vim docker-compose.yml 
+#1505375024
+kubectl create -f ./namespace/
+#1505375055
+sudo /home/rat/bin/kubectl create -f ./namespace/
+#1505375061
+sudo /home/rat/bin/kubectl create -f ./configs/
+#1505375068
+sudo /home/rat/bin/kubectl create -f ./services/
+#1505375074
+sudo /home/rat/bin/kubectl create -f ./nodes/
+#1505375079
+sudo /home/rat/bin/kubectl create -f ./pgpool/
+#1505375090
+sudo /home/rat/bin/kubectl get pod --namespace=mysystem
+#1505375113
+watch sudo /home/rat/bin/kubectl get pod --namespace=mysystem
+#1505375229
+sudo /home/rat/bin/kubectl get servcies
+#1505375238
+sudo /home/rat/bin/kubectl get services
+#1505375261
+sudo /home/rat/bin/kubectl get pod | grep db-node  | awk '{print $1}' | while read pod ; do echo "$pod": ; kubectl  exec $pod -- bash -c 'gosu postgres repmgr cluster show' ; done
+#1505375280
+sudo /home/rat/bin/kubectl get pod | grep db-node  | awk '{print $1}'
+#1505375283
+sudo /home/rat/bin/kubectl get pod 
+#1505375288
+sudo /home/rat/bin/kubectl get pods
+#1505375293
+sudo /home/rat/bin/kubectl get all
+#1505375310
+sudo /home/rat/bin/kubectl get all --namespace=mysystem
+#1505375326
+sudo /home/rat/bin/kubectl get pod --namespace=mysystem | grep db-node  | awk '{print $1}' | while read pod ; do echo "$pod": ; kubectl  exec $pod -- bash -c 'gosu postgres repmgr cluster show' ; done
+#1505375360
+kubectl get pod --namespace=mysystem | grep pgpool | awk '{print $1 }' | while read pod; do echo "$pod": ;kubectl exec $pod -- bash -c 'PGCONNECT_TIMEOUT=$CHECK_PGCONNECT_TIMEOUT  PGPASSWORD=$CHECK_PASSWORD psql -U $CHECK_USER -h 127.0.0.1 template1 -c "show pool_nodes"' ; done
+#1505375381
+cd configs/
+#1505375384
+vim config.yml 
+#1505375407
+vim secret.yml 
+#1505375439
+cd nodes/
+#1505375444
+vim node1.yml 
+#1505375476
+cd services/
+#1505375480
+vim service1.yml 
+#1505375500
+cd pgpool/
+#1505375503
+vim pgpool.yml 
+#1505375539
+kubectl get pod | grep pgpool | awk '{print $1 }' | while read pod; do echo "$pod": ;kubectl exec $pod -- bash -c 'PGCONNECT_TIMEOUT=$CHECK_PGCONNECT_TIMEOUT  PGPASSWORD=$CHECK_PASSWORD psql -U $CHECK_USER -h 127.0.0.1 template1 -c "show pool_nodes"' ; done
+#1505376836
+cd k8s/
+#1505376837
+ls -la
+#1505391435
+cd example1/
+#1505391439
+vim pgpool/
+#1505391453
+grep -r 8080 .
+#1505391460
+grep -r 8080 
+#1505391463
+grep -r 8080 ./
+#1505391465
+grep -r 8 ./
+#1505391501
+vim nodes/node1.yml 
+#1505394217
+cd ../
+#1505394217
+ls
+#1505397655
+cal
+#1505397657
+cal -3
+#1505307138
+cd .git/
+#1505307142
+cd refs/original/
+#1505307145
+rm -r refs/
+#1505307152
+bash change.sh 
+#1505307164
+git push --force --tags origin 'refs/heads/*'
+#1505307177
+rm change.sh 
+#1505307179
+git status
+#1505307185
+gcp
+#1505307370
+gbc dev_kubernetes
+#1505307384
+vim pybot_k8s.yml
+#1505312808
+sudo minikube dashboard 
+#1505312850
+sudo kubectl get services
+#1505312864
+sudo kubectl get deployment
+#1505312866
+sudo kubectl get deploy
+#1505313365
+sudo kubectl delete deployments
+#1505313371
+sudo kubectl get deployments
+#1505313376
+sudo kubectl delete deployments demo-backend-deployment
+#1505313387
+sudo kubectl delete service demo-backend-service
+#1505313771
+sudo docker-compose build -f
+#1505313775
+sudo docker-compose -f build 
+#1505313778
+sudo docker-compose build 
+#1505313784
+sudo docker-compose push
+#1505313806
+sudo kubectl help
+#1505313816
+sudo kubectl update
+#1505313851
+docker run --rm -it pybot
+#1505313887
+ды
+#1505313894
+rm \\ 
+#1505313898
+cd data/
+#1505313902
+vim pybot
+#1505314409
+vim pybot.py 
+#1505314638
+cd dockerfiles/
+#1505314641
+vim pybot.Dockerfile 
+#1505314670
+sudo docker run --rm -it pybot
+#1505314732
+sudo kubectl get al
+#1505314745
+sudo kubectl delete svc/pyservice
+#1505314772
+sudo docker images
+#1505314905
+vim pybot_k8s.yml 
+#1505314916
+vim docker-compose.yml 
+#1505314926
+sudo docker-compose build
+#1505314933
+sudo kubectl delete deploy/pybot
+#1505314938
+sudo kubectl apply -f pybot_k8s.yml 
+#1505314983
+sudo kubectl describe pod pybot-2433174331-ncmp9
+#1505315060
+eval $(minikube docker-env)
+#1505315064
+sudo eval $(minikube docker-env)
+#1505315068
+sudo eval $(sudo minikube docker-env)
+#1505315099
+docker-compose version
+#1505315122
+sudo su
+#1505308289
+ambient
+#1505375208
+netstat -tunalp
+#1505375940
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@cuttlerat.ru
+#1505397744
+minikube status
+#1505397748
+sudo kubectl delete svc/pyservice
+#1505397786
+sudo kubectl get all --namespace=all
+#1505397788
+sudo kubectl get all --namespace
+#1505397793
+sudo kubectl get all --namespace=myservice
+#1505397805
+cd Git/P
+#1505397808
+cd Git/PostDock/
+#1505397811
+cd k8s/example1/
+#1505397814
+cd namespace/
+#1505397827
+sudo kubectl delete all --namespace=mysystem
+#1505397845
+sudo kubectl delete rs/mysystem-database-pgpool-619983112 --namespace=mysystem
+#1505397861
+sudo kubectl delete mysystem --namespace=mysystem
+#1505397879
+sudo kubectl delete deploy/mysystem-database-pgpool --namespace=mysystem
+#1505397895
+sudo kubectl delete --namespace=mysystem statefulsets/mysystem-db-node5
+#1505397910
+sudo kubectl delete --namespace=mysystem rs/mysystem-database-pgpool-619983112
+#1505397932
+sudo kubectl delete --namespace=mysystem po/mysystem-db-node1-0
+#1505397938
+sudo kubectl delete --namespace=mysystem svc/mysystem-db-node1-service
+#1505397981
+sudo kubectl delete --namespace=mysystem svc/mysystem-db-node2-service
+#1505397984
+sudo kubectl delete --namespace=mysystem svc/mysystem-db-node3-service
+#1505397987
+sudo kubectl delete --namespace=mysystem svc/mysystem-db-node4-service
+#1505397994
+sudo kubectl delete --namespace=mysystem svc/mysystem-pgpool-service
+#1505398000
+sudo kubectl delete --namespace=mysystem statefulsets/mysystem-db-node1
+#1505398039
+sudo kubectl delete --namespace=mysystem svc/mysystem-db-node5-service
+#1505398043
+sudo kubectl delete --namespace=mysystem po/mysystem-db-node2-0
+#1505398046
+sudo kubectl delete --namespace=mysystem po/mysystem-db-node3-0
+#1505398050
+sudo kubectl delete --namespace=mysystem po/mysystem-db-node4-0
+#1505398055
+sudo kubectl delete --namespace=mysystem svc/mysystem-db-node5-service 
+#1505398081
+sudo kubectl delete mysystem
+#1505398086
+sudo kubectl delete mysystem --all
+#1505398153
+sudo kubectl delete --all --namespace=mysystem
+#1505398160
+sudo kubectl delete --allmysystem
+#1505398162
+sudo kubectl delete --all mysystem
+#1505398182
+sudo kubectl delete namespace mysystem
+#1505398209
+sudo kubectl get all --namespace=mysystem
+#1505398214
+cd ../../../
+#1505398217
+cd ../
+#1505398221
+rm -r PostDock/
+#1505398225
+sudo rm -r PostDock/
+#1505398268
+git clone git@github.com:CrunchyData/crunchy-containers.git
+#1505398330
+cd crunchy-containers/
+#1505398399
+sudo PATH=$PATH ALLOW_PRIVILEGED=true ./hack/local-up-cluster.sh
+#1505398583
+sudo nix-env -iA nixos.nfs-utils
+#1505398621
+sudo systemctl start rpcbind
+#1505398628
+sudo systemctl start nfs-server
+#1505398642
+sudo mkdir /nfs
+#1505398651
+sudo vim /etc/exports
+#1505398662
+sudo vim /etc/nixos/configuration.nix 
+#1505399204
+sudo vim /etc/nixos//configuration.nix 
+#1505399221
+sudo nixos-rebuild switch
+#1505399660
+vim /etc/exports 
+#1505399666
+cd $HOME
+#1505399674
+cd Git/crunchy-containers/
+#1505399683
+cd examples/kube/statefulset
+#1505399688
+docker pull crunchydata/crunchy-postgres:centos7-9.5-1.2.6
+#1505399691
+sudo docker pull crunchydata/crunchy-postgres:centos7-9.5-1.2.6
+#1505399702
+sudo docker pull crunchydata/crunchy-postgres
+#1505399708
+sudo docker pull crunchy-postgres
+#1505399751
+./run.sh 
+#1505399780
+sudo nix-env -iA nixos.envsubs
+#1505399783
+sudo nix-env -iA nixos.envsubst
+#1505399788
+sudo nix-env -qa " grep envsubst
+#1505399792
+sudo nix-env -qa | grep envsubst
+#1505399895
+sudo nix-env -iA nixos.gettext-base
+#1505399898
+sudo nix-env -iA nixos.gettext
+#1505399907
+sudo ./run.sh 
+#1505399918
+sudo kubectl get namespaces
+#1505399999
+ping pgset-master
+#1505400036
+ping -p 5432 pgset-master
+#1505400040
+ping --port 5432 pgset-master
+#1505400054
+nix-env -iA nixos.telnet
+#1505400059
+telnet pgset-master 5432
+#1505400083
+telnet 10.0.0.43 5432
+#1505400379
+vim run.sh 
+#1505400389
+ls
+#1505400395
+vim pv1.json 
+#1505400403
+vim set.json
+#1505400421
+export CCP_IMAGE_TAG=centos7-9.5-1.2.6
+#1505400483
+sudo docker pull crunchydata/centos7-9.6-1.5.1
+#1505400498
+sudo docker pull crunchydata/crunchy-postgres:centos7-9.6-1.5.1
+#1505400575
+м
+#1505400645
+sudo ./cleanup.sh 
+#1505400677
+sudo kubectl delete statefulsets/pgset
+#1505400706
+vim cleanup.sh 
+#1505400711
+sudo ./cleanup.sh
+#1505400720
+sudo CCP_IMAGE_TAG=centos7-9.5-1.2.6 ./run.sh 
+#1505400735
+sudo kubectl get all
+#1505400742
+sudo kubectl scale statefulset pgset --replicas=3
+#1505400760
+sudo vim run.sh 
+#1505400787
+sudo CCP_IMAGE_TAG=centos7-9.5-1.2.6 BUILDBASE=$HOME/Git/crunchy-containers ./run.sh 
+#1505400793
+sudo kubectl get pods
+#1505400802
+watch sudo kubectl get pods
+#1505400519
+ambient 
+#1505474085
+sudo kubectl get pods
+#1505474140
+sudo kubectl delete pgset
+#1505474164
+sudo kubectl delete svc/pgset
+#1505474169
+sudo kubectl delete svc/pgset-master
+#1505474173
+sudo kubectl delete svc/pgset-replica
+#1505474177
+sudo kubectl delete svc/pyservice
+#1505474183
+sudo kubectl delete po/pgset-0
+#1505474187
+sudo kubectl delete statefulsets/pgset
+#1505474187
+sudo kubectl delete statefulsets/pgset
+#1505485086
+sudo docker ps
+#1505485104
+sudo docker exec 909 cat /pybot/pybot
+#1505485107
+sudo docker exec 909 cat /pybot/pybot.py
+#1505485119
+sudo docker exec 909 cat /pybot/pybot.py | grep cat_5
+#1505485120
+sudo docker exec 909 cat /pybot/pybot.py | grep cat_1
+#1505474183
+sudo kubectl delete po/pgset-0
+#1505474187
+sudo kubectl delete statefulsets/pgset
+#1505475472
+cd ../
+#1505484429
+sudo minikube stop
+#1505484757
+sudo docker run --rm -it python
+#1505485043
+cd rat/Git/
+#1505485045
+cd pybot/
+#1505485045
+ls
+#1505485049
+sudo docker-compose up
+#1505485776
+sudo docker ps
+#1505485776
+sudo docker ps
+#1505488836
+cd Git/pybot/
+#1505488839
+git status
+#1505488848
+git pull
+#1505488857
+git push
+#1505398642
+sudo mkdir /nfs
+#1505398651
+sudo vim /etc/exports
+#1505398662
+sudo vim /etc/nixos/configuration.nix 
+#1505399204
+sudo vim /etc/nixos//configuration.nix 
+#1505399221
+sudo nixos-rebuild switch
+#1505399660
+vim /etc/exports 
+#1505399666
+cd $HOME
+#1505399674
+cd Git/crunchy-containers/
+#1505399683
+cd examples/kube/statefulset
+#1505399688
+docker pull crunchydata/crunchy-postgres:centos7-9.5-1.2.6
+#1505399691
+sudo docker pull crunchydata/crunchy-postgres:centos7-9.5-1.2.6
+#1505399702
+sudo docker pull crunchydata/crunchy-postgres
+#1505399708
+sudo docker pull crunchy-postgres
+#1505399751
+./run.sh 
+#1505399780
+sudo nix-env -iA nixos.envsubs
+#1505399783
+sudo nix-env -iA nixos.envsubst
+#1505399788
+sudo nix-env -qa " grep envsubst
+#1505399792
+sudo nix-env -qa | grep envsubst
+#1505399895
+sudo nix-env -iA nixos.gettext-base
+#1505399898
+sudo nix-env -iA nixos.gettext
+#1505399907
+sudo ./run.sh 
+#1505399918
+sudo kubectl get namespaces
+#1505399999
+ping pgset-master
+#1505400036
+ping -p 5432 pgset-master
+#1505400040
+ping --port 5432 pgset-master
+#1505400054
+nix-env -iA nixos.telnet
+#1505400059
+telnet pgset-master 5432
+#1505400083
+telnet 10.0.0.43 5432
+#1505400379
+vim run.sh 
+#1505400395
+vim pv1.json 
+#1505400403
+vim set.json
+#1505400421
+export CCP_IMAGE_TAG=centos7-9.5-1.2.6
+#1505400483
+sudo docker pull crunchydata/centos7-9.6-1.5.1
+#1505400498
+sudo docker pull crunchydata/crunchy-postgres:centos7-9.6-1.5.1
+#1505400575
+м
+#1505400645
+sudo ./cleanup.sh 
+#1505400677
+sudo kubectl delete statefulsets/pgset
+#1505400706
+vim cleanup.sh 
+#1505400711
+sudo ./cleanup.sh
+#1505400720
+sudo CCP_IMAGE_TAG=centos7-9.5-1.2.6 ./run.sh 
+#1505400742
+sudo kubectl scale statefulset pgset --replicas=3
+#1505400760
+sudo vim run.sh 
+#1505400787
+sudo CCP_IMAGE_TAG=centos7-9.5-1.2.6 BUILDBASE=$HOME/Git/crunchy-containers ./run.sh 
+#1505400802
+watch sudo kubectl get pods
+#1505400519
+ambient 
+#1505472893
+sudo minikube status
+#1505473961
+sudo minikube start
+#1505474224
+sudo kubectl delete pgset-0 
+#1505474231
+sudo kubectl delete po/gset-0 
+#1505474235
+sudo kubectl delete po/pgset-0 
+#1505474270
+cd Git/pybot/
+#1505474292
+vim tokens.py
+#1505474313
+sudo kubectl rolling-update pybot
+#1505474321
+sudo kubectl rolling-update --image pybot
+#1505474326
+sudo kubectl rolling-update -h
+#1505474363
+sudo kubectl rolling-update pybot-3304411659 --image=pybot
+#1505474557
+sudo kubectl rolling-update deploy/pybot  --image=pybot
+#1505474564
+sudo kubectl rolling-update pybot --image=pybot
+#1505474615
+sudo kubectl rolling-update pybot-rs --image=pybot
+#1505474636
+sudo kubectl rolling-update pybot-3304411659  --image=pybot
+#1505474744
+sudo kubectl apply -f pybot_k8s.yml 
+#1505474804
+sudo kubectl delete -f pybot_k8s.yml 
+#1505474812
+vim pybot_k8s.yml 
+#1505474889
+sudo kubectl create -f pybot_k8s.yml 
+#1505474902
+curl 10.0.0.1
+#1505474907
+curl 10.0.0.1:443
+#1505474927
+sudo kubectl logs -f pybot
+#1505474936
+sudo kubectl get pods
+#1505474944
+sudo kubectl logs -f pybot-304411659-bz3ld
+#1505474952
+sudo kubectl logs -f pybot-3304411659-bz3ld
+#1505474969
+sudo kubectl logs -f pybot-3304411659-f
+#1505474975
+sudo kubectl logs -f pybot-3304411659-f26m9
+#1505474986
+sudo kubectl logs -f pybot-3304411659-sx8xm
+#1505475008
+sudo kubectl logs -f pybot-3304411659-sx8xm pybot-3304411659-f26m9 pybot-3304411659-bz3ld
+#1505475071
+sudo kubectl logs -f deploy/pybot --all
+#1505475111
+sudo kubectl help
+#1505475122
+sudo kubectl resize help
+#1505475129
+sudo kubectl scale help
+#1505475135
+sudo kubectl scale pybot
+#1505475145
+sudo kubectl scale deploy/pybot
+#1505475151
+sudo kubectl scale deploy/pybot --replicas=1
+#1505475157
+sudo kubectl get all
+#1505475166
+sudo kubectl logs pybot
+#1505475169
+sudo kubectl logs deploy/pybot
+#1505475172
+sudo kubectl logs-f  deploy/pybot
+#1505475175
+sudo kubectl logs -f deploy/pybot
+#1505475204
+sudo kubectl rolling-update deploy/pybot
+#1505475210
+sudo kubectl rolling-update deploy/pybot --image pybot
+#1505475215
+sudo kubectl rolling-update pybot --image pybot
+#1505475223
+sudo kubectl get rs
+#1505475266
+sudo kubectl rollout status deployment pybot
+#1505475272
+sudo kubectl rollout deployment pybot
+#1505475278
+sudo kubectl rollout start deployment pybot
+#1505475282
+sudo kubectl rollout update deployment pybot
+#1505475287
+sudo kubectl rollout help
+#1505475292
+sudo kubectl rollout -h
+#1505475367
+sudo docker-compose build
+#1505475377
+sudo kubectl set image deployment/pybot pybot=pybot
+#1505484436
+;s
+#1505484446
+vim pybot
+#1505484479
+git stash show
+#1505484499
+git stash
+#1505484504
+git stash pop
+#1505484509
+git checkout dev_kubernetes 
+#1505484514
+gcp "Test version"
+#1505484524
+git checkout master 
+#1505484528
+git status
+#1505484532
+vim docker-compose.yml 
+#1505484548
+vim dockerfiles//builder.Dockerfile 
+#1505484565
+ls
+#1505484612
+vim pybot.py 
+#1505485124
+vim pybot.py
+#1505485892
+gcp 
+#1505488754
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@cuttlerat.ru
+#1505485124
+vim pybot.py
+#1505485892
+gcp 
+#1505488754
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@cuttlerat.ru
+#1505717273
+alsamixer 
+#1505717305
+pavucontrol 
+#1505717163
+ambient 
+#1505717163
+ambient 
+#1505718954
+cd Git/pybot/
+#1505718959
+sudo docker-compose up --build
+#1505722382
+sudo nix-env -u '*'
+#1505724713
+sudo nixos-rebuild switch --upgrade
+#1505725091
+ls
+#1505725097
+groups
+#1505725110
+usermod -aG docker rat
+#1505725114
+sudo usermod -aG docker rat
+#1505725120
+group
+#1505725121
+groups 
+#1505725130
+sudo vim /etc/nixos/configuration.nix 
+#1505725314
+groups 
+#1505725317
+ls
+#1505725323
+sudo vim /etc/group 
+#1505725665
+htop
+#1505725669
+screenfetch 
+#1505474363
+sudo kubectl rolling-update pybot-3304411659 --image=pybot
+#1505474557
+sudo kubectl rolling-update deploy/pybot  --image=pybot
+#1505474564
+sudo kubectl rolling-update pybot --image=pybot
+#1505474615
+sudo kubectl rolling-update pybot-rs --image=pybot
+#1505474636
+sudo kubectl rolling-update pybot-3304411659  --image=pybot
+#1505474744
+sudo kubectl apply -f pybot_k8s.yml 
+#1505474804
+sudo kubectl delete -f pybot_k8s.yml 
+#1505474889
+sudo kubectl create -f pybot_k8s.yml 
+#1505474902
+curl 10.0.0.1
+#1505474907
+curl 10.0.0.1:443
+#1505474927
+sudo kubectl logs -f pybot
+#1505474936
+sudo kubectl get pods
+#1505474944
+sudo kubectl logs -f pybot-304411659-bz3ld
+#1505474952
+sudo kubectl logs -f pybot-3304411659-bz3ld
+#1505474969
+sudo kubectl logs -f pybot-3304411659-f
+#1505474975
+sudo kubectl logs -f pybot-3304411659-f26m9
+#1505474986
+sudo kubectl logs -f pybot-3304411659-sx8xm
+#1505475008
+sudo kubectl logs -f pybot-3304411659-sx8xm pybot-3304411659-f26m9 pybot-3304411659-bz3ld
+#1505475071
+sudo kubectl logs -f deploy/pybot --all
+#1505475111
+sudo kubectl help
+#1505475122
+sudo kubectl resize help
+#1505475129
+sudo kubectl scale help
+#1505475135
+sudo kubectl scale pybot
+#1505475145
+sudo kubectl scale deploy/pybot
+#1505475151
+sudo kubectl scale deploy/pybot --replicas=1
+#1505475157
+sudo kubectl get all
+#1505475166
+sudo kubectl logs pybot
+#1505475169
+sudo kubectl logs deploy/pybot
+#1505475172
+sudo kubectl logs-f  deploy/pybot
+#1505475175
+sudo kubectl logs -f deploy/pybot
+#1505475204
+sudo kubectl rolling-update deploy/pybot
+#1505475210
+sudo kubectl rolling-update deploy/pybot --image pybot
+#1505475215
+sudo kubectl rolling-update pybot --image pybot
+#1505475223
+sudo kubectl get rs
+#1505475266
+sudo kubectl rollout status deployment pybot
+#1505475272
+sudo kubectl rollout deployment pybot
+#1505475278
+sudo kubectl rollout start deployment pybot
+#1505475282
+sudo kubectl rollout update deployment pybot
+#1505475287
+sudo kubectl rollout help
+#1505475292
+sudo kubectl rollout -h
+#1505475377
+sudo kubectl set image deployment/pybot pybot=pybot
+#1505484436
+;s
+#1505484479
+git stash show
+#1505484514
+gcp "Test version"
+#1505484548
+vim dockerfiles//builder.Dockerfile 
+#1505485124
+vim pybot.py
+#1505485892
+gcp 
+#1505488754
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@cuttlerat.ru
+#1505485124
+vim pybot.py
+#1505485892
+gcp 
+#1505488754
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@cuttlerat.ru
+#1505717273
+alsamixer 
+#1505717305
+pavucontrol 
+#1505717163
+ambient 
+#1505717163
+ambient 
+#1505718959
+sudo docker-compose up --build
+#1505722382
+sudo nix-env -u '*'
+#1505724713
+sudo nixos-rebuild switch --upgrade
+#1505725097
+groups
+#1505725110
+usermod -aG docker rat
+#1505725114
+sudo usermod -aG docker rat
+#1505725120
+group
+#1505725121
+groups 
+#1505725130
+sudo vim /etc/nixos/configuration.nix 
+#1505725314
+groups 
+#1505725323
+sudo vim /etc/group 
+#1505725665
+htop
+#1505725669
+screenfetch 
+#1505725783
+cd Git/pybot/
+#1505726306
+sudo docker images -a
+#1505726333
+sudo docker images eb1
+#1505726343
+sudo docker images pybot
+#1505727128
+sudo docker-compose push
+#1505727136
+sudo docker-compose push localhost:500
+#1505727183
+sudo docker-compose push pybot
+#1505727212
+sudo docker-compose push localhost:5000
+#1505727220
+vim docker-compose.yml
+#1505727300
+sudo docker-compose build --push
+#1505727456
+sudo docker login localhost:5000
+#1505727483
+sudo docker-compose push 127.0.0.1:5000/pybot
+#1505728180
+sudo docker push 127.0.0.1:5000/pybot
+#1505728417
+vim docker-compose.yml 
+#1505729942
+sudo docker-compose push localhost:5000/pybot
+#1505729997
+vim pybot_k8s.yml 
+#1505730425
+ls
+#1505730426
+vim o
+#1505730429
+vim pybot
+#1505730675
+git stash
+#1505730676
+git checkout master
+#1505730856
+sudo docker tag pybot localhost:5000/pybot:v1
+#1505730857
+sudo docker push localhost:5000/pybot:v1
+#1505730910
+git status
+#1505730916
+rm registry.yml 
+#1505730922
+git checkout dev_kubernetes 
+#1505730927
+git stash pop
+#1505730930
+vim pybot.py 
+#1505730940
+sudo docker-compose buyild
+#1505730953
+sudo docker tag pybot localhost:5000/pybot
+#1505730958
+sudo docker push localhost:5000/pybot
+#1505731014
+sudo docker tag pybot localhost:5000/pybot:v2
+#1505731015
+sudo docker push localhost:5000/pybot:v2
+#1505731044
+gcp
+#1505731054
+git checkout master 
+#1505731076
+sudo docker-compose build
+#1505731078
+sudo docker tag pybot localhost:5000/pybot:latest
+#1505731082
+sudo docker push localhost:5000/pybot:latest
+#1505732011
+cd Git/pybot/
+#1505732011
+ls
+#1505732018
+vim dockerfiles/pybot_preinstall.Dockerfile 
+#1505732032
+vim docker-compose.yml 
+#1505732056
+vim .travis.yml 
+#1505732204
+cd Git/pybot/
+#1505732209
+vim docker-compose.yml 
+#1505732222
+sudo docker-compose up --build
+#1505732306
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@cuttlerat.ru
+#1505735342
+cd
+#1505735347
+vim .bashrc 
+#1505375208
+netstat -tunalp
+#1505375940
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@cuttlerat.ru
+#1505397744
+minikube status
+#1505397748
+sudo kubectl delete svc/pyservice
+#1505397788
+sudo kubectl get all --namespace
+#1505397793
+sudo kubectl get all --namespace=myservice
+#1505397805
+cd Git/P
+#1505397808
+cd Git/PostDock/
+#1505397811
+cd k8s/example1/
+#1505397814
+cd namespace/
+#1505397827
+sudo kubectl delete all --namespace=mysystem
+#1505397845
+sudo kubectl delete rs/mysystem-database-pgpool-619983112 --namespace=mysystem
+#1505397861
+sudo kubectl delete mysystem --namespace=mysystem
+#1505397879
+sudo kubectl delete deploy/mysystem-database-pgpool --namespace=mysystem
+#1505397895
+sudo kubectl delete --namespace=mysystem statefulsets/mysystem-db-node5
+#1505397910
+sudo kubectl delete --namespace=mysystem rs/mysystem-database-pgpool-619983112
+#1505397932
+sudo kubectl delete --namespace=mysystem po/mysystem-db-node1-0
+#1505397938
+sudo kubectl delete --namespace=mysystem svc/mysystem-db-node1-service
+#1505397981
+sudo kubectl delete --namespace=mysystem svc/mysystem-db-node2-service
+#1505397984
+sudo kubectl delete --namespace=mysystem svc/mysystem-db-node3-service
+#1505397987
+sudo kubectl delete --namespace=mysystem svc/mysystem-db-node4-service
+#1505397994
+sudo kubectl delete --namespace=mysystem svc/mysystem-pgpool-service
+#1505398000
+sudo kubectl delete --namespace=mysystem statefulsets/mysystem-db-node1
+#1505398039
+sudo kubectl delete --namespace=mysystem svc/mysystem-db-node5-service
+#1505398043
+sudo kubectl delete --namespace=mysystem po/mysystem-db-node2-0
+#1505398046
+sudo kubectl delete --namespace=mysystem po/mysystem-db-node3-0
+#1505398050
+sudo kubectl delete --namespace=mysystem po/mysystem-db-node4-0
+#1505398055
+sudo kubectl delete --namespace=mysystem svc/mysystem-db-node5-service 
+#1505398081
+sudo kubectl delete mysystem
+#1505398086
+sudo kubectl delete mysystem --all
+#1505398153
+sudo kubectl delete --all --namespace=mysystem
+#1505398160
+sudo kubectl delete --allmysystem
+#1505398162
+sudo kubectl delete --all mysystem
+#1505398182
+sudo kubectl delete namespace mysystem
+#1505398209
+sudo kubectl get all --namespace=mysystem
+#1505398214
+cd ../../../
+#1505398221
+rm -r PostDock/
+#1505398225
+sudo rm -r PostDock/
+#1505398268
+git clone git@github.com:CrunchyData/crunchy-containers.git
+#1505398330
+cd crunchy-containers/
+#1505398399
+sudo PATH=$PATH ALLOW_PRIVILEGED=true ./hack/local-up-cluster.sh
+#1505398583
+sudo nix-env -iA nixos.nfs-utils
+#1505398621
+sudo systemctl start rpcbind
+#1505398628
+sudo systemctl start nfs-server
+#1505398642
+sudo mkdir /nfs
+#1505398651
+sudo vim /etc/exports
+#1505398662
+sudo vim /etc/nixos/configuration.nix 
+#1505399204
+sudo vim /etc/nixos//configuration.nix 
+#1505399221
+sudo nixos-rebuild switch
+#1505399660
+vim /etc/exports 
+#1505399666
+cd $HOME
+#1505399674
+cd Git/crunchy-containers/
+#1505399683
+cd examples/kube/statefulset
+#1505399688
+docker pull crunchydata/crunchy-postgres:centos7-9.5-1.2.6
+#1505399691
+sudo docker pull crunchydata/crunchy-postgres:centos7-9.5-1.2.6
+#1505399702
+sudo docker pull crunchydata/crunchy-postgres
+#1505399708
+sudo docker pull crunchy-postgres
+#1505399751
+./run.sh 
+#1505399780
+sudo nix-env -iA nixos.envsubs
+#1505399783
+sudo nix-env -iA nixos.envsubst
+#1505399788
+sudo nix-env -qa " grep envsubst
+#1505399792
+sudo nix-env -qa | grep envsubst
+#1505399895
+sudo nix-env -iA nixos.gettext-base
+#1505399898
+sudo nix-env -iA nixos.gettext
+#1505399907
+sudo ./run.sh 
+#1505399918
+sudo kubectl get namespaces
+#1505399999
+ping pgset-master
+#1505400036
+ping -p 5432 pgset-master
+#1505400040
+ping --port 5432 pgset-master
+#1505400054
+nix-env -iA nixos.telnet
+#1505400059
+telnet pgset-master 5432
+#1505400083
+telnet 10.0.0.43 5432
+#1505400379
+vim run.sh 
+#1505400395
+vim pv1.json 
+#1505400403
+vim set.json
+#1505400421
+export CCP_IMAGE_TAG=centos7-9.5-1.2.6
+#1505400483
+sudo docker pull crunchydata/centos7-9.6-1.5.1
+#1505400498
+sudo docker pull crunchydata/crunchy-postgres:centos7-9.6-1.5.1
+#1505400575
+м
+#1505400645
+sudo ./cleanup.sh 
+#1505400677
+sudo kubectl delete statefulsets/pgset
+#1505400706
+vim cleanup.sh 
+#1505400711
+sudo ./cleanup.sh
+#1505400720
+sudo CCP_IMAGE_TAG=centos7-9.5-1.2.6 ./run.sh 
+#1505400742
+sudo kubectl scale statefulset pgset --replicas=3
+#1505400760
+sudo vim run.sh 
+#1505400787
+sudo CCP_IMAGE_TAG=centos7-9.5-1.2.6 BUILDBASE=$HOME/Git/crunchy-containers ./run.sh 
+#1505400802
+watch sudo kubectl get pods
+#1505400519
+ambient 
+#1505474140
+sudo kubectl delete pgset
+#1505474164
+sudo kubectl delete svc/pgset
+#1505474169
+sudo kubectl delete svc/pgset-master
+#1505474173
+sudo kubectl delete svc/pgset-replica
+#1505474177
+sudo kubectl delete svc/pyservice
+#1505474183
+sudo kubectl delete po/pgset-0
+#1505474187
+sudo kubectl delete statefulsets/pgset
+#1505474187
+sudo kubectl delete statefulsets/pgset
+#1505485104
+sudo docker exec 909 cat /pybot/pybot
+#1505485107
+sudo docker exec 909 cat /pybot/pybot.py
+#1505485119
+sudo docker exec 909 cat /pybot/pybot.py | grep cat_5
+#1505485120
+sudo docker exec 909 cat /pybot/pybot.py | grep cat_1
+#1505474183
+sudo kubectl delete po/pgset-0
+#1505474187
+sudo kubectl delete statefulsets/pgset
+#1505484757
+sudo docker run --rm -it python
+#1505485043
+cd rat/Git/
+#1505485045
+cd pybot/
+#1505488857
+git push
+#1505398642
+sudo mkdir /nfs
+#1505398651
+sudo vim /etc/exports
+#1505398662
+sudo vim /etc/nixos/configuration.nix 
+#1505399204
+sudo vim /etc/nixos//configuration.nix 
+#1505399221
+sudo nixos-rebuild switch
+#1505399660
+vim /etc/exports 
+#1505399666
+cd $HOME
+#1505399674
+cd Git/crunchy-containers/
+#1505399683
+cd examples/kube/statefulset
+#1505399688
+docker pull crunchydata/crunchy-postgres:centos7-9.5-1.2.6
+#1505399691
+sudo docker pull crunchydata/crunchy-postgres:centos7-9.5-1.2.6
+#1505399702
+sudo docker pull crunchydata/crunchy-postgres
+#1505399708
+sudo docker pull crunchy-postgres
+#1505399751
+./run.sh 
+#1505399780
+sudo nix-env -iA nixos.envsubs
+#1505399783
+sudo nix-env -iA nixos.envsubst
+#1505399788
+sudo nix-env -qa " grep envsubst
+#1505399792
+sudo nix-env -qa | grep envsubst
+#1505399895
+sudo nix-env -iA nixos.gettext-base
+#1505399898
+sudo nix-env -iA nixos.gettext
+#1505399907
+sudo ./run.sh 
+#1505399918
+sudo kubectl get namespaces
+#1505399999
+ping pgset-master
+#1505400036
+ping -p 5432 pgset-master
+#1505400040
+ping --port 5432 pgset-master
+#1505400054
+nix-env -iA nixos.telnet
+#1505400059
+telnet pgset-master 5432
+#1505400083
+telnet 10.0.0.43 5432
+#1505400379
+vim run.sh 
+#1505400395
+vim pv1.json 
+#1505400403
+vim set.json
+#1505400421
+export CCP_IMAGE_TAG=centos7-9.5-1.2.6
+#1505400483
+sudo docker pull crunchydata/centos7-9.6-1.5.1
+#1505400498
+sudo docker pull crunchydata/crunchy-postgres:centos7-9.6-1.5.1
+#1505400575
+м
+#1505400645
+sudo ./cleanup.sh 
+#1505400677
+sudo kubectl delete statefulsets/pgset
+#1505400706
+vim cleanup.sh 
+#1505400711
+sudo ./cleanup.sh
+#1505400720
+sudo CCP_IMAGE_TAG=centos7-9.5-1.2.6 ./run.sh 
+#1505400742
+sudo kubectl scale statefulset pgset --replicas=3
+#1505400760
+sudo vim run.sh 
+#1505400787
+sudo CCP_IMAGE_TAG=centos7-9.5-1.2.6 BUILDBASE=$HOME/Git/crunchy-containers ./run.sh 
+#1505400802
+watch sudo kubectl get pods
+#1505400519
+ambient 
+#1505474224
+sudo kubectl delete pgset-0 
+#1505474231
+sudo kubectl delete po/gset-0 
+#1505474235
+sudo kubectl delete po/pgset-0 
+#1505474292
+vim tokens.py
+#1505474313
+sudo kubectl rolling-update pybot
+#1505474321
+sudo kubectl rolling-update --image pybot
+#1505474326
+sudo kubectl rolling-update -h
+#1505474363
+sudo kubectl rolling-update pybot-3304411659 --image=pybot
+#1505474557
+sudo kubectl rolling-update deploy/pybot  --image=pybot
+#1505474564
+sudo kubectl rolling-update pybot --image=pybot
+#1505474615
+sudo kubectl rolling-update pybot-rs --image=pybot
+#1505474636
+sudo kubectl rolling-update pybot-3304411659  --image=pybot
+#1505474902
+curl 10.0.0.1
+#1505474907
+curl 10.0.0.1:443
+#1505474944
+sudo kubectl logs -f pybot-304411659-bz3ld
+#1505474952
+sudo kubectl logs -f pybot-3304411659-bz3ld
+#1505474969
+sudo kubectl logs -f pybot-3304411659-f
+#1505474975
+sudo kubectl logs -f pybot-3304411659-f26m9
+#1505474986
+sudo kubectl logs -f pybot-3304411659-sx8xm
+#1505475008
+sudo kubectl logs -f pybot-3304411659-sx8xm pybot-3304411659-f26m9 pybot-3304411659-bz3ld
+#1505475071
+sudo kubectl logs -f deploy/pybot --all
+#1505475111
+sudo kubectl help
+#1505475122
+sudo kubectl resize help
+#1505475129
+sudo kubectl scale help
+#1505475135
+sudo kubectl scale pybot
+#1505475145
+sudo kubectl scale deploy/pybot
+#1505475151
+sudo kubectl scale deploy/pybot --replicas=1
+#1505475166
+sudo kubectl logs pybot
+#1505475169
+sudo kubectl logs deploy/pybot
+#1505475172
+sudo kubectl logs-f  deploy/pybot
+#1505475204
+sudo kubectl rolling-update deploy/pybot
+#1505475210
+sudo kubectl rolling-update deploy/pybot --image pybot
+#1505475215
+sudo kubectl rolling-update pybot --image pybot
+#1505475223
+sudo kubectl get rs
+#1505475266
+sudo kubectl rollout status deployment pybot
+#1505475272
+sudo kubectl rollout deployment pybot
+#1505475278
+sudo kubectl rollout start deployment pybot
+#1505475282
+sudo kubectl rollout update deployment pybot
+#1505475287
+sudo kubectl rollout help
+#1505475292
+sudo kubectl rollout -h
+#1505475367
+sudo docker-compose build
+#1505475377
+sudo kubectl set image deployment/pybot pybot=pybot
+#1505484446
+vim pybot
+#1505484479
+git stash show
+#1505484504
+git stash pop
+#1505484514
+gcp "Test version"
+#1505484524
+git checkout master 
+#1505484548
+vim dockerfiles//builder.Dockerfile 
+#1505485124
+vim pybot.py
+#1505488754
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@cuttlerat.ru
+#1505485124
+vim pybot.py
+#1505488754
+ssh -i ~/.ssh/cuttlerat.pem ubuntu@cuttlerat.ru
+#1505717273
+alsamixer 
+#1505717305
+pavucontrol 
+#1505717163
+ambient 
+#1505718585
+git pull
+#1505719315
+vim requirements 
+#1505720226
+git reset --hard
+#1505721266
+gcp "New markdown for quotes"
+#1505724719
+cd nixconfig/
+#1505724721
+vim configuration.nix 
+#1505724732
+gcp 
+#1505725479
+minikube start
+#1505725574
+sudo minikube start
+#1505725744
+sudo minikube ыефегы
+#1505725747
+sudo minikube status
+#1505725754
+sudo kubectl status
+#1505725852
+#sudo kubectl rolling-update pybot -f 
+#1505725856
+cd ../pybot/
+#1505725873
+sudo kubectl rolling-update pybot -f pybot_k8s.yml 
+#1505725911
+sudo kubectl rolling-update rs/pybot-3304411659 -f pybot_k8s.yml 
+#1505725915
+sudo kubectl rolling-update pybot-3304411659 -f pybot_k8s.yml 
+#1505725926
+sudo kubectl rolling-update --deploy pybot -f pybot_k8s.yml 
+#1505725931
+sudo kubectl rolling-update deployment pybot -f pybot_k8s.yml 
+#1505726023
+sudo kubectl set image deployments/pybot pybot=pybot
+#1505726433
+sudo kubectl set image deployments/pybot pybot=pybot:v1
+#1505726704
+sudo kubectl delete pybot_k8s.yml 
+#1505726710
+sudo kubectl start pybot_k8s.yml 
+#1505726725
+sudo kubectl --help
+#1505726775
+sudo kubectl scale pybot --size=1
+#1505726781
+sudo kubectl scale pybot --replicas=1 deployment/pybot
+#1505726802
+sudo kubectl scale --replicas=1 deployment/pybot
+#1505726812
+sudo kubectl delete rs/pybot-3213185772
+#1505726818
+sudo kubectl delete rs/pybot-3304411659
+#1505726938
+docker run -d -p 5000:5000 --restart=always --name registry registry:2
+#1505726940
+sudo docker run -d -p 5000:5000 --restart=always --name registry registry:2
+#1505726978
+sudo docker tag pybot localhost:5000/pybot
+#1505727073
+curl -X GET https://localhost:5000/v2/_catalog
+#1505727080
+curl -X GET http://localhost:5000/v2/_catalog
+#1505727265
+curl -X GET http://127.0.0.1:5000/v2/_catalog
+#1505727268
+curl -X GET http://127.0.0.2:5000/v2/_catalog
+#1505727272
+curl -X GET http://asdasd:5000/v2/_catalog
+#1505727277
+curl -X GET http:/registry:5000/v2/_catalog
+#1505727960
+curl localhost:5000
+#1505727982
+sudo kubectl cecreate -f pybot_k8s.yml 
+#1505728021
+ssh -i ~/.docker/machine/machines/default/id_rsa -R 5000:localhost:5000 docker@$(docker-machine ip)
+#1505728073
+vim registry.yml
+#1505728091
+sudo kubectl create -f registry.yml
+#1505728100
+kubectl port-forward --namespace kube-system $(kubectl get po -n kube-system | grep kube-registry-v0 | \
+awk '{print $1;}') 5000:5000
+#1505728119
+sudo kubectl port-forward --namespace kube-system $(sudo kubectl get po -n kube-system | grep kube-registry-v0 | \
+awk '{print $1;}') 5000:5000
+#1505728139
+sudo docker stop 3633d11d2354
+#1505728145
+sudo docker rm registry
+#1505728148
+sudo kubectl port-forward --namespace kube-system $(sudo kubectl get po -n kube-system | grep kube-registry-v0 | \
+awk '{print $1;}') 5000:5000
+#1505728211
+sudo kubectl cedelete -f pybot_k8s.yml 
+#1505729794
+sudo kubectl set image deployments/pybot pybot=pybot:v1
+#1505729844
+sudo kubectl set image deployments/pybot 127.0.0.1:5000/pybot=localhost:5000/pybot
+#1505729870
+sudo kubectl rolling-update --deployment pybot -f pybot_k8s.yml 
+#1505729955
+curl -X GET http:/localhost:5000/v2/_catalog
+#1505729964
+curl -X GET http:/localhost:5000/v2/repositories/
+#1505729966
+curl -X GET http:/localhost:5000/v2/repositories/pybot
+#1505729970
+curl -X GET http:/localhost:5000/v2/pybot
+#1505729977
+curl -X GET http:/localhost:5000/v2/_pybot
+#1505730313
+sudo kubectl scale --replicas=0 deployments/pybot
+#1505730316
+sudo kubectl scale --replicas=1 deployments/pybot
+#1505730322
+sudo kubectl delete pybot_k8s.yml 
+#1505730623
+sudo docker pull localhost:5000/pybot
+#1505730731
+sudo kubectl apply -f pybot_k8s.yml 
+#1505730863
+sudo kubectl set image deployments/pybot pybot=localhost:5000/pybot:v1
+#1505731021
+sudo kubectl set image deployments/pybot pybot=localhost:5000/pybot:v2
+#1505731091
+sudo kubectl set image deployments/pybot pybot=localhost:5000/pybot
+#1505731103
+sudo kubectl rollout status deployments/pybot:latest
+#1505731109
+sudo kubectl set image deployments/pybot pybot=localhost:5000/pybot:latest
+#1505731112
+sudo kubectl rollout status deployments/pybot
+#1505731356
+sudo kubectl get all
+#1505731362
+sudo kubectl get all --namespace=all
+#1505731365
+sudo kubectl get all --all
+#1505731413
+sudo kubectl delete svc/kube-registry
+#1505731417
+sudo kubectl delete svc/kube-registry --all
+#1505731430
+sudo kubectl delete --namespace=kube-system svc/kube-registry 
+#1505731435
+sudo kubectl delete --namespace=kube-system rc/kube-registry-v0
+#1505731442
+sudo kubectl delete --namespace=kube-system po/kube-registry-v0-mkz0s po/kube-registry-proxy-9kp65
+#1505731448
+sudo kubectl delete --namespace=kube-system po/kube-registry-v0-mkz0s 
+#1505731454
+sudo kubectl get all --all-namespaces=true
+#1505731517
+sudo kubectl logs -f pybot
+#1505731548
+sudo kubectl scale --replicas=2 deploy/pybot
+#1505731552
+sudo kubectl logs -f deploy/pybot
+#1505731650
+git checkout dev_kubernetes 
+#1505731653
+vim pybot_k8s.yml 
+#1505731679
+sudo kubectl scale --replicas=0 deploy/pybot
+#1505731740
+sudo kubectl scale --replicas=1 deploy/pybot
+#1505731761
+sudo kubectl delete -f pybot_k8s.yml 
+#1505731765
+sudo kubectl start -f pybot_k8s.yml 
+#1505731770
+sudo kubectl create -f pybot_k8s.yml 
+#1505731772
+sudo kubectl get pods
+#1505731789
+sudo kubectl get pods,rs
+#1505731795
+sudo kubectl get deplot
+#1505731796
+sudo kubectl get deploy
+#1505731803
+sudo kubectl describe pybot
+#1505731805
+sudo kubectl describe pds
+#1505731808
+sudo kubectl describe pods
+#1505731935
+git stash
+#1505731935
+git checkout master
+#1505732074
+vim .gitignore 
+#1505732093
+vim README.md 
+#1505732109
+vim pybot.py 
+#1505732183
+mkdir tokens
+#1505732189
+mv tokens.py tokens
+#1505732193
+vim docker-compose.yml 
+#1505732279
+sudo minikube stop
+#1505732529
+gbc "dev_travis_production"
+#1505732563
+vim .travis.
+#1505732820
+curl -X https://cuttlerat.ru/464825eb6d4f2d7d0f9fcbeb38600cbd.php
+#1505732838
+curl -X GET https://cuttlerat.ru/464825eb6d4f2d7d0f9fcbeb38600cbd.php
+#1505732881
+gcp "Test №1"
+#1505733562
+sudo docker-compose up --build
+#1505733593
+sudo docker ps
+#1505733645
+sudo docker-compose up
+#1505733705
+;s
+#1505733735
+sudo docker push cut
+#1505733744
+sudo docker push cuttlerat/pybot
+#1505733880
+git status
+#1505733884
+vim .travis.tokens.py 
+#1505733887
+vim .travis.yml 
+#1505733906
+gcp "Test №2"
+#1505734633
+cd 
+#1505734830
+curl -X GET https://cuttlerat.ru
+#1505734837
+sleep 2
+#1505734852
+vim .bash_functions 
+#1505734912
+vim .bash_timer
+#1505734936
+. .bashrc 
+#1505734989
+cat ad
+#1505735381
+cd env/
+#1505735387
+cd ../
+#1505735390
+cd Git/
+#1505735396
+cd dreamhub/
+#1505735406
+d
+#1505735539
+cat asedasd
+#1505735548
+asdasd
+#1505735624
+sudo su
+#1505735802
+vim .bash_timer 
+#1505735810
+. .bash_timer 
+#1505735818
+cd Git/pybot/
+#1505735899
+sleep 1
+#1505735903
+sleep 10
+#1505735931
+kek;?=123
+#1505735950
+cd
+#1505735965
+mv .bash_timer .bash_prompt
+#1505735968
+vim .bashrc 
+#1505735996
+ls
