@@ -2,7 +2,9 @@
 #~/.bash_aliases
 
 alias ssh='TERM=xterm ssh'
-alias vim='nvim'
+alias vdc='vim docker-compose.yml'
+alias dupb='sudo docker-compose up --build'
+alias dup='sudo docker-compose up'
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias :q='exit'
