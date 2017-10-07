@@ -26,6 +26,11 @@ function gbc {
     git push --set-upstream origin $1
 }
 
+function dbash {
+
+    sudo docker-compose exec $1 bash
+}
+
 git_branch() {
   git branch 2> /dev/null | sed -r '/^[^*]/d;s/\* (.*)/[\1]/'
 }
