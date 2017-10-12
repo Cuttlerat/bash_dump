@@ -1,0 +1,67 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+set -o vi
+bind 'set completion-ignore-case on'
+bind 'TAB:menu-complete'
+bind 'set menu-complete-display-prefix on'
+bind 'set show-all-if-ambiguous on'
+bind 'set match-hidden-files off'
+
+export HISTSIZE=10000
+export HISTFILESIZE=10000
+export HISTTIMEFORMAT="%h %d %H:%M:%S "
+export HISTCONTROL=ignoreboth:erasedups
+export AWS_DEFAULT_PROFILE=avkioller@gmail.com
+export DCK1C_ROOT=~/Git/1C_docker/dck1c # /opt/dck1c   - путь к корневой директории dck1c
+export PATH=$DCK1C_ROOT:$DCK1C_ROOT/bin:$PATH
+
+
+alias ssh='TERM=xterm ssh'
+alias vdc='vim docker-compose.yml'
+alias dupb='sudo docker-compose up --build'
+alias dup='sudo docker-compose up'
+alias ddown='sudo docker-compose down'
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias :q='exit'
+alias dc='cd'
+alias sl='ls'
+alias ambient="mpv 'http://hot.friezy.ru/?radio=di&station=ambient&bitrate=320'"
+
+function cdg {
+    TEMP_PWD=$PWD
+    while [ ! -d .git ]
+    do
+            cd ..
+    done
+    OLDPWD=$TEMP_PWD
+}
+
+function gcp {
+    # [g]it [c]ommit [p]ush
+    cdg
+    git add . && git commit -m "${1:-"Fast commit by Cuttlerat"}" && git push
+    cd -
+}
+
+function gbc {
+
+    git branch $1
+    git checkout $1
+    git push --set-upstream origin $1
+}
+
+function git_branch {
+  git branch 2> /dev/null | sed -r '/^[^*]/d;s/\* (.*)/[\1]/'
+}
+
+
+
+# Use bash-completion, if available
+[[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
+    . /usr/share/bash-completion/bash_completion
+
