@@ -1,8 +1,8 @@
-#! /bin/bash
+#!/usr/bin/env bash
 
-# I bound this script to my PrintScreen button
-# This script make a screenshot of focused window, and put it into your clipboard
+# I bound this script to my PrintScreen
+# This script make a screenshot, and put it into your clipboard
 
 scrot -u /tmp/foo.png
-copyq write image/png - < /tmp/foo.png && copyq select 0
+xclip -selection clipboard -t image/png -i /tmp/foo.png
 rm /tmp/foo.png
