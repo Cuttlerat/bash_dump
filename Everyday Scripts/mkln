@@ -1,4 +1,0 @@
-#!/bin/bash
-
-[[ ! -z $( ls "/usr/local/bin" ) ]] && for link in /usr/local/bin/*;{ sudo unlink "${link}";}
-for new_link in /home/rat/.bin/*;{ sudo ln -s "${new_link}" /usr/local/bin/${i/#*\//};} 
