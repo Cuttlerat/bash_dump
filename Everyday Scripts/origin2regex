@@ -1,6 +1,10 @@
 #!/bin/bash
 
-# I was in a great hurry when I wrote this script, so it turned out oneliner
-# I'm going to fix it in the near future
+# Dig all IP adresses by origin of given IP and them turned into regular expressions
 
-for IP in $(whois -h whois.radb.net -i origin -T route $(whois -h whois.radb.net $(dig $1 +short | head -1) | grep origin: |awk '$0=$2')| grep -w "route:" | awk '{print $NF}' |sort -n);{ rgxg cidr $IP;}
+DIG_IP="$(dig $1 +short | head -1)"
+ORIGIN="$(whois -h whois.radb.net ${DIG_IP} | grep origin: |awk '$0=$2')"
+
+for IP in $(whois -h whois.radb.net -i origin -T route ${ORIGIN} | grep -w "route:" | awk '{print $NF}' | sort -n); do
+    rgxg cidr $IP;
+done
