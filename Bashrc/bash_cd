@@ -1,8 +1,0 @@
-#!/bin/bash
-#~/.bash_cd
-
-function cd {
-    unset -f cd
-    cd "$@" && ls .
-    source ${BASH_SOURCE[@]}
-}
