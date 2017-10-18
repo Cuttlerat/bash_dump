@@ -1,7 +1,11 @@
 #!/bin/bash
 #~/.bash_functions
 
-. ~/.bash_cd
+# . ~/.bash_cd
+
+function cd {
+    command cd "$@" && ls .
+}
 
 function cdg {
     TEMP_PWD=$PWD
