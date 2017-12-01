@@ -14,7 +14,6 @@ alias dc='cd'
 alias sl='ls'
 alias ambient="mpv 'http://hot.friezy.ru/?radio=di&station=ambient&bitrate=320'"
 alias vim='emacs -nw'
-alias org='vim ~/.org'
 alias g='git'
 alias gc='git commit -m'
 alias gp='git pull'
