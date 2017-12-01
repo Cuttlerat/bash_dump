@@ -40,6 +40,7 @@ function timer_stop {
 }
 
 function org {
+
     ORGPATH="$HOME/.org"
     if [[ $# -eq 0 ]]; then
         DAY=$(date +'%d')
@@ -57,5 +58,12 @@ function org {
         return
     fi
     mkdir -p "${ORGPATH}/${YEAR}/${MONTH}"
-    emacs -nw "${ORGPATH}/${YEAR}/${MONTH}/${DAY}.org"
+    ORGFILE="${ORGPATH}/${YEAR}/${MONTH}/${DAY}.org"
+    [[ ! -f "${ORGFILE}" ]] && cat >"${ORGFILE}" <<-EOF
+#+AUTHOR:   Алексей Киоллер
+#+EMAIL:    a.kioller@dreamkas.ru
+#+LANGUAGE: ru
+           
+EOF
+    emacs -nw "${ORGFILE}"
 }
