@@ -5,6 +5,8 @@ set keymap vi-command
 # # these are for vi-command mode
 "\e[A": history-search-backward            # arrow up
 "\e[B": history-search-forward             # arrow down
+"k": history-search-backward            # arrow up
+"j": history-search-forward             # arrow down
 "\ep": yank-last-arg                       # bind Alt+. from emacs mode to Alt-p
 Control-l: clear-screen
 
