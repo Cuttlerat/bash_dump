@@ -1,7 +1,5 @@
 # Bash Dump
 
-English version will be soon
-
 Свалка для моих Bash/Shell скриптов
 
 ## Everyday scripts
@@ -11,11 +9,3 @@ English version will be soon
 ## Bashrc
 
 Здесь собраны все мои bashrc, стараюсь постоянно дополнять эту категорию и держать в чистоте, здесь можно найти очень много удобных функций и алиасов для ежедневного пользования
-
-## Working
-
-Это папка со скриптами над которыми я работаю в данный момент
-
-## English
-
-It is a dump of my Bash/Shell scripts
