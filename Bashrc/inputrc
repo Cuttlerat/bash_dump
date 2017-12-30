@@ -7,6 +7,7 @@ set keymap vi-command
 "\e[B": history-search-forward             # arrow down
 "k": history-search-backward            # arrow up
 "j": history-search-forward             # arrow down
+"p": yank-last-arg                       # bind Alt+. from emacs mode to Alt-p
 "\ep": yank-last-arg                       # bind Alt+. from emacs mode to Alt-p
 Control-l: clear-screen
 
