@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-### Этот скрипт нужен мне для автоматического подключения монитора, срабатывает на триггере в udev
-
 #export DISPLAY=:0
 #export XAUTHORITY=/home/rat/.Xauthority
 
