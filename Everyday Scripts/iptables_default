@@ -1,5 +1,9 @@
 #!/bin/sh
 
+##############################################################
+# This script is deprecated! Now I am using the ansible role #
+##############################################################
+
 # Variables
 SERVER_IP=""
 DNS_SERVERS=""
