@@ -1,15 +1,19 @@
 set editing-mode vi
 $if mode=vi
 
+### Vi command mode ##############################
+
 set keymap vi-command
-# # these are for vi-command mode
-"\e[A": history-search-backward            # arrow up
-"\e[B": history-search-forward             # arrow down
+
+"\e[A": history-search-backward         # arrow up
+"\e[B": history-search-forward          # arrow down
 "k": history-search-backward            # arrow up
 "j": history-search-forward             # arrow down
-"p": yank-last-arg                       # bind Alt+. from emacs mode to Alt-p
-"\ep": yank-last-arg                       # bind Alt+. from emacs mode to Alt-p
+"p": yank-last-arg                      # bind Alt+. from emacs mode to Alt-p
+"\ep": yank-last-arg                    # bind Alt+. from emacs mode to Alt-p
 Control-l: clear-screen
+
+### Vi insert mode ##############################
 
 set keymap vi-insert
 # # these are for vi-insert mode
@@ -18,3 +22,5 @@ set keymap vi-insert
 "\ep": yank-last-arg
 Control-l: clear-screen
 $endif
+
+##################################################
