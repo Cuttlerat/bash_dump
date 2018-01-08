@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-# I bound this script to my PrintScreen
 # This script make a screenshot, and put it into your clipboard
+# I bound it to my PrintScreen button
 
 swaygrab /tmp/foo.png
 xclip -selection clipboard -t image/png -i /tmp/foo.png
