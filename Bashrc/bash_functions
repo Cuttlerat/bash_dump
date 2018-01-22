@@ -69,6 +69,9 @@ EOF
 }
 
 function arole {
+    # $1 - Name of new role
+    # $2 - Group of hosts of this roles (keep empty for all)
+    
     for i in "./roles/${1}/"{tasks,defaults}; do
         mkdir -p "${i}"
         if [ ! -f "${i}/main.yml" ]; then
@@ -91,4 +94,13 @@ EOF
     fi
     cd "./roles/${1}/"
     "${EDITOR}" "./tasks/main.yml"
+}
+
+function atask {
+    FILE_PATH="./roles/${1}/tasks/main.yml"
+    if [ -f "${FILE_PATH}" ]; then
+        "${EDITOR}" "${FILE_PATH}"
+    else
+        echo "File ${FILE_PATH} does not exists!" && (exit 1)
+    fi
 }
