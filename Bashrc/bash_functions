@@ -67,3 +67,15 @@ function org {
 EOF
     emacs -nw "${ORGFILE}"
 }
+
+function arole {
+    for i in "./roles/${1}/"{tasks,defaults}; do
+        mkdir -p "${i}"
+        if [ ! -f "${i}/main.yml" ]; then
+            touch "${i}/main.yml"
+            echo "---" > "${i}/main.yml"
+        fi
+    done
+    cd "./roles/${1}/"
+    "${EDITOR}" "./tasks/main.yml"
+}
