@@ -76,6 +76,19 @@ function arole {
             echo "---" > "${i}/main.yml"
         fi
     done
+    if [ ! -f "./${1}.yml" ]; then
+        if [ -e ${2} ]; then
+            HOST="all"
+        else
+            HOST="${2}"
+        fi
+        cat > "./${1}.yml" <<EOF  
+---
+- hosts: ${HOST}
+  roles:
+    - ${i}
+EOF
+    fi
     cd "./roles/${1}/"
     "${EDITOR}" "./tasks/main.yml"
 }
