@@ -97,6 +97,7 @@ EOF
 }
 
 function atask {
+    # $1 - Name of role to open the main task
     FILE_PATH="./roles/${1}/tasks/main.yml"
     if [ -f "${FILE_PATH}" ]; then
         "${EDITOR}" "${FILE_PATH}"
