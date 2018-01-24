@@ -48,13 +48,13 @@ set_prompt () {
     else
         PS1="$RED"
     fi
-    PS1+="[\$?]"
+    PS1+="[\$?]" # Exit code of last command
 
-    PS1+="$Red[$timer_show]$RED"
+    PS1+="$Red[$timer_show]$RED" # Last command execution time
 
-    PS1+="$RED[$USER]"
-    PS1+="$Green\$(git_branch)"
-    PS1+="$Red\\w: $Reset"
+    PS1+="$RED[$USER]" # Current user
+    PS1+="$Green\$(git_branch)" # Git branch (if you are in a git directory)
+    PS1+="$Red\\w: $Reset" # ':'
 }
 
 trap 'timer_start' DEBUG
