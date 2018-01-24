@@ -1,7 +1,9 @@
 #!/bin/bash
 #~/.bash_functions
 
-. ~/.bash_cd
+function cd {
+    command cd $@ && ls
+}
 
 function cdg {
     TEMP_PWD=$PWD
@@ -65,7 +67,7 @@ function org {
 #+LANGUAGE: ru
            
 EOF
-    emacs -nw "${ORGFILE}"
+    ${EDITOR} "${ORGFILE}"
 }
 
 function arole {
@@ -85,22 +87,22 @@ function arole {
         else
             HOST="${2}"
         fi
-        cat > "./${1}.yml" <<EOF  
+    cat > "./${1}.yml" <<EOF  
 ---
 - hosts: ${HOST}
   roles:
-    - ${i}
+    - ${1}
 EOF
     fi
-    cd "./roles/${1}/"
-    "${EDITOR}" "./tasks/main.yml"
+    #cd "./roles/${1}/"
+    ${EDITOR} "./tasks/main.yml"
 }
 
 function atask {
     # $1 - Name of role to open the main task
     FILE_PATH="./roles/${1}/tasks/main.yml"
     if [ -f "${FILE_PATH}" ]; then
-        "${EDITOR}" "${FILE_PATH}"
+        ${EDITOR} "${FILE_PATH}"
     else
         echo "File ${FILE_PATH} does not exists!" && (exit 1)
     fi
