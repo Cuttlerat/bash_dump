@@ -1,10 +1,6 @@
 #!/bin/bash
 #~/.bash_functions
 
-function cd {
-    command cd $@ && ls
-}
-
 function cdg {
     TEMP_PWD=$PWD
     while [ ! -d .git ]
@@ -12,6 +8,10 @@ function cdg {
             cd ..
     done
     OLDPWD=$TEMP_PWD
+}
+
+function cd {
+    command cd $@ && ls
 }
 
 function gcp {
@@ -67,7 +67,7 @@ function org {
 #+LANGUAGE: ru
            
 EOF
-    ${EDITOR} "${ORGFILE}"
+    $EDITOR "${ORGFILE}"
 }
 
 function arole {
@@ -100,7 +100,8 @@ EOF
 
 function atask {
     # $1 - Name of role to open the main task
-    FILE_PATH="./roles/${1}/tasks/main.yml"
+    ROLE="$( sed 's/\.yml$//' <<<${1})"
+    FILE_PATH="./roles/${ROLE}/tasks/main.yml"
     if [ -f "${FILE_PATH}" ]; then
         ${EDITOR} "${FILE_PATH}"
     else
