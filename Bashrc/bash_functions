@@ -1,15 +1,6 @@
 #!/bin/bash
 #~/.bash_functions
 
-function cdg {
-    TEMP_PWD=$PWD
-    while [ ! -d .git ]
-    do
-            cd ..
-    done
-    OLDPWD=$TEMP_PWD
-}
-
 function cd {
     command cd $@ && ls
 }
