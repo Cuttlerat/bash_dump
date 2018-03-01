@@ -1,7 +1,7 @@
 #~/.bash_aliases
 #!/bin/bash
 
-alias cdg='cd $(dirname $(git rev-parse --git-dir 2>/dev/null || echo .))'
+alias cdg='cd $(dirname $(git rev-parse --git-dir 2>&- || echo .))'
 alias ssh='TERM=xterm ssh'
 alias vdc='vim docker-compose.yml'
 alias dupb='sudo docker-compose up --build'

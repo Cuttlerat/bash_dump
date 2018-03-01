@@ -2,7 +2,7 @@
 #~/.bash_functions
 
 function cd {
-    command cd $@ && ls
+    command cd "$@" && ls
 }
 
 function gcp {
@@ -20,7 +20,7 @@ function gbc {
 }
 
 function git_branch {
-  git branch 2> /dev/null | sed -r '/^[^*]/d;s/\* (.*)/[\1]/'
+  git branch 2>&- | sed -r '/^[^*]/d;s/\* (.*)/[\1]/'
 }
 
 function timer_start {
