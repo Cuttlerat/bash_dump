@@ -1,5 +1,5 @@
-#~/.bash_aliases
-#!/bin/bash
+#!/usr/bin/env bash
+# ~/.bash_aliases
 
 alias cdg='cd $(dirname $(git rev-parse --git-dir 2>&- || echo .))'
 alias ssh='TERM=xterm ssh'

@@ -1,5 +1,5 @@
-#!/bin/bash
-#~/.bash_functions
+#!/usr/bin/env bash
+# ~/.bash_functions
 
 function cd {
     command cd "$@" && ls

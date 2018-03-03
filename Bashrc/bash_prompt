@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# ~/.bash_prompt
 
 function timer_now {
     date +%s%N
