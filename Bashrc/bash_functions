@@ -44,7 +44,7 @@ function org {
         DAY=$(awk -F'.' '$0=$1' <<< "${INPUT}" )
         MONTH=$(awk -F'.' '$0=$2' <<< "${INPUT}")
         YEAR=$(awk -F'.' '$0=$3' <<< "${INPUT}")
-        [[ ${YEAR:="2017"} ]]
+        [[ ${YEAR:="$(date +%Y)"} ]]
         [[ $(printf "${YEAR}" | wc -m) -eq 2 ]] && YEAR="20$YEAR"
     else
         echo "Usage: 'org' or 'org DD.MM' or 'org DD.MM.YY'"
