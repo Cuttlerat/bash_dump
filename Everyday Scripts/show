@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+readonly FORMATS="*avi *mkv"
+readonly SHOW_PATH="$1"
+
+function _save_last() {
+    local LAST="$1"
+    echo "LAST=${LAST}" > ".last"
+}
+
+function _get_series() {
+    ls ${FORMATS} 2>&- | grep -Eo 's[0-9]+e[0-9]+' | uniq
+}
+
+cd "${SHOW_PATH}"
+
+if [[ -f ".last" ]]; then
+    . ".last"
+    CURRENT="$(_get_series | sed -n "/${LAST}/{n;p;}")"
+else
+    CURRENT="$(_get_series | head -1)"
+fi
+
+mpv *"${CURRENT}"* &>/dev/null &
+_save_last "${CURRENT}"
+cd -
