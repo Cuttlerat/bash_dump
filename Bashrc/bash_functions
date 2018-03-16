@@ -7,9 +7,9 @@ function cd {
 
 function gcp {
     # [g]it [c]ommit [p]ush
-    cdg
+    cdg >/dev/null
     git add . && git commit -m "${1:-"Fast commit by Cuttlerat"}" && git push
-    cd -
+    cd - >/dev/null
 }
 
 function gbc {
