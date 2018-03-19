@@ -1,28 +1,34 @@
 #!/usr/bin/env bash
 # ~/.bash_aliases
 
-alias cdg='cd $(dirname $(git rev-parse --git-dir 2>&- || echo .))'
-alias ssh='TERM=xterm ssh'
-alias vdc='vim docker-compose.yml'
+# Docker
 alias dupb='sudo docker-compose up --build'
-alias dup='sudo docker-compose up'
-alias ddown='sudo docker-compose down'
 alias dlog='sudo docker-compose logs -f'
+alias ddown='sudo docker-compose down'
 alias dexec='sudo docker-compose exec'
-alias ls='ls --color=auto'
-alias grep='grep --color=auto'
-alias :q='exit'
-alias dc='cd'
-alias sl='ls'
-alias ambient="mpv 'http://hot.friezy.ru/?radio=di&station=ambient&bitrate=320'"
-alias vim='emacs -nw'
-alias vi='vim'
-alias g='git'
+alias dup='sudo docker-compose up'
+# Git
 alias gc='git checkout'
 alias gp='git pull'
 alias ga='git add'
 alias gl='git log'
 alias gP='git push'
+alias g='git'
+# Pacman
 alias update='sudo pacman -Syu'
-alias install='sudo pacman -S'
 alias remove='sudo pacman -Rs'
+alias install='sudo pacman -S'
+# Editors
+alias vim='emacs -nw'
+alias vi='vim'
+# Misspellings
+alias grep='grep --color=auto'
+alias ls='ls --color=auto'
+alias :q='exit'
+alias dc='cd'
+alias sl='ls'
+# Other
+alias ambient="mpv 'http://hot.friezy.ru/?radio=di&station=ambient&bitrate=320'"
+alias cdg='cd $(dirname $(git rev-parse --git-dir 2>&- || echo .))'
+alias ssh='TERM=xterm ssh'
+alias vdc='vim docker-compose.yml'
