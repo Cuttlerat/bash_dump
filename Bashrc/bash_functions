@@ -13,14 +13,14 @@ function gcp {
 }
 
 function gbc {
-
+    # [g]it [b]ranch [c]heckout
     git branch $1
     git checkout $1
     git push --set-upstream origin $1
 }
 
 function git_branch {
-  git branch 2>&- | sed -r '/^[^*]/d;s/\* (.*)/[\1]/'
+  git rev-parse --abbrev-ref HEAD 2>&- | sed 's/.\+/[&]/g'
 }
 
 function timer_start {
