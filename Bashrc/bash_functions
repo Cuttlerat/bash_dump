@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # ~/.bash_functions
 
+
 function cd {
     command cd "$@" && ls
 }
@@ -33,7 +34,6 @@ function timer_stop {
 }
 
 function org {
-
     ORGPATH="$HOME/.org"
     if [[ $# -eq 0 ]]; then
         DAY=$(date +'%d')
