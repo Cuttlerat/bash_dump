@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 
 readonly FORMATS="*avi *mkv"
-readonly SHOW_PATH="$1"
+
+SHOW_PATH="$1"
+[[ "${SHOW_PATH:=.}" ]]
+readonly SHOW_PATH
 
 function _save_last() {
     local LAST="$1"
@@ -12,7 +15,7 @@ function _get_series() {
     ls ${FORMATS} 2>&- | grep -Eo 's[0-9]+e[0-9]+' | uniq
 }
 
-cd "${SHOW_PATH}"
+command cd "${SHOW_PATH}"
 
 if [[ -f ".last" ]]; then
     . ".last"
@@ -23,4 +26,4 @@ fi
 
 mpv *"${CURRENT}"* &>/dev/null &
 _save_last "${CURRENT}"
-cd -
+command cd - >/dev/null
