@@ -2,7 +2,8 @@
 
 # This script make a screenshot, and put it into your clipboard
 # I bound it to my PrintScreen button
+set -e
 
-swaygrab /tmp/foo.png
+scrot -u /tmp/foo.png
 xclip -selection clipboard -t image/png -i /tmp/foo.png
 rm /tmp/foo.png

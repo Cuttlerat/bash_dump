@@ -2,6 +2,7 @@
 
 # I bound this script to my Alt+PrintScreen
 # This script select an area on your screen, and put this screenshot to your clipboard
+set -e
 
 scrot -s /tmp/foo.png
 xclip -selection clipboard -t image/png -i /tmp/foo.png
