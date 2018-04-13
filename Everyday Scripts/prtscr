@@ -4,6 +4,4 @@
 # I bound it to my PrintScreen button
 set -e
 
-scrot -u /tmp/foo.png
-xclip -selection clipboard -t image/png -i /tmp/foo.png
-rm /tmp/foo.png
+scrot /tmp/foo.png ${1:--u} -e 'xclip -selection clipboard -t image/png -i $f && rm $f'
