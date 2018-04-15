@@ -2,6 +2,11 @@
 
 # This script make a screenshot, and put it into your clipboard
 # I bound it to my PrintScreen button
+
+# Usage:
+# prtscr - Print screen current window to clipboard
+# prtscr -s - Print screen selection to clipboard
+
 set -e
 
 scrot /tmp/foo.png ${1:--u} -e 'xclip -selection clipboard -t image/png -i $f && rm $f'
