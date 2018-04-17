@@ -65,6 +65,7 @@ function arole {
     # $1 - Name of new role
     # $2 - Group of hosts of this roles (keep empty for all)
     
+    [[ -d "./group_vars" ]] || [[ -d "./roles" ]] || return 1
     for i in "./roles/${1}/"{tasks,defaults}; do
         mkdir -p "${i}"
         if [ ! -f "${i}/main.yml" ]; then
@@ -85,7 +86,7 @@ function arole {
     - ${1}
 EOF
     fi
-    #cd "./roles/${1}/"
+    cd "./roles/${1}/"
     ${EDITOR} "./tasks/main.yml"
 }
 
