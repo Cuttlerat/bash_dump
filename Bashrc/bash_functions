@@ -6,6 +6,16 @@ function cd {
     command cd "$@" && ls
 }
 
+function up() {
+
+    n=""
+    for i in $(seq $1); do
+        n="$n../"
+    done
+    command cd $n && ls
+}
+
+
 function gcp {
     # [g]it [c]ommit [p]ush
     cdg >/dev/null
