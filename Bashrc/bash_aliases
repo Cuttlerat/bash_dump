@@ -27,9 +27,16 @@ alias ls='ls --color=auto'
 alias :q='exit'
 alias dc='cd'
 alias sl='ls'
+alias cd..='cd ..'
 # Translation
 alias ru='trans -s en -t ru -b'
 alias en='trans -s ru -t en -b'
+# Navigation
+alias home='cd ~'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
 # Other
 alias ambient="mpv 'http://hot.friezy.ru/?radio=di&station=ambient&bitrate=320'"
 alias cdg='cd $(dirname $(git rev-parse --git-dir 2>&- || echo .))'
