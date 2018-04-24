@@ -9,6 +9,7 @@ bind 'TAB:menu-complete'
 bind 'set menu-complete-display-prefix on'
 bind 'set show-all-if-ambiguous on'
 bind 'set match-hidden-files off'
+shopt -s globstar
 
 export HISTSIZE=10000
 export HISTFILESIZE=10000
