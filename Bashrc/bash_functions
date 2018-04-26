@@ -7,12 +7,11 @@ function cd {
 }
 
 function up() {
-
-    n=""
+    DIR=""
     for i in $(seq $1); do
-        n="$n../"
+        DIR="${DIR}../"
     done
-    command cd $n && ls
+    command cd "${DIR}" && ls
 }
 
 
@@ -63,8 +62,8 @@ function org {
     mkdir -p "${ORGPATH}/${YEAR}/${MONTH}"
     ORGFILE="${ORGPATH}/${YEAR}/${MONTH}/${DAY}.org"
     [[ ! -f "${ORGFILE}" ]] && cat >"${ORGFILE}" <<-EOF
-#+AUTHOR:   Алексей Киоллер
-#+EMAIL:    a.kioller@dreamkas.ru
+#+AUTHOR:   Aleksei Kioller
+#+EMAIL:    avkioller@gmail.com
 #+LANGUAGE: ru
            
 EOF
@@ -76,19 +75,15 @@ function arole {
     # $2 - Group of hosts of this roles (keep empty for all)
     
     [[ -d "./group_vars" ]] || [[ -d "./roles" ]] || return 1
-    for i in "./roles/${1}/"{tasks,defaults}; do
-        mkdir -p "${i}"
-        if [ ! -f "${i}/main.yml" ]; then
-            touch "${i}/main.yml"
-            echo "---" > "${i}/main.yml"
+    for ROLE_DIR in "./roles/${1}/"{tasks,defaults}; do
+        mkdir -p "${ROLE_DIR}"
+        if [ ! -f "${ROLE_DIR}/main.yml" ]; then
+            touch "${ROLE_DIR}/main.yml"
+            echo "---" > "${ROLE_DIR}/main.yml"
         fi
     done
     if [ ! -f "./${1}.yml" ]; then
-        if [ -e ${2} ]; then
-            HOST="all"
-        else
-            HOST="${2}"
-        fi
+        HOST="${2:-all}"
     cat > "./${1}.yml" <<EOF  
 ---
 - hosts: ${HOST}
