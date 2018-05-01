@@ -11,7 +11,7 @@ function up() {
     for i in $(seq $1); do
         DIR="${DIR}../"
     done
-    command cd "${DIR}" && ls
+    cd "${DIR}"
 }
 
 
