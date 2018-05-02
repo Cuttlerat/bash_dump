@@ -17,9 +17,9 @@ export HISTTIMEFORMAT="%h %d %H:%M:%S "
 export HISTCONTROL=ignoreboth:erasedups
 export EDITOR="emacs -nw"
 
-. ~/.bash_aliases
-. ~/.bash_functions
-. ~/.bash_prompt
+[[ -f ~/.bash_aliases ]] && . ~/.bash_aliases
+[[ -f ~/.bash_functions ]] && . ~/.bash_functions
+[[ -f ~/.bash_prompt ]] && . ~/.bash_prompt
 
 # Use bash-completion, if available
 [[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
