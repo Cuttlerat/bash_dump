@@ -6,26 +6,26 @@ function timer_now {
 }
 
 function timer_start {
-    timer_start=${timer_start:-$(timer_now)}
+    TIMER_START=${TIMER_START:-$(timer_now)}
 }
 
 function timer_stop {
-    local delta_us=$((($(timer_now) - $timer_start) / 1000))
+    local delta_us=$((($(timer_now) - ${TIMER_START}) / 1000))
     local us=$((delta_us % 1000))
     local ms=$(((delta_us / 1000) % 1000))
     local s=$(((delta_us / 1000000) % 60))
     local m=$(((delta_us / 60000000) % 60))
     local h=$((delta_us / 3600000000))
     # Goal: always show around 3 digits of accuracy
-    if ((h > 0)); then timer_show=${h}h${m}m
-    elif ((m > 0)); then timer_show=${m}m${s}s
-    elif ((s >= 10)); then timer_show=${s}.$((ms / 100))s
-    elif ((s > 0)); then timer_show=${s}.$(printf %03d $ms)s
-    elif ((ms >= 100)); then timer_show=${ms}ms
-    elif ((ms > 0)); then timer_show=${ms}.$((us / 100))ms
-    else timer_show=${us}us
+    if ((h > 0)); then TIMER_SHOW=${h}h${m}m
+    elif ((m > 0)); then TIMER_SHOW=${m}m${s}s
+    elif ((s >= 10)); then TIMER_SHOW=${s}.$((ms / 100))s
+    elif ((s > 0)); then TIMER_SHOW=${s}.$(printf %03d $ms)s
+    elif ((ms >= 100)); then TIMER_SHOW=${ms}ms
+    elif ((ms > 0)); then TIMER_SHOW=${ms}.$((us / 100))ms
+    else TIMER_SHOW=${us}us
     fi
-    unset timer_start
+    unset TIMER_START
 }
 
 
@@ -50,7 +50,7 @@ set_prompt () {
     
     PS1+="[\$?]" # Exit code of last command
 
-    PS1+="$Light_Red[$timer_show]" # Last command execution time
+    PS1+="$Light_Red[$TIMER_SHOW]" # Last command execution time
 
     PS1+="$Red[$USER]" # Current user
     PS1+="$Green\$(git_branch)" # Git branch (if you are in a git directory)

@@ -6,6 +6,7 @@ function cd {
     command cd "$@" && ls
 }
 
+
 function up() {
     DIR=""
     for i in $(seq $1); do
@@ -22,6 +23,7 @@ function gcp {
     cd - >/dev/null
 }
 
+
 function gbc {
     # [g]it [b]ranch [c]heckout
     git branch $1
@@ -29,18 +31,21 @@ function gbc {
     git push --set-upstream origin $1
 }
 
+
 function git_branch {
   git rev-parse --abbrev-ref HEAD 2>&- | sed 's/.\+/[&]/g'
 }
 
+
 function timer_start {
-  timer=${timer:-$SECONDS}
+  TIMER=${TIMER:-$SECONDS}
 }
 
 function timer_stop {
-  timer_show=$(($SECONDS - $timer))
-  unset timer
+  TIMER_SHOW=$((${SECONDS} - ${TIMER}))
+  unset TIMER
 }
+
 
 function org {
     ORGPATH="$HOME/.org"
@@ -67,8 +72,9 @@ function org {
 #+LANGUAGE: ru
            
 EOF
-    $EDITOR "${ORGFILE}"
+    ${EDITOR} "${ORGFILE}"
 }
+
 
 function arole {
     # $1 - Name of new role
@@ -95,8 +101,10 @@ EOF
     ${EDITOR} "./tasks/main.yml"
 }
 
+
 function atask {
     # $1 - Name of role to open the main task
+   
     ROLE="$( sed 's/\.yml$//' <<<${1})"
     FILE_PATH="./roles/${ROLE}/tasks/main.yml"
     if [ -f "${FILE_PATH}" ]; then
