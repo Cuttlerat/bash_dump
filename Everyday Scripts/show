@@ -12,7 +12,7 @@ function _save_last() {
 }
 
 function _get_series() {
-    ls ${FORMATS} 2>&- | grep -Eo 's[0-9]+e[0-9]+' | uniq
+    ls ${FORMATS} 2>&- | grep -Eo 's[0-9]+e[0-9]+' | sort -u
 }
 
 command cd "${SHOW_PATH}"
