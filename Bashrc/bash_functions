@@ -9,9 +9,9 @@ cd() {
 
 up() {
     # $1 - How much dirs to go back
-    local up_dirs="$1"
+    local up_dirs="${1:-1}"
+    local dir
 
-    dir=""
     for i in $(seq "${up_dirs}"); do
         dir="${dir}../"
     done
