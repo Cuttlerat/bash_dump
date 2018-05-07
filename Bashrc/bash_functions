@@ -66,7 +66,7 @@ org() {
     if [[ $# -eq 1 ]]; then
         read day month year <<<"${date/./ }"
         : "${year:="$(date +%Y)"}"
-        [[ "$(printf "${YEAR}" | wc -m)" -eq 2 ]] && year="20${year}"
+        [[ "$(printf "${year}" | wc -m)" -eq 2 ]] && year="20${year}"
     else
         echo "Usage: 'org' or 'org DD.MM' or 'org DD.MM.YY'"
         return
