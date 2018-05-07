@@ -2,21 +2,24 @@
 # ~/.bash_functions
 
 
-function cd {
+cd() {
     command cd "$@" && ls
 }
 
 
-function up() {
-    DIR=""
-    for i in $(seq $1); do
-        DIR="${DIR}../"
+up() {
+    # $1 - How much dirs to go back
+    local up_dirs="$1"
+
+    dir=""
+    for i in $(seq "${up_dirs}"); do
+        dir="${dir}../"
     done
-    cd "${DIR}"
+    cd "${dir}"
 }
 
 
-function gcp {
+gcp() {
     # [g]it [c]ommit [p]ush
     cdg >/dev/null
     git add . && git commit -m "${1:-"Fast commit by Cuttlerat"}" && git push
@@ -24,92 +27,99 @@ function gcp {
 }
 
 
-function gbc {
+gbc() {
     # [g]it [b]ranch [c]heckout
-    git branch $1
-    git checkout $1
-    git push --set-upstream origin $1
+    local branch_name="$1"
+    
+    git branch "${branch_name}"
+    git checkout "${branch_name}"
+    git push --set-upstream origin "${branch_name}"
 }
 
 
-function git_branch {
+git_branch() {
   git rev-parse --abbrev-ref HEAD 2>&- | sed 's/.\+/[&]/g'
 }
 
 
-function timer_start {
-  TIMER=${TIMER:-$SECONDS}
+timer_start() {
+  TIMER="${TIMER:-$SECONDS}"
 }
 
-function timer_stop {
-  TIMER_SHOW=$((${SECONDS} - ${TIMER}))
+timer_stop() {
+  TIMER_SHOW="$((${SECONDS} - ${TIMER}))"
   unset TIMER
 }
 
 
-function org {
-    ORGPATH="$HOME/.org"
-    if [[ $# -eq 0 ]]; then
-        DAY=$(date +'%d')
-        MONTH=$(date +'%m')
-        YEAR=$(date +'%Y')
-    elif [[ $# -eq 1 ]]; then
-        INPUT="$@"
-        DAY=$(awk -F'.' '$0=$1' <<< "${INPUT}" )
-        MONTH=$(awk -F'.' '$0=$2' <<< "${INPUT}")
-        YEAR=$(awk -F'.' '$0=$3' <<< "${INPUT}")
-        [[ ${YEAR:="$(date +%Y)"} ]]
-        [[ $(printf "${YEAR}" | wc -m) -eq 2 ]] && YEAR="20${YEAR}"
+org() {
+    # $1 - Date in one of format:
+    #    + DD.MM
+    #    + DD.MM.YY
+    #    + DD.MM.YYYY
+    local date="$1"
+    local orgpath="${ORGPATH:-${HOME}/.org}"
+    local day=$(date +'%d')
+    local month=$(date +'%m')
+    local year=$(date +'%Y')
+
+    if [[ $# -eq 1 ]]; then
+        read day month year <<<"${date/./ }"
+        : "${year:="$(date +%Y)"}"
+        [[ "$(printf "${YEAR}" | wc -m)" -eq 2 ]] && year="20${year}"
     else
         echo "Usage: 'org' or 'org DD.MM' or 'org DD.MM.YY'"
         return
     fi
-    mkdir -p "${ORGPATH}/${YEAR}/${MONTH}"
-    ORGFILE="${ORGPATH}/${YEAR}/${MONTH}/${DAY}.org"
-    [[ ! -f "${ORGFILE}" ]] && cat >"${ORGFILE}" <<-EOF
-#+AUTHOR:   Aleksei Kioller
-#+EMAIL:    avkioller@gmail.com
-#+LANGUAGE: ru
-           
-EOF
-    ${EDITOR} "${ORGFILE}"
+    mkdir -p "${orgpath}/${year}/${month}"
+    orgfile="${orgpath}/${year}/${month}/${day}.org"
+    if [[ ! -f "${orgfile}" ]]; then
+        cat >"${orgfile}" <<-EOF
+	#+AUTHOR:   Aleksei Kioller
+	#+EMAIL:    avkioller@gmail.com
+	#+LANGUAGE: ru
+	           
+	EOF
+    fi
+    ${EDITOR} "${orgfile}"
 }
 
 
-function arole {
+arole() {
     # $1 - Name of new role
-    # $2 - Group of hosts of this roles (keep empty for all)
+    # $2 - Host or group of this roles (keep empty for all)
+    local role_name="$1"
+    local hosts="${2:-all}"
     
     [[ -d "./group_vars" ]] || [[ -d "./roles" ]] || return 1
-    for ROLE_DIR in "./roles/${1}/"{tasks,defaults}; do
-        mkdir -p "${ROLE_DIR}"
-        if [ ! -f "${ROLE_DIR}/main.yml" ]; then
-            touch "${ROLE_DIR}/main.yml"
-            echo "---" > "${ROLE_DIR}/main.yml"
+    for role_dir in "./roles/${1}/"{tasks,defaults}; do
+        mkdir -p "${role_dir}"
+        if [ ! -f "${role_dir}/main.yml" ]; then
+            touch "${role_dir}/main.yml"
+            echo "---" > "${role_dir}/main.yml"
         fi
     done
-    if [ ! -f "./${1}.yml" ]; then
-        HOST="${2:-all}"
-    cat > "./${1}.yml" <<EOF  
----
-- hosts: ${HOST}
-  roles:
-    - ${1}
-EOF
+    if [ ! -f "./${role_name}.yml" ]; then
+        cat > "./${role_name}.yml" <<-EOF
+	---
+	- hosts: ${hosts}
+	  roles:
+	    - ${role_name}
+	EOF
     fi
-    cd "./roles/${1}/"
+    cd "./roles/${role_name}/"
     ${EDITOR} "./tasks/main.yml"
 }
 
 
-function atask {
+atask() {
     # $1 - Name of role to open the main task
-   
-    ROLE="$( sed 's/\.yml$//' <<<${1})"
-    FILE_PATH="./roles/${ROLE}/tasks/main.yml"
-    if [ -f "${FILE_PATH}" ]; then
-        ${EDITOR} "${FILE_PATH}"
+    local role="${1%%.yml}"
+    local file_path="./roles/${role}/tasks/main.yml"
+
+    if [[ -f "${file_path}" ]]; then
+        ${EDITOR} "${file_path}"
     else
-        echo "File ${FILE_PATH} does not exists!" && (exit 1)
+        echo "File ${file_path} does not exists!" && (exit 1)
     fi
 }
