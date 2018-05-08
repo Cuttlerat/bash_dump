@@ -120,6 +120,7 @@ atask() {
     if [[ -f "${file_path}" ]]; then
         ${EDITOR} "${file_path}"
     else
-        echo "File ${file_path} does not exists!" && (exit 1)
+        echo "File ${file_path} does not exists!"
+        return 1
     fi
 }
