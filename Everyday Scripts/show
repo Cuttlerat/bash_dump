@@ -1,29 +1,36 @@
 #!/usr/bin/env bash
 
-readonly FORMATS="*avi *mkv"
 
-SHOW_PATH="$1"
-[[ "${SHOW_PATH:=.}" ]]
-readonly SHOW_PATH
 
-function _save_last() {
-    local LAST="$1"
-    echo "LAST=${LAST}" > ".last"
+_save_last() {
+    local last="$1"
+    echo "last=${last}" > ".last"
 }
 
-function _get_series() {
-    ls ${FORMATS} 2>&- | grep -Eo 's[0-9]+e[0-9]+' | sort -u
+_get_series() {
+    local regexp='s[0-9]+e[0-9]+'
+    for file in "${formats[@]}"; do
+        [[ "${file}" =~ ${regexp} ]] && echo "${file}"
+    done | sort -u
 }
 
-command cd "${SHOW_PATH}"
+_main() {
+    readonly formats=(*avi *mkv)
+    readonly show_path="${1:=.}"
+    local current
+    
+    command cd "${show_path}"
+    
+    if [[ -f ".last" ]]; then
+        source ".last"
+        current="$(_get_series | sed -n "/${last}/{n;p;}")"
+    else
+        current="$(_get_series | head -1)"
+    fi
+    
+    mpv ./*"${current}"* &>/dev/null &
+    _save_last "${current}"
+    command cd - >/dev/null
+}
 
-if [[ -f ".last" ]]; then
-    . ".last"
-    CURRENT="$(_get_series | sed -n "/${LAST}/{n;p;}")"
-else
-    CURRENT="$(_get_series | head -1)"
-fi
-
-mpv *"${CURRENT}"* &>/dev/null &
-_save_last "${CURRENT}"
-command cd - >/dev/null
+_main "$@"

@@ -9,4 +9,4 @@
 
 set -e
 
-scrot /tmp/foo.png ${1:--u} -e 'xclip -selection clipboard -t image/png -i $f && rm $f'
+scrot /tmp/foo.png "${1:--u}" -e 'xclip -selection clipboard -t image/png -i $f && rm $f'
