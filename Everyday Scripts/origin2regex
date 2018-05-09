@@ -1,10 +1,31 @@
 #!/bin/bash
 
-# Dig all IP adresses by origin of given IP and them turned into regular expressions
+# Dig all IP adresses by origin of given domain name and them turned into regular expressions
 
-DIG_IP="$(dig $1 +short | head -1)"
-ORIGIN="$(whois -h whois.radb.net ${DIG_IP} | grep origin: |awk '$0=$2')"
+check_packages() {
 
-for IP in $(whois -h whois.radb.net -i origin -T route ${ORIGIN} | grep -w "route:" | awk '{print $NF}' | sort -n); do
-    rgxg cidr $IP;
-done
+    local packages=("$@")
+    for package in "${packages[@]}"; do
+      if [[ ! $(which "${package}") ]]; then
+          echo "${package} is not installed"
+          exit 1
+      fi
+    done
+}
+
+main() {
+
+    # $1 - Domain name
+    local domain_name="$1"
+
+    check_packages dig rgxg whois
+    local dig_ip="$(dig "${domain_name}" +short | head -1)"
+    local origin="$(whois -h whois.radb.net "${dig_ip}" | awk '/origin:/{print $2}')"
+    local ip_array=($(whois -h whois.radb.net -i origin -T route "${origin}" | grep -w "route:" | awk '{print $NF}' | sort -n))
+    
+    for found_ip in "${ip_array[@]}"; do
+        rgxg cidr "${found_ip}";
+    done
+}
+
+main "$@"
