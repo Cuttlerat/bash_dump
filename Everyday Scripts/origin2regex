@@ -2,6 +2,10 @@
 
 # Dig all IP adresses by origin of given domain name and them turned into regular expressions
 
+
+[[ "${TRACE}" ]] && set -x
+set -eu
+
 check_packages() {
 
     local packages=("$@")
