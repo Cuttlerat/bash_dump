@@ -1,10 +1,38 @@
 #!/bin/bash
 
-# Dig all IP adresses by origin of given domain name and them turned into regular expressions
-
-
-[[ "${TRACE}" ]] && set -x
 set -eu
+[[ "${TRACE:-}" ]] && set -x
+
+usage() {
+    cat <<-EOF
+	Dig all IP addresses by origin of given domain name and turn them into regular expressions
+	
+	Options:
+	    -h, --help        show this help
+	    -c, --clean       return IP addresses as clean, not in regex patterns
+		
+	EOF
+}
+
+parse_args() {
+
+    while [[ $# -gt 0 ]]; do
+        case "$1" in
+            -h|--help)
+                    usage
+                    exit 0
+                    ;;
+            -c|--clean)
+                    clean="true"
+                    shift
+                    ;;
+            *)
+                    domain_name="$1"
+                    shift
+                    ;;
+        esac
+    done
+}
 
 check_packages() {
 
@@ -19,16 +47,20 @@ check_packages() {
 
 main() {
 
-    # $1 - Domain name
-    local domain_name="$1"
-
     check_packages dig rgxg whois
+    declare domain_name clean="false"
+    parse_args "$@"
+
     local dig_ip="$(dig "${domain_name}" +short | head -1)"
     local origin="$(whois -h whois.radb.net "${dig_ip}" | awk '/origin:/{print $2}')"
     local ip_array=($(whois -h whois.radb.net -i origin -T route "${origin}" | grep -w "route:" | awk '{print $NF}' | sort -n))
     
     for found_ip in "${ip_array[@]}"; do
-        rgxg cidr "${found_ip}";
+        if "${clean}"; then
+            echo "${found_ip}"
+        else
+            rgxg cidr "${found_ip}"
+        fi
     done
 }
 
