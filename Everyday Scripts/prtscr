@@ -7,6 +7,23 @@
 # prtscr - Print screen current window to clipboard
 # prtscr -s - Print screen selection to clipboard
 
-set -e
+set -eu
 
-scrot /tmp/foo.png "${1:--u}" -e 'xclip -selection clipboard -t image/png -i $f && rm $f'
+
+cleanup() {
+
+    rm -rf "${tmp_file}"
+}
+
+main() {
+
+    readonly tmp_file="$(mktemp -t scrot.XXXXXXXXX.png)"
+    local flags=("$@")
+    : "${flags:=-u}"
+    
+    scrot "${tmp_file}" -z "${flags[@]}" -e 'xclip -selection clipboard -t image/png -i $f'
+
+}
+
+trap cleanup EXIT
+main "$@"

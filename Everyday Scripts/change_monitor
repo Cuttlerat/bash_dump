@@ -5,7 +5,7 @@
 
 resolution="1366 768"
 
-function connect(){
+connect() {
         $(cvt "${resolution}" | awk '/Modeline/{for (i=2;i<=NF;i++) printf $i" " } END{print ""}' | sed 's/_[^"]*//;s/^/xrandr --newmode /;s/"//g')
         # Эта команда выдает строку для создания нового мода для xrandr и сразу же запускат, ниже пример для разрешения 1366x768
         # xrandr --newmode "1368x768"   85.25  1368 1440 1576 1784  768 771 781 798 -hsync +vsync
@@ -14,7 +14,7 @@ function connect(){
         xrandr --output VGA-1 --right-of LVDS-1 --mode "$(xrandr | awk '/VGA-1 connected/{flag=1;next}/HDMI/{flag=0}flag' | sort -nr | awk 'NR==1{print $1}')"
 }
 
-function disconnect(){
+disconnect() {
 	xrandr --output VGA-1 --off
 }
 
