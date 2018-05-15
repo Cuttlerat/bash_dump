@@ -87,7 +87,7 @@ org() {
 
 arole() {
     # $1 - Name of new role
-    # $2 - Host or group of this roles (keep empty for all)
+    # $2 - Host or group for this role (keep it empty for all)
     local role_name="$1"
     local hosts="${2:-all}"
     

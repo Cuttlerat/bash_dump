@@ -1,11 +1,11 @@
 # Bash Dump
 
-Свалка для моих Bash/Shell скриптов
+Dump of my Bash/Shell scripts
 
 ## Everyday scripts
 
-Это скрипты которыми я пользуюсь ежедевно, основные их назначения описаны в первых строках самих скриптов.
+These are scripts that I use every day, their main assignments are described in a first lines.
 
 ## Bashrc
 
-Здесь собраны все мои bashrc, стараюсь постоянно дополнять эту категорию и держать в чистоте, здесь можно найти очень много удобных функций и алиасов для ежедневного пользования
+This is bashrc and other files that source into it.
