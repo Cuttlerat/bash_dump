@@ -28,8 +28,8 @@ alias :q='exit'
 alias dc='cd'
 alias sl='ls'
 # Translation
-alias ru='trans -s en -t ru -b'
-alias en='trans -s ru -t en -b'
+alias ru='trans -s en -t ru'
+alias en='trans -s ru -t en'
 # Navigation
 alias home='cd ~'
 alias ..='cd ..'
