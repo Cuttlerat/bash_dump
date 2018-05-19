@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-
-
 _save_last() {
     local last="$1"
     echo "last=${last}" > ".last"
