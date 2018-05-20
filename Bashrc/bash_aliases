@@ -33,4 +33,4 @@ alias ambient="mpv 'http://hot.friezy.ru/?radio=di&station=ambient&bitrate=320'"
 alias cdg='cd $(dirname $(git rev-parse --git-dir 2>&- || echo .))'
 alias ssh='TERM=xterm ssh'
 alias vdc='vim docker-compose.yml'
-alias vpn='sudo pon EPAM debug dump logfd 2 nodetach& sleep 3 && sudo route add default dev ppp0'
+alias vpn='sudo pon EPAM debug dump logfd 2 nodetach'
