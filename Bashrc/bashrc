@@ -18,6 +18,7 @@ export HISTTIMEFORMAT="%h %d %H:%M:%S "
 export HISTCONTROL=ignoreboth:erasedups
 export EDITOR="emacs -nw"
 
+[[ -f ~/.bash_secrets ]] && . ~/.bash_secrets
 [[ -f ~/.bash_aliases ]] && . ~/.bash_aliases
 [[ -f ~/.bash_functions ]] && . ~/.bash_functions
 [[ -f ~/.bash_prompt ]] && . ~/.bash_prompt
