@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+set -eu
+[[ "${TRACE:-}" ]] && set -x
+
+main() {
+    # $1 - ip for getting info, if not defined, used from ifconfig.io
+    local ip="${1:-$(curl -s ifconfig.io)}"
+
+    curl -s "ipinfo.io/${ip}" | cat | jq .
+
+    # Recursion over all args
+    if [[ $# -ne 1 ]]; then
+        shift
+        main "$@"
+    fi
+}
+
+main "$@"

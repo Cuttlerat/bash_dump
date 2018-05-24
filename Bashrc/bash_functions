@@ -7,6 +7,13 @@ cd() {
 }
 
 
+jq() {
+    args="$@"
+    [[ $# -eq 0 ]] && args="."
+    command jq "${args[@]}"
+}
+
+
 up() {
     # $1 - How much dirs to go back
     local up_dirs="${1:-1}"
