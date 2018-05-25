@@ -12,7 +12,6 @@ alias update='sudo pacman -Syu'
 alias remove='sudo pacman -Rs'
 alias install='sudo pacman -S'
 # Editors
-alias vim='emacs -nw'
 alias vi='vim'
 # Misspellings
 alias grep='grep --color=auto'

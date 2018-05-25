@@ -14,6 +14,28 @@ jq() {
 }
 
 
+vim() {
+    case $# in
+        0)
+            local temp_file="$(mktemp -t vim.XXXXXXXX)"
+            ${EDITOR} "${temp_file}"
+            rm -rf "${temp_file}"
+            ;;
+        1)
+            ${EDITOR} "$1"
+            ;;
+        *)
+            first="$1"
+            while [[ $# -ne 1 ]]; do
+                shift
+                nohup termite -e "${EDITOR} $1" &>/dev/null &
+            done
+            ${EDITOR} "${first}"
+            ;;
+    esac
+}
+
+
 up() {
     # $1 - How much dirs to go back
     local up_dirs="${1:-1}"
