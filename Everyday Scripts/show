@@ -14,7 +14,7 @@ _get_series() {
 
 _main() {
     readonly formats=(*avi *mkv)
-    readonly show_path="${1:=.}"
+    readonly show_path="${1:-.}"
     local current
     
     command cd "${show_path}"
