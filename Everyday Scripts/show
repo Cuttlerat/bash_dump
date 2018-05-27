@@ -2,7 +2,7 @@
 
 _save_last() {
     local last="$1"
-    echo "last=${last}" > ".last"
+    echo "${last}" > ".last"
 }
 
 _get_series() {
@@ -15,14 +15,20 @@ _get_series() {
 _main() {
     readonly formats=(*avi *mkv)
     readonly show_path="${1:-.}"
-    local current
+    readonly last_file=".last"
+    local current last
     
     command cd "${show_path}"
     
-    if [[ -f ".last" ]]; then
-        source ".last"
+    if [[ -f "${last_file}" ]]; then
+        read last < "${last_file}"
+    fi
+
+    if [[ "${last}" ]]; then
         current="$(_get_series | sed -n "/${last}/{n;p;}")"
-    else
+    fi
+
+    if [[ ! "${current}" ]]; then
         current="$(_get_series | head -1)"
     fi
     
