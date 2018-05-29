@@ -96,7 +96,7 @@ org() {
         read day month year <<<"${date/./ }"
         : "${year:="$(date +%Y)"}"
         [[ "$(printf "${year}" | wc -m)" -eq 2 ]] && year="20${year}"
-    else
+    elif [[ $# -gt 1 ]]; then
         echo "Usage: 'org' or 'org DD.MM' or 'org DD.MM.YY'"
         return
     fi
