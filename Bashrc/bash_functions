@@ -19,7 +19,7 @@ vim() {
         0)
             local temp_file="$(mktemp -t vim.XXXXXXXX)"
             ${EDITOR} "${temp_file}"
-            rm -rf "${temp_file}"
+            rm -rfi "${temp_file}"
             ;;
         1)
             ${EDITOR} "$1"
