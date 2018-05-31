@@ -1,18 +1,18 @@
 #!/usr/bin/env bash
 
-_save_last() {
+save_last() {
     local last="$1"
     echo "${last}" > ".last"
 }
 
-_get_series() {
+get_series() {
     local regexp='[sS][0-9]+[eE][0-9]+'
     for file in "${formats[@]}"; do
         [[ "${file}" =~ ${regexp} ]] && echo "${file}"
     done | sort -u
 }
 
-_main() {
+main() {
     readonly formats=(*avi *mkv)
     readonly show_path="${1:-.}"
     readonly last_file=".last"
@@ -25,16 +25,16 @@ _main() {
     fi
 
     if [[ "${last}" ]]; then
-        current="$(_get_series | sed -n "/${last}/{n;p;}")"
+        current="$(get_series | sed -n "/${last}/{n;p;}")"
     fi
 
     if [[ ! "${current}" ]]; then
-        current="$(_get_series | head -1)"
+        current="$(get_series | head -1)"
     fi
     
     mpv ./*"${current}"* &>/dev/null &
-    _save_last "${current}"
+    save_last "${current}"
     command cd - >/dev/null
 }
 
-_main "$@"
+main "$@"
