@@ -2,11 +2,11 @@
 # ~/.bash_aliases
 
 # Docker
+alias dup='sudo docker-compose up'
 alias dupb='sudo docker-compose up --build'
 alias dlog='sudo docker-compose logs -f'
 alias ddown='sudo docker-compose down'
 alias dexec='sudo docker-compose exec'
-alias dup='sudo docker-compose up'
 # Pacman
 alias update='sudo pacman -Syu'
 alias remove='sudo pacman -Rs'
