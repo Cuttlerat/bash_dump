@@ -3,5 +3,5 @@ resolution="1920 1080"
 $(cvt "${resolution}" | awk '/Modeline/{for (i=2;i<=NF;i++) printf $i" " } END{print ""}' | sed 's/_[^"]*//;s/^/xrandr --newmode /;s/"//g')
 xrandr --addmode VGA-1 1920x1080
 xrandr --output VGA-1 --mode 1920x1080
-xrandr --output LVDS-1 --off
+#xrandr --output LVDS-1 --off
 feh --bg-center /home/rat/Pictures/background_new.png
