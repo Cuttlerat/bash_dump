@@ -144,12 +144,12 @@ arole() {
 atask() {
     # $1 - Name of role to open the main task
     local role="${1%%.yml}"
-    local file_path="./roles/${role}/tasks/main.yml"
+    local main_task="./roles/${role}/tasks/main.yml"
 
-    if [[ -f "${file_path}" ]]; then
-        ${EDITOR} "${file_path}"
+    if [[ -f "${main_task}" ]]; then
+        ${EDITOR} "${main_task}"
     else
-        echo "File ${file_path} does not exists!"
+        echo "File ${main_task} does not exists!"
         return 1
     fi
 }
