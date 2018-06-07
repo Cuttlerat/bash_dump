@@ -6,6 +6,10 @@ cd() {
     command cd "$@" && ls
 }
 
+mkcd() {
+    [[ $# -ne 1 ]] && echo "Works only for 1 dir" && return 1
+    mkdir -p "$1" && cd "$1"
+}
 
 jq() {
     args="$@"
