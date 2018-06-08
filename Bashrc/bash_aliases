@@ -29,7 +29,6 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 # Other
 alias ff='find . -name '
-alias ambient="mpv 'http://hot.friezy.ru/?radio=di&station=ambient&bitrate=320'"
 alias cdg='cd $(dirname $(git rev-parse --git-dir 2>&- || echo .))'
 alias ssh='TERM=xterm ssh'
 alias vdc='vim docker-compose.yml'
