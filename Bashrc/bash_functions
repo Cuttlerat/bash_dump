@@ -85,39 +85,6 @@ timer_stop() {
 }
 
 
-org() {
-    # $1 - Date in one of format:
-    #    + DD.MM
-    #    + DD.MM.YY
-    #    + DD.MM.YYYY
-    local date="$1"
-    local orgpath="${ORGPATH:-${HOME}/.org}"
-    local day=$(date +'%d')
-    local month=$(date +'%m')
-    local year=$(date +'%Y')
-
-    if [[ $# -eq 1 ]]; then
-        read day month year <<<"${date/./ }"
-        : "${year:="$(date +%Y)"}"
-        [[ "$(printf "${year}" | wc -m)" -eq 2 ]] && year="20${year}"
-    elif [[ $# -gt 1 ]]; then
-        echo "Usage: 'org' or 'org DD.MM' or 'org DD.MM.YY'"
-        return
-    fi
-    mkdir -p "${orgpath}/${year}/${month}"
-    orgfile="${orgpath}/${year}/${month}/${day}.org"
-    if [[ ! -f "${orgfile}" ]]; then
-        cat >"${orgfile}" <<-EOF
-	#+AUTHOR:   Aleksei Kioller
-	#+EMAIL:    avkioller@gmail.com
-	#+LANGUAGE: ru
-	           
-	EOF
-    fi
-    ${EDITOR} "${orgfile}"
-}
-
-
 arole() {
     # $1 - Name of new role
     # $2 - Host or group for this role (keep it empty for all)
