@@ -82,17 +82,17 @@ gpr() {
 
 
 git_branch() {
-  git rev-parse --abbrev-ref HEAD 2>&- | sed 's/.\+/[&]/g'
+    git rev-parse --abbrev-ref HEAD 2>&- | sed 's/.\+/[&]/g'
 }
 
 
 timer_start() {
-  TIMER="${TIMER:-$SECONDS}"
+    TIMER="${TIMER:-$SECONDS}"
 }
 
 timer_stop() {
-  TIMER_SHOW="$((${SECONDS} - ${TIMER}))"
-  unset TIMER
+    TIMER_SHOW="$((${SECONDS} - ${TIMER}))"
+    unset TIMER
 }
 
 
