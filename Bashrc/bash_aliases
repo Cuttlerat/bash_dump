@@ -13,9 +13,11 @@ alias remove='sudo pacman -Rs'
 alias install='sudo pacman -S'
 # Editors
 alias vi='vim'
-# Misspellings
+# Shortenings
+alias df='df -h'
 alias grep='grep --color=auto'
 alias ls='ls --color=auto'
+# Misspellings
 alias :q='exit'
 alias dc='cd'
 alias sl='ls'
