@@ -7,6 +7,7 @@ alias dupb='sudo docker-compose up --build'
 alias dlog='sudo docker-compose logs -f'
 alias ddown='sudo docker-compose down'
 alias dexec='sudo docker-compose exec'
+alias dps='sudo docker ps'
 # Pacman
 alias update='sudo pacman -Syu'
 alias remove='sudo pacman -Rs'
