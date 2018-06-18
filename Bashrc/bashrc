@@ -19,7 +19,7 @@ export HISTCONTROL=ignoreboth:erasedups
 export EDITOR="emacs -nw"
 
 for name in "secrets" "aliases" "functions" "prompt"; do
-    [[ -f "~/.bash_${name}" ]] && . "~/.bash_name"
+    [[ -f ~/.bash_"${name}" ]] && . ~/.bash_"${name}"
 done
 
 # Use bash-completion, if available
