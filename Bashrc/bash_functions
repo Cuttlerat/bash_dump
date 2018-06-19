@@ -56,6 +56,7 @@ up() {
 
 gcp() {
     # [g]it [c]ommit [p]ush
+    # $1 - Commit comment
     cdg >/dev/null
     git add . && git commit -m "${1:-"Autocommit by Aleksei Kioller"}" && git push
     cd - >/dev/null
