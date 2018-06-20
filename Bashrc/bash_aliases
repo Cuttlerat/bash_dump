@@ -9,9 +9,9 @@ alias ddown='sudo docker-compose down'
 alias dexec='sudo docker-compose exec'
 alias dps='sudo docker ps'
 # Pacman
-alias update='sudo pacman -Syu'
-alias remove='sudo pacman -Rs'
-alias install='sudo pacman -S'
+alias upd='sudo pacman -Syu'
+alias rem='sudo pacman -Rs'
+alias ins='sudo pacman -S'
 # Editors
 alias vi='vim'
 # Shortenings
