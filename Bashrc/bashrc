@@ -12,8 +12,10 @@ bind 'set show-all-if-ambiguous on'
 bind 'set match-hidden-files off'
 shopt -s globstar
 
-export HISTSIZE=100000
-export HISTFILESIZE=100000
+export HISTSIZE=
+export HISTFILESIZE=
+shopt -s histappend
+
 export HISTTIMEFORMAT="%h %d %H:%M:%S "
 export HISTCONTROL=ignoreboth:erasedups
 export EDITOR="emacs -nw"
