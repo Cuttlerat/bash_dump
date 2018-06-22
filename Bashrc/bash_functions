@@ -56,9 +56,10 @@ up() {
 
 gcp() {
     # [g]it [c]ommit [p]ush
-    # $1 - Commit comment
+    local comment="${1:-"Autocommit by Aleksei Kioller"}"
+
     cdg >/dev/null
-    git add . && git commit -m "${1:-"Autocommit by Aleksei Kioller"}" && git push
+    git add . && git commit -m "${comment}" && git push
     cd - >/dev/null
 }
 
