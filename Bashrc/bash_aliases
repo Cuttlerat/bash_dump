@@ -35,7 +35,7 @@ alias .....='cd ../../../..'
 alias org="${EDITOR} ${HOME}/.org/main.org"
 alias org_archive="${EDITOR} ${HOME}/.org/main.org_archive"
 alias myip='curl ifconfig.ru'
-alias ff='find . -name '
+alias ff='find . -name'
 alias cdg='cd $(dirname $(git rev-parse --git-dir 2>&- || echo .))'
 alias ssh='TERM=xterm ssh'
 alias vdc='vim docker-compose.yml'
