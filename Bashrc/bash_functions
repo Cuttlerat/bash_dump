@@ -14,8 +14,7 @@ mkcd() {
 
 
 jq() {
-    args="$@"
-    [[ $# -eq 0 ]] && args="."
+    [[ $# -eq 0 ]] && args="." || args="$@"
     command jq "${args[@]}"
 }
 
