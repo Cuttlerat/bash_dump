@@ -31,16 +31,16 @@ function timer_stop {
 
 set_prompt () {
 
-    Last_Command=$? # Must come first!
+    local Last_Command=$? # Must come first!
 
     timer_stop
 
-    Blue='\[\e[01;34m\]'
-    White='\[\e[01;37m\]'
-    Red='\[\e[00;31m\]'
-    Light_Red='\[\e[01;31m\]'
-    Green='\[\e[01;32m\]'
-    Reset='\[\e[00m\]'
+    local Blue='\[\e[01;34m\]'
+    local White='\[\e[01;37m\]'
+    local Red='\[\e[00;31m\]'
+    local Light_Red='\[\e[01;31m\]'
+    local Green='\[\e[01;32m\]'
+    local Reset='\[\e[00m\]'
 
     if [[ $Last_Command == 0 ]]; then
         PS1="$Green"
