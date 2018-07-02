@@ -8,6 +8,7 @@
 # prtscr -s - Print screen selection to clipboard
 
 set -eu
+[[ "${TRACE:-}" ]] && set -x
 
 
 cleanup() {
