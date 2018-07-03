@@ -29,7 +29,6 @@ done
     . /usr/share/bash-completion/bash_completion
 
 # Source SSH settings, if applicable
-
 if ! pgrep -u "${USER}" ssh-agent > /dev/null; then
     ssh-agent | sed '/echo/d' > ~/.ssh-agent-thing
 fi
