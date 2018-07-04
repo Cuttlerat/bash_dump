@@ -30,7 +30,7 @@ vim() {
             ${EDITOR} "$1"
             ;;
         *)
-            first="$1"
+            local first="$1"
             while [[ $# -ne 1 ]]; do
                 shift
                 nohup termite -e "${EDITOR} $1" &>/dev/null &
