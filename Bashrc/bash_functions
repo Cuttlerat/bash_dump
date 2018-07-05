@@ -58,7 +58,7 @@ gcp() {
     local comment="${1:-"Autocommit by Aleksei Kioller"}"
 
     cdg >/dev/null
-    git add . && git commit -m "${comment}" && git push
+    git commit -a -m "${comment}" && git push
     cd - >/dev/null
 }
 
@@ -67,8 +67,7 @@ gbc() {
     # [g]it [b]ranch [c]heckout
     local branch_name="$1"
     
-    git branch "${branch_name}"
-    git checkout "${branch_name}"
+    git checkout -b "${branch_name}"
     git push --set-upstream origin "${branch_name}"
 }
 
