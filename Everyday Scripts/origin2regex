@@ -16,6 +16,7 @@ usage() {
 
 parse_args() {
 
+
     while [[ $# -gt 0 ]]; do
         case "$1" in
             -h|--help)
@@ -36,7 +37,7 @@ parse_args() {
 
 check_packages() {
 
-    local packages=("$@")
+    local packages=("dig" "rgxg" "whois")
     for package in "${packages[@]}"; do
       if [[ ! $(which "${package}") ]]; then
           echo "${package} is not installed"
@@ -47,8 +48,8 @@ check_packages() {
 
 main() {
 
-    check_packages dig rgxg whois
     declare domain_name clean="false"
+    check_packages
     parse_args "$@"
 
     local dig_ip="$(dig "${domain_name}" +short | head -1)"
