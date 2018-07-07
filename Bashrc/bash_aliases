@@ -20,6 +20,7 @@ alias df='df -h'
 alias grep='grep --color=auto'
 alias ls='ls --color=auto'
 alias dua='du -hSc'
+alias tgz='tar -cvzf'
 # Misspellings
 alias :q='exit'
 alias dc='cd'
