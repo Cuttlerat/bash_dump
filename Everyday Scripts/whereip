@@ -10,7 +10,7 @@ main() {
     curl -s "ipinfo.io/${ip}" | cat | jq .
 
     # Recursion over all args
-    if [[ $# -ne 1 ]]; then
+    if [[ $# -gt 1 ]]; then
         shift
         main "$@"
     fi
