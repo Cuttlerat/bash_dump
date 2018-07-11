@@ -6,10 +6,7 @@ save_last() {
 }
 
 get_series() {
-    local regexp='[sS][0-9]+[eE][0-9]+'
-    for file in "${formats[@]}"; do
-        [[ "${file}" =~ ${regexp} ]] && echo "${file}"
-    done | sort -u
+    ls "${formats[@]}" | grep -iE 's[0-9]+e[0-9]+' | sort -u
 }
 
 main() {
