@@ -47,6 +47,7 @@ set_prompt () {
     else
         PS1="$Red"
     fi
+
     
     PS1+="[\$?]" # Exit code of last command
 
@@ -57,5 +58,27 @@ set_prompt () {
     PS1+="$Light_Red\\w: $Reset" # ':'
 }
 
-trap 'timer_start' DEBUG
-PROMPT_COMMAND='set_prompt'
+exec 9>&2
+exec 8> >(
+    while IFS='' read -r line || [[ "$line" ]]; do
+       echo -e "$(tput setaf 3)${line}$(tput sgr 0)"
+    done
+)
+
+undirect(){ exec 2>&9; }
+redirect(){ exec 2>&8; }
+
+
+trap_handler() {
+    timer_start
+    redirect
+}
+
+prompt_command() {
+    set_prompt
+    undirect
+}
+
+
+trap 'trap_handler' DEBUG
+PROMPT_COMMAND='prompt_command'
