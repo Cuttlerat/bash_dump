@@ -3,7 +3,7 @@
 
 
 cd() {
-    command cd "$@" && ls
+    builtin cd "$@" && ls
 }
 
 
