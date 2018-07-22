@@ -8,12 +8,14 @@ connect() {
         
         xrandr --output HDMI-1 --right-of LVDS-1 --auto
         xrandr --output VGA-1 --right-of LVDS-1 --auto
+        logger -t "display" "connected"
 }
 
 disconnect() {
 
 	xrandr --output HDMI-1 --off
 	xrandr --output VGA-1 --off
+        logger -t "display" "disconnected"
 }
 
 main() {
