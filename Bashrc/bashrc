@@ -19,6 +19,7 @@ shopt -s histappend
 export HISTTIMEFORMAT="%h %d %H:%M:%S "
 export HISTCONTROL=ignoreboth:erasedups
 export EDITOR="emacs -nw"
+export TERM="xterm"
 
 # Source additional files
 for name in "secrets" "aliases" "functions" "prompt"; do

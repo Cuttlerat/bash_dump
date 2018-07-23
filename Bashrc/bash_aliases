@@ -40,6 +40,5 @@ alias org_archive="${EDITOR} ${HOME}/.org/main.org_archive"
 alias myip='curl ifconfig.ru'
 alias ff='find . -name'
 alias cdg='cd $(dirname $(git rev-parse --git-dir 2>&- || echo .))'
-alias ssh='TERM=xterm ssh'
 alias vpn='sudo pon EPAM debug dump logfd 2 nodetach'
 alias rdp="xfreerdp /sound:sys:pulse /microphone:sys:pulse +fonts \"/u:${RDP_USERNAME}\" \"/v:${RDP_HOSTNAME}\" /size:955x1185 /compression"
