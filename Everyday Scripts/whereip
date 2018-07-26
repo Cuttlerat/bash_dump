@@ -5,15 +5,11 @@ set -euo pipefail
 
 main() {
     # $1 - ip for getting info, if not defined, used from ifconfig.io
-    local ip="${1:-$(curl -s ifconfig.io)}"
+    local ip=("${@:-$(curl -s ifconfig.io)}")
 
-    curl -s "ipinfo.io/${ip}" | cat | jq .
-
-    # Recursion over all args
-    if [[ $# -gt 1 ]]; then
-        shift
-        main "$@"
-    fi
+    for i in "${ip[@]}"; do
+        curl -s "ipinfo.io/${i}" 
+    done | jq -s '.'
 }
 
 main "$@"
