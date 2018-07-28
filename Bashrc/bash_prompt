@@ -76,6 +76,7 @@ trap_handler() {
 
 prompt_command() {
     set_prompt
+    history -a
     #undirect
 }
 
