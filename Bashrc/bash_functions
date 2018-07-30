@@ -76,8 +76,8 @@ gpr() {
     # $1 - Parent branch (default - master)
     # $2 - Repo (default - from remote.origin.url)
     local current=`git branch | grep '*'`
-    local parent=${1:-"master"}
-    local repo=${2:-"$(git config --get remote.origin.url | sed '/@/s/[^:]*://; /https/s/.*\.com\///; s/\.git$//')"}
+    local parent="${1:-master}"
+    local repo="${2:-$(git config --get remote.origin.url | sed '/@/s/[^:]*://; /https/s/.*\.com\///; s/\.git$//')}"
 
     firefox "https://github.com/${repo/* /}/compare/${parent/* /}...themsaid:${current/* /}?expand=1"
 }
