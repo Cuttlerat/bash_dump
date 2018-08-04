@@ -1,0 +1,10 @@
+#!/bin/bash
+
+while read; do
+    if [[ "$LAST" != "$REPLY" ]]; then
+        LAST="$REPLY"
+        echo "$REPLY"
+    fi
+done
+
+    
