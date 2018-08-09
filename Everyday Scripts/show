@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 # My script for watching TV series
+# It saves last version in .last file in a series directory
 
 save_last() {
     local last="${1}"
