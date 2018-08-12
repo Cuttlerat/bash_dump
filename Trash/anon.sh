@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# It is a Telegram bot for transporting all messages sent to bot into specific chat
+
 set -euo pipefail
 [[ "${TRACE:-}" ]] && set -x
 
